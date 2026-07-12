@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Mendoza Fisioterapia — Consulta de Carla Mendoza en el Retiro, Madrid. Rehabilitación, dolor y movimiento con trato cercano.">
+  <meta name="theme-color" content="#1a3d36">
+  <title>Mendoza Fisioterapia · Madrid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#contenido">Ir al contenido</a>
+
+  <aside class="barra" aria-label="Navegación">
+    <a href="#contenido" class="barra__marca">
+      <strong>Mendoza</strong>
+      <small>Fisioterapia</small>
+    </a>
+    <nav class="barra__enlaces">
+      <a href="#motivos">Motivos</a>
+      <a href="#areas">Áreas</a>
+      <a href="#metodo">Método</a>
+      <a href="#carla">Carla</a>
+      <a href="#cita" class="barra__cita">Pedir cita</a>
+    </nav>
+    <button class="barra__menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="panel-menu">
+      <i aria-hidden="true"></i>
+    </button>
+  </aside>
+
+  <div class="velo" id="velo" hidden></div>
+  <nav class="panel-menu" id="panel-menu" aria-label="Menú móvil" hidden>
+    <a href="#motivos">Motivos</a>
+    <a href="#areas">Áreas</a>
+    <a href="#metodo">Método</a>
+    <a href="#carla">Carla</a>
+    <a href="#voces">Pacientes</a>
+    <a href="#cita" class="panel-menu__cita">Pedir cita</a>
+  </nav>
+
+  <div class="pagina" id="contenido">
+
+    <header class="apertura">
+      <div class="apertura__copy">
+        <p class="apertura__donde">Retiro · consulta individual</p>
+        <h1>Tu cuerpo puede <em>recuperarse</em> sin ir a prisa</h1>
+        <p class="apertura__sub">Tratamientos personalizados para tu bienestar</p>
+        <p class="apertura__claim">
+          Fisioterapia profesional y rehabilitación en una consulta tranquila,
+          con tiempo para escucharte y un plan claro desde la primera visita.
+        </p>
+      </div>
+      <figure class="apertura__foto">
+        <img src="assets/img/portada.jpg" alt="Sesión de fisioterapia en consulta" width="800" height="1000" decoding="async" fetchpriority="high">
+      </figure>
+      <div class="apertura__pie">
+        <a href="#cita" class="enlace-accion">Reservar primera visita</a>
+        <span class="apertura__dato">Primera sesión · 50 min</span>
+      </div>
+    </header>
+
+    <section class="banda banda--oscura" id="motivos">
+      <div class="banda__inner">
+        <h2>Por qué la gente llega aquí</h2>
+        <ul class="lista-motivos">
+          <li>
+            <strong>Dolor que no se va</strong>
+            <span>Espalda, cuello, hombro o cadera que limitan el día a día.</span>
+          </li>
+          <li>
+            <strong>Volver a moverte</strong>
+            <span>Tras una operación, una lesión deportiva o meses parado.</span>
+          </li>
+          <li>
+            <strong>Entender qué te pasa</strong>
+            <span>Sin jerga médica: qué duele, por qué y qué vamos a hacer.</span>
+          </li>
+          <li>
+            <strong>Dejar de depender</strong>
+            <span>Ejercicios y hábitos para que no necesites venir eternamente.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="areas" id="areas">
+      <div class="areas__intro">
+        <p class="etiqueta">Áreas de trabajo</p>
+        <h2>Lo que tratamos en consulta</h2>
+      </div>
+      <ol class="areas__lista">
+        <li>
+          <span class="areas__n">01</span>
+          <div>
+            <h3>Fisioterapia general</h3>
+            <p>Valoración completa, terapia manual y pauta de ejercicios adaptada a tu caso.</p>
+          </div>
+        </li>
+        <li>
+          <span class="areas__n">02</span>
+          <div>
+            <h3>Rehabilitación de lesiones</h3>
+            <p>Esguinces, tendinitis, roturas fibrilares y sobrecargas con progresión controlada.</p>
+          </div>
+        </li>
+        <li>
+          <span class="areas__n">03</span>
+          <div>
+            <h3>Masaje terapéutico</h3>
+            <p>Descarga muscular y trabajo de tejidos con objetivo clínico, no solo relax.</p>
+          </div>
+        </li>
+        <li>
+          <span class="areas__n">04</span>
+          <div>
+            <h3>Columna cervical y lumbar</h3>
+            <p>Ciáticas, cervicalgias y lumbalgias: tratamos la causa, no solo el síntoma.</p>
+          </div>
+        </li>
+        <li>
+          <span class="areas__n">05</span>
+          <div>
+            <h3>Readaptación deportiva</h3>
+            <p>Vuelta al running, bici o gimnasio con criterio y sin saltarte fases.</p>
+          </div>
+        </li>
+        <li>
+          <span class="areas__n">06</span>
+          <div>
+            <h3>Post-operatorio</h3>
+            <p>Seguimiento coordinado tras cirugía de rodilla, hombro, cadera o columna.</p>
+          </div>
+        </li>
+      </ol>
+      <figure class="areas__img">
+        <img src="assets/img/manos.jpg" alt="Tratamiento manual en consulta" width="900" height="600" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="metodo banda banda--arena" id="metodo">
+      <div class="banda__inner metodo__grid">
+        <div>
+          <p class="etiqueta">Cómo trabajamos</p>
+          <h2>Tres fases, un mismo hilo</h2>
+          <p class="metodo__texto">No vendemos paquetes cerrados. Cada persona entra por un motivo distinto y sale cuando recupera función, no cuando se acaban las sesiones.</p>
+        </div>
+        <ol class="pasos">
+          <li>
+            <span>Escuchar y mirar</span>
+            <p>Historia, gestos, movimientos. La primera visita es para entender, no para apuntar diez técnicas.</p>
+          </li>
+          <li>
+            <span>Tratar y enseñar</span>
+            <p>Manos, ejercicio y cambios sencillos en el día a día. Te llevas cosas que hacer en casa.</p>
+          </li>
+          <li>
+            <span>Soltar con criterio</span>
+            <p>Cuando el cuerpo responde, espaciamos. El objetivo es que no nos necesites cada mes.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="carla" id="carla">
+      <div class="carla__layout">
+        <figure class="carla__retrato">
+          <img src="assets/img/perfil.jpg" alt="Carla Mendoza, fisioterapeuta" width="500" height="600" loading="lazy">
+        </figure>
+        <div class="carla__bio">
+          <p class="etiqueta">La fisioterapeuta</p>
+          <h2>Carla Mendoza</h2>
+          <p class="carla__col">Colegiada nº 31.204 · Colegio de Fisioterapeutas de Madrid</p>
+          <p>
+            Llevo once años en consulta. Me formé en terapia manual, punción seca
+            y readaptación deportiva, pero lo que más me importa es que entiendas
+            tu proceso. No creo en las sesiones eternas ni en los tratamientos
+            que suenan bien en un folleto.
+          </p>
+          <p>
+            Esta consulta es mía: una sala, una camilla, tiempo de verdad.
+            Si necesitas que hable con tu traumatólogo o entrenador, lo hacemos.
+          </p>
+          <ul class="carla__sellos">
+            <li>Grado Fisioterapia · UCM</li>
+            <li>Máster Terapia Manual</li>
+            <li>+500 pacientes/año</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="voces" id="voces">
+      <div class="voces__wrap">
+        <article class="voz-card">
+          <p>«Tenía miedo de mover el hombro después de la operación. Carla fue paciente, me fue quitando miedos y ahora vuelvo a nadar.»</p>
+          <footer>Lucía · 42 años</footer>
+        </article>
+        <article class="voz-card voz-card--acento">
+          <p>«Llevaba un año con la espalda encajada. En la tercera sesión ya noté diferencia. Y lo mejor: me explicó por qué me pasaba.»</p>
+          <footer>Raúl · 38 años</footer>
+        </article>
+        <article class="voz-card">
+          <p>«Reservé por WhatsApp un martes y el jueves ya estaba. Trato directo, sin rodeos ni venta de bonos.»</p>
+          <footer>Silvia · 51 años</footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="dudas" id="dudas">
+      <div class="dudas__layout">
+        <h2>Preguntas que suelen surgir</h2>
+        <dl class="dudas__lista">
+          <div>
+            <dt>¿Hace falta derivación médica?</dt>
+            <dd>No para consulta privada. Si tienes pruebas o informes, tráelos: ahorramos tiempo.</dd>
+          </div>
+          <div>
+            <dt>¿Cuánto dura cada visita?</dt>
+            <dd>La primera, unos 50 minutos. El resto, entre 40 y 45 según lo que toque ese día.</dd>
+          </div>
+          <div>
+            <dt>¿Trabajáis con seguros?</dt>
+            <dd>Sí, con varias mutuas. Pregunta al reservar y te confirmamos cobertura.</dd>
+          </div>
+          <div>
+            <dt>¿Puedo venir con dolor agudo?</dt>
+            <dd>Escríbenos por WhatsApp. Intentamos dejar un hueco en 24–48 h si es urgente leve.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="cita banda banda--oscura" id="cita">
+      <div class="cita__layout">
+        <div class="cita__info">
+          <p class="etiqueta etiqueta--clara">Contacto</p>
+          <h2>Pide tu cita</h2>
+          <p>Dinos qué te ocurre. Respondemos con horario disponible el mismo día laborable.</p>
+          <address>
+            C/ Narváez, 71 · 28009 Madrid<br>
+            Junto al Retiro
+          </address>
+          <p class="cita__tel"><a href="tel:+34618765432">618 765 432</a></p>
+          <a href="https://wa.me/34618765432?text=Hola%20Carla%2C%20me%20gustar%C3%ADa%20pedir%20cita" class="enlace-accion enlace-accion--claro" target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a>
+          <a href="https://maps.google.com/?q=Calle+de+Narvaez+71+Madrid" class="cita__mapa" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a>
+        </div>
+        <form class="cita__form" id="form-cita" novalidate>
+          <label>
+            <span>Tu nombre</span>
+            <input type="text" name="nombre" id="f-nombre" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Teléfono</span>
+            <input type="tel" name="telefono" id="f-tel" autocomplete="tel" required>
+          </label>
+          <label>
+            <span>¿Qué te trae?</span>
+            <select name="motivo" id="f-motivo" required>
+              <option value="">Elige una opción</option>
+              <option>Dolor de espalda o cuello</option>
+              <option>Lesión deportiva</option>
+              <option>Post-operatorio</option>
+              <option>Masaje terapéutico</option>
+              <option>Otro motivo</option>
+            </select>
+          </label>
+          <label>
+            <span>Comentario breve</span>
+            <textarea name="nota" id="f-nota" rows="3" placeholder="Opcional"></textarea>
+          </label>
+          <button type="submit" class="enviar">Enviar solicitud</button>
+          <p class="enviado" id="enviado" hidden>Recibido. Te llamamos o escribimos pronto.</p>
+        </form>
+      </div>
+      <div class="cita__mapa-embed">
+        <iframe
+          src="https://maps.google.com/maps?q=Calle+de+Narvaez+71+Madrid&output=embed"
+          title="Ubicación Mendoza Fisioterapia"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="pie">
+      <span>© 2026 Mendoza Fisioterapia</span>
+      <span><a href="#">Legal</a> · <a href="#">Privacidad</a></span>
+    </footer>
+
+  </div>
+
+  <a href="https://wa.me/34618765432?text=Hola%20Carla%2C%20me%20gustar%C3%ADa%20pedir%20cita" class="ancla-wa" target="_blank" rel="noopener noreferrer" aria-label="Reservar por WhatsApp">WhatsApp</a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
