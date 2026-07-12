@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Academia Nova — Academia de barrio en Chamberí, Madrid. Oposiciones, idiomas, ofimática y refuerzo. Grupos de 8 alumnos.">
+  <meta name="theme-color" content="#2b7cb8">
+  <title>Academia Nova | Chamberí, Madrid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>L–V · 16:00 – 21:00</span>
+      <a href="tel:+34911223344">911 223 344</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand">
+        <span class="brand__mark" aria-hidden="true">A</span>
+        <span class="brand__name">Academia Nova</span>
+      </a>
+      <div class="header__actions">
+        <a href="tel:+34911223344" class="header__phone">911 223 344</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#academia">La academia</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#contacto" class="nav__cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="hero__label">Chamberí · Desde 2014</p>
+        <h1 class="hero__title">Academia de barrio con grupos de 8 alumnos</h1>
+        <p class="hero__text">
+          Dos aulas, dos profesoras y el mismo trato desde que entras hasta que terminas.
+          Oposiciones, idiomas, ofimática y refuerzo escolar.
+        </p>
+        <a href="tel:+34911223344" class="btn btn--primary">Llamar: 911 223 344</a>
+      </div>
+    </section>
+
+    <section class="academia section" id="academia">
+      <div class="container academia__grid">
+        <div class="academia__copy">
+          <p class="section-label">La academia</p>
+          <h2 class="section-title">Laura y Elena, de tú a tú</h2>
+          <p>
+            Laura Méndez abrió el centro en 2014 en García de Paredes. No somos franquicia
+            ni macrocentro: quien te informa por teléfono es quien da clase al día siguiente.
+          </p>
+          <ul class="academia__list">
+            <li>Máximo 8 alumnos por grupo</li>
+            <li>Clase de prueba gratuita</li>
+            <li>Pago mensual, sin permanencia</li>
+            <li>Presencial u online el mismo día</li>
+          </ul>
+        </div>
+        <figure class="academia__figure">
+          <div class="academia__img" role="img" aria-label="Aula de la academia"></div>
+          <figcaption>C. García de Paredes, 32 — bajo izq.</figcaption>
+        </figure>
+      </div>
+
+      <div class="container equipo">
+        <article class="equipo-card">
+          <div class="equipo-card__photo equipo-card__photo--1" role="img" aria-label="Laura Méndez"></div>
+          <div>
+            <h3>Laura Méndez</h3>
+            <p>Directora · Oposiciones y administración</p>
+          </div>
+        </article>
+        <article class="equipo-card">
+          <div class="equipo-card__photo equipo-card__photo--2" role="img" aria-label="Elena Ruiz"></div>
+          <div>
+            <h3>Elena Ruiz</h3>
+            <p>Idiomas y refuerzo escolar</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cursos section section--alt" id="cursos">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Cursos</p>
+          <h2 class="section-title">Lo que damos este curso</h2>
+        </header>
+        <div class="cursos__grid">
+
+          <article class="curso-card">
+            <span class="curso-card__tag">Oposiciones</span>
+            <h3>Auxiliar Administrativo CAM</h3>
+            <p>Temario, test y supuestos. Mar y jue 18:30.</p>
+            <p class="curso-card__price">95 €/mes</p>
+            <a href="#contacto" class="curso-card__link">Pedir información</a>
+          </article>
+
+          <article class="curso-card">
+            <span class="curso-card__tag">Idiomas</span>
+            <h3>Inglés B1–B2</h3>
+            <p>Conversación y preparación Cambridge. 2 h/semana.</p>
+            <p class="curso-card__price">68 €/mes</p>
+            <a href="#contacto" class="curso-card__link">Pedir información</a>
+          </article>
+
+          <article class="curso-card">
+            <span class="curso-card__tag">Ofimática</span>
+            <h3>Excel y administración</h3>
+            <p>Facturación, nóminas y tablas dinámicas. 4 meses.</p>
+            <p class="curso-card__price">72 €/mes</p>
+            <a href="#contacto" class="curso-card__link">Pedir información</a>
+          </article>
+
+          <article class="curso-card">
+            <span class="curso-card__tag">Refuerzo</span>
+            <h3>ESO y Bachillerato</h3>
+            <p>Mates, lengua e inglés. Grupos por curso escolar.</p>
+            <p class="curso-card__price">55 €/mes</p>
+            <a href="#contacto" class="curso-card__link">Pedir información</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonios section" id="testimonios">
+      <div class="container testimonios__grid">
+        <blockquote class="testimonio">
+          <p>«Laura me conoce por mi nombre. Aprobé el auxiliar de la CAM sin ir a un macrocentro.»</p>
+          <footer><strong>María G.</strong></footer>
+        </blockquote>
+        <blockquote class="testimonio">
+          <p>«Mi hija va contenta al refuerzo con Elena. Se nota en los exámenes.»</p>
+          <footer><strong>Carmen R.</strong></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="faq section section--alt" id="faq">
+      <div class="container faq__wrap">
+        <h2 class="section-title">Preguntas frecuentes</h2>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>¿Puedo probar una clase?</summary>
+            <p>Sí, una sesión gratuita sin compromiso. Llama y reservamos día y hora.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Hay permanencia?</summary>
+            <p>No. Pagas mes a mes. Solo avisa con 15 días si dejas el curso.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Cuántos alumnos por clase?</summary>
+            <p>Entre 6 y 8. Si el grupo se llena, abrimos otro horario o cerramos matrícula.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Puedo conectarme online?</summary>
+            <p>Sí, si avisas antes te unes a la misma clase por videollamada.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto section section--dark" id="contacto">
+      <div class="container contacto__grid">
+        <div class="contacto__info">
+          <p class="section-label section-label--light">Contacto</p>
+          <h2 class="section-title section-title--light">Llámanos o pásate</h2>
+          <ul class="contacto__datos">
+            <li>
+              <span>Teléfono</span>
+              <a href="tel:+34911223344">911 223 344</a>
+            </li>
+            <li>
+              <span>Email</span>
+              <a href="mailto:info@academianova.es">info@academianova.es</a>
+            </li>
+            <li>
+              <span>Dirección</span>
+              C. García de Paredes, 32, bajo izq. — 28010 Madrid
+            </li>
+          </ul>
+        </div>
+        <form class="contacto__form" id="contact-form" novalidate>
+          <label class="field">
+            <span>Nombre</span>
+            <input type="text" id="nombre" name="nombre" required autocomplete="name">
+          </label>
+          <label class="field">
+            <span>Teléfono</span>
+            <input type="tel" id="telefono" name="telefono" required autocomplete="tel" inputmode="tel">
+          </label>
+          <label class="field">
+            <span>Curso</span>
+            <select id="curso" name="curso" required>
+              <option value="" disabled selected>Selecciona</option>
+              <option value="oposiciones">Oposiciones CAM</option>
+              <option value="ingles">Inglés B1–B2</option>
+              <option value="ofimatica">Excel y administración</option>
+              <option value="refuerzo">Refuerzo escolar</option>
+              <option value="otro">Otro</option>
+            </select>
+          </label>
+          <label class="field field--check">
+            <input type="checkbox" id="privacidad" name="privacidad" required>
+            <span>Acepto la <a href="#">política de privacidad</a>.</span>
+          </label>
+          <button type="submit" class="btn btn--primary btn--full">Enviar</button>
+          <p class="form-ok" id="form-ok" hidden>Recibido. Te llamamos pronto.</p>
+        </form>
+      </div>
+      <div class="container contacto__map">
+        <iframe
+          src="https://maps.google.com/maps?q=Calle+de+Garcia+de+Paredes+32+Madrid&output=embed"
+          title="Academia Nova en Chamberí"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__name">Academia Nova</p>
+      <div class="footer__links">
+        <a href="tel:+34911223344">911 223 344</a>
+        <a href="mailto:info@academianova.es">info@academianova.es</a>
+      </div>
+      <ul class="footer__legal">
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Privacidad</a></li>
+      </ul>
+      <p class="footer__copy">© 2026 Academia Nova · CIF B-87654321</p>
+    </div>
+  </footer>
+
+  <a href="tel:+34911223344" class="fab" aria-label="Llamar">Llamar</a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

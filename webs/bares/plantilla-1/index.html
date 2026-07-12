@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="La Esquina — Bar en La Latina, Madrid. Cava Baja, 42. Cañas, vermut y tapas.">
+  <title>La Esquina · La Latina, Madrid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="logo">
+        <span class="logo__name">La Esquina</span>
+        <span class="logo__area">La Latina</span>
+      </a>
+      <button class="nav-btn" type="button" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#carta">Carta</a>
+        <a href="#donde">Dónde estamos</a>
+        <a class="nav__cta" href="tel:+34914567890">914 567 890</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__media">
+      <img
+        src="https://images.unsplash.com/photo-1572116468176-4b38b09a42bb?w=1400&q=80"
+        alt="Barra del bar con copas y luz cálida"
+        width="1400"
+        height="700"
+      >
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="wrap hero__inner">
+      <h1 class="hero__brand">
+        <span class="hero__name">La Esquina</span>
+        <span class="hero__area">La Latina</span>
+      </h1>
+      <p class="hero__tagline">Cava Baja, 42 · Cañas, vermut y tapas</p>
+      <div class="hero__actions">
+        <a class="btn" href="#carta">Ver carta</a>
+        <a class="btn btn--ghost" href="tel:+34914567890">Llamar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="wrap">
+      <div class="intro__card">
+        <div class="intro__text">
+          <h2 class="intro__title">Un bar de barrio</h2>
+          <p>
+            Abrimos en 2018 en una esquina de Cava Baja que llevaba tiempo cerrada.
+            Hay quien viene solo por el café de las ocho, quien se queda dos horas
+            con un vermut, y quien aparece el sábado a las once y pide la misma
+            caña de siempre. Nos parece bien así.
+          </p>
+          <p>
+            La carta cabe en una pizarra. Si un día no hay croquetas, te lo decimos
+            en cara —no hay drama.
+          </p>
+          <p class="intro__note">
+            Viernes · suele haber música en vivo. Pregunta en barra.
+          </p>
+        </div>
+        <img
+          class="intro__img"
+          src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80"
+          alt="Tapas y cañas en la mesa"
+          width="600"
+          height="400"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="carta" id="carta">
+    <div class="wrap">
+      <header class="section-head section-head--light">
+        <h2>Carta</h2>
+        <p>Precios con IVA incluido</p>
+      </header>
+
+      <div class="carta__cols">
+        <div class="carta__block">
+          <h3>De beber</h3>
+          <ul class="carta__list">
+            <li><span>Caña</span><span class="dots" aria-hidden="true"></span><span>2,50 €</span></li>
+            <li><span>Jarra</span><span class="dots" aria-hidden="true"></span><span>5,00 €</span></li>
+            <li><span>Vino tinto / blanco</span><span class="dots" aria-hidden="true"></span><span>3,50 €</span></li>
+            <li><span>Vermut de grifo</span><span class="dots" aria-hidden="true"></span><span>4,00 €</span></li>
+            <li><span>Café</span><span class="dots" aria-hidden="true"></span><span>1,50 €</span></li>
+            <li><span>Refresco / mosto</span><span class="dots" aria-hidden="true"></span><span>2,80 €</span></li>
+          </ul>
+          <h3>Copas</h3>
+          <ul class="carta__list">
+            <li><span>Gin tonic</span><span class="dots" aria-hidden="true"></span><span>9,50 €</span></li>
+            <li><span>Negroni</span><span class="dots" aria-hidden="true"></span><span>10,00 €</span></li>
+            <li><span>Mojito</span><span class="dots" aria-hidden="true"></span><span>9,00 €</span></li>
+            <li><span>Cubata</span><span class="dots" aria-hidden="true"></span><span>8,50 €</span></li>
+          </ul>
+        </div>
+        <div class="carta__block">
+          <h3>De comer</h3>
+          <ul class="carta__list">
+            <li><span>Patatas bravas</span><span class="dots" aria-hidden="true"></span><span>6,50 €</span></li>
+            <li><span>Croquetas (6 uds.)</span><span class="dots" aria-hidden="true"></span><span>8,50 €</span></li>
+            <li><span>Jamón ibérico</span><span class="dots" aria-hidden="true"></span><span>14,00 €</span></li>
+            <li><span>Tabla de quesos</span><span class="dots" aria-hidden="true"></span><span>13,50 €</span></li>
+            <li><span>Pan con tomate</span><span class="dots" aria-hidden="true"></span><span>4,00 €</span></li>
+          </ul>
+          <h3>Postre</h3>
+          <ul class="carta__list">
+            <li><span>Tarta de queso</span><span class="dots" aria-hidden="true"></span><span>5,50 €</span></li>
+            <li><span>Brownie</span><span class="dots" aria-hidden="true"></span><span>5,00 €</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="agenda">
+    <div class="wrap">
+      <div class="agenda__box">
+        <h2>Esta semana</h2>
+        <ul class="agenda__list">
+          <li><span class="agenda__day">Mar</span><span>2ª caña a mitad de precio · 18–20 h</span></li>
+          <li><span class="agenda__day">Vie</span><span>Música en vivo · 21 h</span></li>
+          <li><span class="agenda__day">Dom</span><span>Vermut + DJ · 13–16 h</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="donde" id="donde">
+    <div class="wrap">
+      <header class="section-head">
+        <h2>Dónde estamos</h2>
+      </header>
+      <div class="donde__grid">
+        <div class="donde__card">
+          <p class="donde__addr">
+            Cava Baja, 42<br>
+            La Latina · Madrid
+          </p>
+          <dl class="donde__hours">
+            <div><dt>Lun–jue</dt><dd>12:00 – 01:00</dd></div>
+            <div><dt>Vie–sáb</dt><dd>12:00 – 02:30</dd></div>
+            <div><dt>Dom</dt><dd>12:00 – 24:00</dd></div>
+          </dl>
+          <p class="donde__tel">
+            <a href="tel:+34914567890">914 567 890</a>
+          </p>
+          <p class="donde__links">
+            <a href="https://maps.google.com/?q=Calle+de+la+Cava+Baja+42+Madrid" target="_blank" rel="noopener">Cómo llegar</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+          </p>
+        </div>
+        <div class="donde__map">
+          <iframe
+            src="https://maps.google.com/maps?q=Calle+de+la+Cava+Baja+42+Madrid&output=embed"
+            title="Mapa"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© 2026 La Esquina · La Latina</span>
+      <span class="footer__links">
+        <a href="#">Aviso legal</a>
+        <a href="#">Privacidad</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

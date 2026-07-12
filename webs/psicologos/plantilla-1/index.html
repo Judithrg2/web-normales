@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Elena Morales — Psicóloga general sanitaria. Terapia individual, de pareja y online. Acompañamiento profesional para tu bienestar emocional.">
+  <title>Elena Morales | Psicología y bienestar emocional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,600;1,500&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header" id="inicio">
+    <nav class="nav container">
+      <a href="#inicio" class="nav__logo">
+        <span class="nav__logo-name">Elena Morales</span>
+        <span class="nav__logo-title">Psicóloga</span>
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#como-trabajo">Cómo trabajo</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+        <li><a href="#contacto" class="nav__cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero__bg">
+        <img
+          src="https://images.unsplash.com/photo-1499203533295-495f3970f6de?w=1600&q=80"
+          alt="Luz suave entrando por la ventana de un espacio de consulta acogedor"
+          loading="eager"
+        >
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <p class="hero__eyebrow">Psicóloga general sanitaria · Colegiada nº 28.456</p>
+        <h1 class="hero__title">Psicología y bienestar emocional</h1>
+        <p class="hero__subtitle">Un espacio para parar, hablar y entender lo que te pasa</p>
+        <a href="#contacto" class="btn btn--primary">Reserva tu sesión</a>
+        <p class="hero__text">
+          No hace falta tenerlo todo claro para escribirme. Muchas personas llegan
+          con una mezcla de cosas —algo de ansiedad, algo de cansancio, algo que no
+          saben ni cómo nombrar— y vamos viendo por dónde empezar.
+        </p>
+      </div>
+    </section>
+
+    <section class="about section" id="sobre-mi">
+      <div class="container about__grid">
+        <div class="about__image">
+          <img
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80"
+            alt="Elena Morales, psicóloga, en su consulta"
+            loading="lazy"
+          >
+        </div>
+        <div class="about__content">
+          <h2 class="section__title">Sobre mí</h2>
+          <p class="about__name">Elena Morales Ruiz</p>
+          <ul class="about__formation">
+            <li>Grado en Psicología — Universidad Complutense de Madrid</li>
+            <li>Máster en Psicología General Sanitaria — Universidad Autónoma de Madrid</li>
+            <li>Formación especializada en Terapia Cognitivo-Conductual y terapia de pareja</li>
+            <li>Experiencia clínica en consulta privada desde 2016</li>
+          </ul>
+          <p class="about__approach">
+            Uso sobre todo herramientas de Terapia Cognitivo-Conductual, pero sin
+            quedarme solo en eso. Me importa cómo vives las cosas, no solo qué
+            «deberías» hacer. La idea es que entiendas lo que te pasa y encuentres
+            formas de afrontarlo que te encajen de verdad.
+          </p>
+          <p class="about__personal">
+            Llevo en consulta privada desde 2016. He visto de todo: gente que viene
+            por una crisis puntual, parejas que llevan meses sin hablarse, personas
+            que simplemente quieren entenderse mejor. Me gusta este trabajo y creo
+            que se nota. Cuando no estoy aquí, estoy leyendo, paseando o peleándome
+            con mi hija de cinco años para que se ponga el abrigo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section section--alt" id="servicios">
+      <div class="container">
+        <h2 class="section__title section__title--center">Servicios</h2>
+        <p class="section__intro">
+          Esto es lo que suelo trabajar en consulta. Si no ves exactamente tu caso,
+          pregunta igualmente —a veces encaja en más de un sitio.
+        </p>
+        <div class="services__grid">
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="24" cy="14" r="6"/>
+                <path d="M12 38c0-6.627 5.373-12 12-12s12 5.373 12 12"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Terapia individual</h3>
+            <p class="service-card__text">
+              Un espacio solo para ti. Trabajamos lo que te preocupa —ansiedad, tristeza,
+              bloqueos, duelos— a tu ritmo, con herramientas concretas y sin prisas.
+            </p>
+            <a href="#contacto" class="service-card__link">Más información</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="16" cy="16" r="5"/>
+                <circle cx="32" cy="16" r="5"/>
+                <path d="M8 38c0-5 4-9 8-9s8 4 8 9M24 38c0-5 4-9 8-9s8 4 8 9"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Terapia de pareja</h3>
+            <p class="service-card__text">
+              Cuando la comunicación se enreda o el distanciamiento crece, la terapia
+              de pareja ayuda a entender qué está pasando y a recuperar el vínculo
+              desde el respeto mutuo.
+            </p>
+            <a href="#contacto" class="service-card__link">Más información</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="8" y="12" width="32" height="22" rx="2"/>
+                <circle cx="24" cy="23" r="4"/>
+                <path d="M16 38h16"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Terapia online</h3>
+            <p class="service-card__text">
+              Si vives lejos, tienes poco tiempo o prefieres la comodidad de tu casa,
+              las sesiones por videollamada mantienen la misma calidad y confidencialidad
+              que en consulta presencial.
+            </p>
+            <a href="#contacto" class="service-card__link">Más información</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M24 8v8M24 32v8M8 24h8M32 24h8"/>
+                <circle cx="24" cy="24" r="10"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Ansiedad y estrés</h3>
+            <p class="service-card__text">
+              Aprendemos a identificar qué dispara tu ansiedad, a manejar el cuerpo
+              cuando se acelera y a recuperar sensación de control sin exigirte
+              perfección.
+            </p>
+            <a href="#contacto" class="service-card__link">Más información</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M24 6l4 10h10l-8 7 3 10-9-6-9 6 3-10-8-7h10z"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Autoestima y desarrollo personal</h3>
+            <p class="service-card__text">
+              Para quienes sienten que no se valoran lo suficiente, se comparan
+              constantemente o quieren entender mejor sus patrones y tomar decisiones
+              más alineadas consigo mismas.
+            </p>
+            <a href="#contacto" class="service-card__link">Más información</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="process section" id="como-trabajo">
+      <div class="container process__inner">
+        <h2 class="section__title">Cómo trabajo</h2>
+        <p class="process__intro">
+          Si nunca has ido a terapia, es normal no saber muy bien cómo va.
+          Te lo cuento como lo vivo en consulta, sin pasos rígidos ni promesas raras.
+        </p>
+        <div class="process__steps">
+
+          <article class="process-step">
+            <h3 class="process-step__title">La primera sesión</h3>
+            <p class="process-step__text">
+              Vienes, te sientas, y me cuentas qué te trae. A veces la gente llega
+              con las ideas muy ordenadas; otras, con un lío que cuesta explicar.
+              Las dos cosas están bien. Yo te pregunto lo que haga falta, te explico
+              cómo suelo trabajar y vemos si encajamos. Suele durar un poco más que
+              las siguientes, unos 60 minutos.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <h3 class="process-step__title">Qué hacemos después</h3>
+            <p class="process-step__text">
+              En las sesiones siguientes vamos metiendo mano a lo que te preocupa.
+              A veces hablamos mucho; a veces probamos ejercicios concretos para la
+              ansiedad, la comunicación en pareja o cómo te hablas a ti misma.
+              No hay un guion fijo: depende de lo que necesites esa semana.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <h3 class="process-step__title">Cuánto dura y cuándo se acaba</h3>
+            <p class="process-step__text">
+              Lo habitual es verse una vez a la semana, aunque hay personas que
+              prefieren cada quince días. No te voy a tener aquí más tiempo del
+              necesario, pero tampoco te voy a dar prisa. Cuando notes que puedes
+              manejar las cosas por tu cuenta, lo hablamos y cerramos. Sin drama.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section section--alt" id="testimonios">
+      <div class="container">
+        <h2 class="section__title section__title--center">Algunas opiniones</h2>
+        <p class="section__intro section__intro--small">
+          Me han dejado escribir esto. He cambiado los nombres, como es de rigor.
+        </p>
+        <div class="testimonials__grid">
+          <blockquote class="testimonial">
+            <p class="testimonial__text">
+              «Llegué muy agotada y con la sensación de que nadie me entendía. Elena
+              no me dio sermones ni soluciones rápidas. Me escuchó de verdad y poco
+              a poco fui viendo las cosas con más claridad.»
+            </p>
+            <footer class="testimonial__author">— Marta, 34 años</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p class="testimonial__text">
+              «Fuimos mi pareja y yo en un momento difícil. El ambiente era tranquilo
+              y Elena supo mediar sin tomar partido. No arregló todo en tres sesiones,
+              pero nos dio herramientas que seguimos usando.»
+            </p>
+            <footer class="testimonial__author">— Javier y Lucía</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p class="testimonial__text">
+              «Hago las sesiones desde casa porque con dos niños pequeños me cuesta
+              moverme. Al principio me daba vergüenza, la verdad, pero se me pasó
+              en la primera sesión. Se nota que sabe lo que hace.»
+            </p>
+            <footer class="testimonial__author">— Carmen, 41 años</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="container faq__wrapper">
+        <h2 class="section__title">Preguntas frecuentes</h2>
+        <div class="faq__list">
+
+          <details class="faq__item">
+            <summary class="faq__question">¿Cómo funciona la terapia online?</summary>
+            <p class="faq__answer">
+              Las sesiones se realizan por videollamada segura (Google Meet o similar).
+              Necesitas conexión estable, un lugar privado y auriculares si lo prefieres.
+              La dinámica es la misma que en presencial: hablamos, trabajamos y hacemos
+              ejercicios cuando toca. Te envío el enlace con antelación.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">¿Cuánto dura una sesión?</summary>
+            <p class="faq__answer">
+              Cada sesión dura 50 minutos. Es el tiempo estándar en psicología clínica
+              y permite profundizar sin que resulte agotador. La frecuencia la acordamos
+              juntas: suele ser semanal al inicio y luego espaciamos según evolución.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">¿Es confidencial?</summary>
+            <p class="faq__answer">
+              Sí, completamente. Todo lo que compartes en sesión está protegido por
+              el secreto profesional. No comparto información con terceros salvo los
+              casos excepcionales previstos por ley (riesgo grave para ti o para otras
+              personas). Tu privacidad es prioritaria.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">¿Cómo se realiza el pago?</summary>
+            <p class="faq__answer">
+              El pago se hace al final de cada sesión, por transferencia bancaria o
+              Bizum. Si prefieres pagar varias sesiones por adelantado, lo podemos
+              hablar sin problema. Te facilito factura si la necesitas para tu mutua
+              o para desgravación.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section section--alt" id="contacto">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <h2 class="section__title">Contacto</h2>
+          <p class="contact__intro">
+            Si quieres preguntar algo o reservar una primera sesión, escríbeme.
+            Respondo en un par de días. No tienes que saber qué decir exactamente —
+            con un «hola, me gustaría saber cómo funciona» basta.
+          </p>
+          <ul class="contact__details">
+            <li>
+              <strong>Consulta presencial</strong><br>
+              Calle del Prado, 14 — 28014 Madrid
+            </li>
+            <li>
+              <strong>Email</strong><br>
+              <a href="mailto:elena.morales.psico@gmail.com">elena.morales.psico@gmail.com</a>
+            </li>
+            <li>
+              <strong>Teléfono</strong><br>
+              <a href="tel:+34612345678">612 345 678</a>
+            </li>
+            <li>
+              <strong>Horario</strong><br>
+              Lunes a viernes, 9:00 – 20:00
+            </li>
+          </ul>
+        </div>
+        <form class="contact__form" id="contact-form" novalidate>
+          <div class="form__group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required autocomplete="name" placeholder="Tu nombre">
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="tu@email.com">
+          </div>
+          <div class="form__group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntame brevemente qué te gustaría trabajar o qué dudas tienes..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar consulta</button>
+          <p class="form__success" id="form-success" hidden>
+            Gracias por escribir. Te responderé lo antes posible.
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <p class="footer__name">Elena Morales Ruiz</p>
+        <p class="footer__tagline">Psicóloga general sanitaria</p>
+        <p class="footer__college">Colegiada nº 28.456 — Colegio Oficial de Psicólogos de Madrid</p>
+      </div>
+      <div class="footer__contact">
+        <p><a href="mailto:elena.morales.psico@gmail.com">elena.morales.psico@gmail.com</a></p>
+        <p><a href="tel:+34612345678">612 345 678</a></p>
+        <p>Calle del Prado, 14 — Madrid</p>
+      </div>
+      <div class="footer__social">
+        <p>Sígueme</p>
+        <ul class="footer__social-list">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer__legal">
+        <ul>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+        </ul>
+        <p class="footer__copy">© 2026 Elena Morales Ruiz. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
