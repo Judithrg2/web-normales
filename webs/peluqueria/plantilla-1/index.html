@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Ébano Studio — Peluquería y barbería en Madrid. Cortes, barba, tintes, peinados y tratamientos capilares. Reserva tu cita online.">
+  <meta name="theme-color" content="#0d0d0d">
+  <title>Ébano Studio | Peluquería & Barbería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand">
+        <span class="brand__name">Ébano Studio</span>
+        <span class="brand__tag">Peluquería & Barbería</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#precios">Precios</a>
+        <a href="#contacto" class="nav__cta">Reservar cita</a>
+      </nav>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="hero__media" aria-hidden="true">
+        <img
+          src="assets/img/hero.jpg"
+          alt=""
+          width="1600"
+          height="900"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        >
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__label">Malasaña · Madrid</p>
+        <h1 class="hero__title">Peluquería &amp; Barbería Profesional</h1>
+        <p class="hero__lead">Cortes, barbas y color con estilo en Malasaña.</p>
+        <p class="hero__text">Cortes, barbas y color con estilo. Un espacio moderno donde cuidamos tu imagen con detalle y sin prisas.</p>
+        <a href="#contacto" class="btn btn--gold">Reservar cita</a>
+      </div>
+    </section>
+
+    <section class="servicios section" id="servicios">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Servicios</p>
+          <h2 class="section-title">Lo que hacemos en cabina</h2>
+          <p class="section-intro">Cada servicio incluye asesoramiento previo. Si no sabes qué pedir, te orientamos en recepción.</p>
+        </header>
+        <div class="servicios__grid">
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">01</div>
+            <h3>Corte de pelo</h3>
+            <p>Asesoramiento de forma, lavado, corte a tijera o máquina y acabado con productos profesionales.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">02</div>
+            <h3>Corte + barba</h3>
+            <p>Ritual completo: corte, perfilado de barba, toalla caliente y bálsamo hidratante.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">03</div>
+            <h3>Arreglo de barba</h3>
+            <p>Perfilado, recorte y definición de contornos. Ideal para mantener el estilo entre cortes.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">04</div>
+            <h3>Tinte y mechas</h3>
+            <p>Color global, balayage, mechas y raíces. Trabajamos con marcas sin amoniaco cuando es posible.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">05</div>
+            <h3>Peinados y estilismo</h3>
+            <p>Recogidos, brushing, ondas y peinado para eventos. También asesoría de imagen puntual.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">06</div>
+            <h3>Tratamientos capilares</h3>
+            <p>Hidratación profunda, keratina, anticaída y cuero cabelludo sensible. Diagnóstico incluido.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeria section section--dark" id="galeria">
+      <div class="container">
+        <header class="section-header section-header--light">
+          <p class="section-label">Galería</p>
+          <h2 class="section-title section-title--light">Trabajos recientes</h2>
+          <p class="section-intro section-intro--light">Algunos cortes, barbas y colores que hemos hecho en el estudio.</p>
+        </header>
+        <div class="galeria__grid">
+          <figure class="galeria__item">
+            <img src="assets/img/galeria-1.jpg" alt="Corte fade con degradado limpio" width="600" height="750" loading="lazy">
+          </figure>
+          <figure class="galeria__item">
+            <img src="assets/img/galeria-2.jpg" alt="Arreglo de barba perfilada" width="600" height="750" loading="lazy">
+          </figure>
+          <figure class="galeria__item">
+            <img src="assets/img/galeria-3.jpg" alt="Corte clásico en hombre" width="600" height="750" loading="lazy">
+          </figure>
+          <figure class="galeria__item">
+            <img src="assets/img/galeria-4.jpg" alt="Mechas balayage en cabello largo" width="600" height="750" loading="lazy">
+          </figure>
+          <figure class="galeria__item">
+            <img src="assets/img/galeria-5.jpg" alt="Peinado con ondas suaves" width="600" height="750" loading="lazy">
+          </figure>
+          <figure class="galeria__item">
+            <img src="assets/img/galeria-6.jpg" alt="Interior del salón de peluquería" width="600" height="750" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="equipo section" id="equipo">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Equipo</p>
+          <h2 class="section-title">Quién te atiende</h2>
+        </header>
+        <div class="equipo__grid">
+          <article class="miembro">
+            <img src="assets/img/equipo-1.jpg" alt="Marcos Delgado" width="400" height="500" loading="lazy">
+            <div class="miembro__body">
+              <h3>Marcos Delgado</h3>
+              <p class="miembro__role">Barbero · Socio fundador</p>
+              <p class="miembro__spec">Especialista en fades, barba y estilos clásicos. 12 años de experiencia entre Madrid y Barcelona.</p>
+            </div>
+          </article>
+          <article class="miembro">
+            <img src="assets/img/equipo-2.jpg" alt="Laura Méndez" width="400" height="500" loading="lazy">
+            <div class="miembro__body">
+              <h3>Laura Méndez</h3>
+              <p class="miembro__role">Estilista · Colorista</p>
+              <p class="miembro__spec">Tintes, mechas y peinados de evento. Formación en color avanzado L'Oréal Professionnel.</p>
+            </div>
+          </article>
+          <article class="miembro">
+            <img src="assets/img/equipo-3.jpg" alt="Sergio Ruiz" width="400" height="500" loading="lazy">
+            <div class="miembro__body">
+              <h3>Sergio Ruiz</h3>
+              <p class="miembro__role">Estilista unisex</p>
+              <p class="miembro__spec">Cortes modernos, tratamientos capilares y asesoría de imagen. Certificado en keratina y botox capilar.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="precios section section--alt" id="precios">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Precios</p>
+          <h2 class="section-title">Tarifas orientativas</h2>
+          <p class="section-intro">Los precios pueden variar según largo de cabello o complejidad del color. Te confirmamos el importe antes de empezar.</p>
+        </header>
+        <div class="precios__cols">
+          <div class="precios__block">
+            <h3>Corte &amp; barba</h3>
+            <ul class="precios__list">
+              <li><span>Corte hombre</span><span>22 €</span></li>
+              <li><span>Corte mujer</span><span>28 €</span></li>
+              <li><span>Arreglo de barba</span><span>14 €</span></li>
+              <li><span>Corte + barba</span><span>32 €</span></li>
+              <li><span>Corte niño (hasta 12)</span><span>16 €</span></li>
+            </ul>
+          </div>
+          <div class="precios__block">
+            <h3>Color &amp; estilismo</h3>
+            <ul class="precios__list">
+              <li><span>Tinte raíces</span><span>desde 35 €</span></li>
+              <li><span>Mechas / balayage</span><span>desde 65 €</span></li>
+              <li><span>Brushing</span><span>18 €</span></li>
+              <li><span>Peinado evento</span><span>desde 45 €</span></li>
+              <li><span>Tratamiento hidratante</span><span>25 €</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="opiniones section" id="opiniones">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Opiniones</p>
+          <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        </header>
+        <div class="opiniones__grid">
+          <blockquote class="testimonial">
+            <p>«Llevo dos años viniendo con Marcos. El fade queda perfecto y la barba siempre bien perfilada. Ambiente tranquilo y sin postureo.»</p>
+            <footer>— David R.</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>«Laura me hizo un balayage que por fin se ve natural. Me explicó el mantenimiento y no me vendió nada que no necesitaba.»</p>
+            <footer>— Carmen V.</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>«Reservé por WhatsApp, fui puntual y en 40 minutos salí con el corte que quería. Muy profesionales y el local está impecable.»</p>
+            <footer>— Javier M.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section section--alt" id="faq">
+      <div class="container container--narrow">
+        <header class="section-header">
+          <p class="section-label">FAQ</p>
+          <h2 class="section-title">Preguntas frecuentes</h2>
+        </header>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>¿Cómo reservo una cita?</summary>
+            <p>Puedes usar el formulario de contacto, escribirnos por WhatsApp o llamar al 612 456 789. Confirmamos día y hora en menos de unas horas.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Cuánto dura un corte + barba?</summary>
+            <p>Suele llevar entre 45 y 55 minutos. Si necesitas algo más elaborado, te lo decimos al reservar para bloquear el tiempo adecuado.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Trabajáis con cabello rizado o afro?</summary>
+            <p>Sí. Sergio está especializado en texturas rizadas y afro. Indícalo al reservar para asignarte el estilista adecuado.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Qué pasa si llego tarde?</summary>
+            <p>Guardamos 10 minutos de cortesía. Si llegas más tarde, puede que tengamos que acortar el servicio o reprogramar según la agenda del día.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Aceptáis tarjeta?</summary>
+            <p>Sí, aceptamos tarjeta, Bizum y efectivo. Los tratamientos de color se cobran al finalizar, una vez visto el resultado.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto section" id="contacto">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Contacto</p>
+          <h2 class="section-title">Reserva tu cita</h2>
+          <p class="section-intro">Cuéntanos qué necesitas y te respondemos con disponibilidad. También puedes escribirnos directamente por WhatsApp.</p>
+        </header>
+        <div class="contacto__grid">
+          <form class="contacto__form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel" required>
+            </div>
+            <div class="field">
+              <label for="servicio">Servicio</label>
+              <select id="servicio" name="servicio" required>
+                <option value="">Selecciona un servicio</option>
+                <option>Corte de pelo</option>
+                <option>Corte + barba</option>
+                <option>Arreglo de barba</option>
+                <option>Tinte y mechas</option>
+                <option>Peinado / estilismo</option>
+                <option>Tratamiento capilar</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="mensaje">Mensaje (opcional)</label>
+              <textarea id="mensaje" name="mensaje" rows="3" placeholder="Día preferido, estilo que buscas…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--gold btn--full">Enviar solicitud</button>
+            <p class="form-ok" id="form-ok" hidden>Gracias. Te contactaremos pronto para confirmar la cita.</p>
+          </form>
+          <div class="contacto__info">
+            <a href="https://wa.me/34612456789?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20cita" class="btn btn--wa" target="_blank" rel="noopener noreferrer">
+              WhatsApp
+            </a>
+            <ul class="contacto__datos">
+              <li>
+                <strong>Dirección</strong>
+                <span>Calle del Pez, 18 — 28004 Madrid (Malasaña)</span>
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                <span><a href="tel:+34612456789">612 456 789</a></span>
+              </li>
+              <li>
+                <strong>Horario</strong>
+                <span>Lun–vie 10:00 – 20:00 · Sáb 10:00 – 14:00</span>
+              </li>
+            </ul>
+            <div class="contacto__map">
+              <iframe
+                src="https://maps.google.com/maps?q=Calle+del+Pez+18+Madrid&output=embed"
+                title="Mapa Ébano Studio"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__name">Ébano Studio</span>
+        <span>Peluquería & Barbería · Madrid</span>
+      </div>
+      <nav class="footer__nav" aria-label="Legal">
+        <a href="#">Aviso legal</a>
+        <a href="#">Privacidad</a>
+      </nav>
+      <p class="footer__copy">© 2026 Ébano Studio</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/34612456789?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20cita" class="fab" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
