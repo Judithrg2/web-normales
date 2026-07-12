@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Martín & Costa Abogados — Despacho jurídico en el Barrio de Salamanca, Madrid. Derecho civil, familia, laboral, mercantil, penal e inmobiliario. Primera consulta con presupuesto cerrado.">
+  <meta name="theme-color" content="#0f1f3d">
+  <title>Martín & Costa Abogados | Despacho Jurídico en Madrid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="topbar" aria-hidden="true">
+    <div class="container topbar__inner">
+      <span class="topbar__item">Lunes a viernes · 9:00 – 19:00</span>
+      <a href="tel:+34912345678" class="topbar__phone">912 345 678</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand">
+        <span class="brand__name">Martín & Costa</span>
+        <span class="brand__tag">Abogados · Madrid</span>
+      </a>
+      <div class="header__actions">
+        <a href="tel:+34912345678" class="header__phone">912 345 678</a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#despacho">Despacho</a>
+        <a href="#areas"><span class="nav__long">Áreas de práctica</span><span class="nav__short">Áreas</span></a>
+        <a href="#metodo">Cómo trabajamos</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto" class="nav__cta">Solicitar cita</a>
+      </nav>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true">
+        <img
+          src="assets/img/hero.jpg"
+          alt=""
+          width="1600"
+          height="900"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          sizes="100vw"
+        >
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__label">Barrio de Salamanca · Madrid</p>
+        <h1 class="hero__title">Asesoramiento jurídico para particulares y empresas</h1>
+        <p class="hero__text">
+          Despacho multidisciplinar con sede en Madrid. Defendemos tus intereses en materia
+          civil, laboral, mercantil, penal e inmobiliario con un trato directo y presupuesto
+          cerrado antes de iniciar cada encargo.
+        </p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--gold">Reservar primera consulta</a>
+          <a href="tel:+34912345678" class="btn btn--outline">912 345 678</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Datos del despacho">
+      <div class="container stats__grid">
+        <div class="stats__item">
+          <strong>1998</strong>
+          <span>Fundación del despacho</span>
+        </div>
+        <div class="stats__item">
+          <strong>+2.500</strong>
+          <span>Asuntos atendidos</span>
+        </div>
+        <div class="stats__item">
+          <strong>6</strong>
+          <span>Áreas de práctica</span>
+        </div>
+        <div class="stats__item">
+          <strong>ICAM</strong>
+          <span>Colegiados en Madrid</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="despacho section" id="despacho">
+      <div class="container despacho__grid">
+        <div class="despacho__copy">
+          <p class="section-label">Sobre el despacho</p>
+          <h2 class="section-title">Un bufete de proximidad con solvencia procesal</h2>
+          <p class="lead">
+            Martín & Costa Abogados asesora desde 1998 a particulares, autónomos y pymes
+            desde nuestras oficinas en el Barrio de Salamanca.
+          </p>
+          <p>
+            No somos un call center jurídico: cada expediente lo lleva un abogado colegiado
+            que conoce el caso. Antes de litigar, valoramos la vía negociada — mediación,
+            reclamación extrajudicial o conciliación laboral — cuando reduce plazos y costes
+            para el cliente.
+          </p>
+          <p>
+            Atendemos presencialmente en Madrid y por videollamada en el resto de España.
+            Toda la información que nos facilitas queda amparada por el secreto profesional.
+          </p>
+          <ul class="valores">
+            <li>
+              <strong>Presupuesto cerrado</strong>
+              <span>Honorarios por escrito antes de actuar</span>
+            </li>
+            <li>
+              <strong>Primera consulta</strong>
+              <span>90 € · 45 min · descontable del encargo</span>
+            </li>
+            <li>
+              <strong>Respuesta ágil</strong>
+              <span>Contacto en menos de 24 h laborables</span>
+            </li>
+          </ul>
+        </div>
+        <figure class="despacho__figure">
+          <img
+            src="assets/img/despacho.jpg"
+            alt="Documentación y reunión en el despacho"
+            width="700"
+            height="500"
+            loading="lazy"
+          >
+          <figcaption>Calle de Serrano, 45 — Barrio de Salamanca</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="areas section section--alt" id="areas">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Áreas de práctica</p>
+          <h2 class="section-title">Servicios jurídicos del despacho</h2>
+          <p class="section-intro">
+            Abogados especializados en las materias que más suelen necesitar particulares
+            y pequeñas empresas en Madrid y ámbito estatal.
+          </p>
+        </header>
+        <div class="areas__grid">
+
+          <article class="area-card">
+            <h3>Familia y sucesiones</h3>
+            <ul class="area-card__list">
+              <li>Divorcios de mutuo acuerdo y contenciosos</li>
+              <li>Convenios regulatorios y custodia</li>
+              <li>Herencias, testamentos y legítimas</li>
+              <li>Liquidación de gananciales</li>
+            </ul>
+          </article>
+
+          <article class="area-card">
+            <h3>Laboral y Seguridad Social</h3>
+            <ul class="area-card__list">
+              <li>Despidos disciplinarios e improcedentes</li>
+              <li>Reclamaciones salariales y finiquitos</li>
+              <li>Incapacidades y prestaciones</li>
+              <li>Acoso laboral y mobbing</li>
+            </ul>
+          </article>
+
+          <article class="area-card">
+            <h3>Mercantil y societario</h3>
+            <ul class="area-card__list">
+              <li>Constitución y modificación de sociedades</li>
+              <li>Contratos mercantiles y distribución</li>
+              <li>Reclamación de impagos y monitorio</li>
+              <li>Concurso de acreedores y segunda oportunidad</li>
+            </ul>
+          </article>
+
+          <article class="area-card">
+            <h3>Penal y penal económico</h3>
+            <ul class="area-card__list">
+              <li>Defensa en juicio oral y faltas</li>
+              <li>Delitos económicos y estafa</li>
+              <li>Violencia de género y órdenes de alejamiento</li>
+              <li>Asistencia letrada en comisaría y juzgado</li>
+            </ul>
+          </article>
+
+          <article class="area-card">
+            <h3>Inmobiliario y arrendamientos</h3>
+            <ul class="area-card__list">
+              <li>Desahucios por impago y expiración</li>
+              <li>Contratos de arrendamiento y fianzas</li>
+              <li>Propiedad horizontal y comunidades</li>
+              <li>Compraventa y due diligence inmobiliaria</li>
+            </ul>
+          </article>
+
+          <article class="area-card">
+            <h3>Civil y vía extrajudicial</h3>
+            <ul class="area-card__list">
+              <li>Reclamación de cantidad y responsabilidad civil</li>
+              <li>Contratos entre particulares</li>
+              <li>Mediación familiar y mercantil</li>
+              <li>Asesoría preventiva para autónomos</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="metodo section" id="metodo">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Cómo trabajamos</p>
+          <h2 class="section-title">Un proceso claro desde la primera cita</h2>
+        </header>
+        <ol class="metodo__steps">
+          <li class="metodo__step">
+            <span class="metodo__num">1</span>
+            <h3>Primera consulta</h3>
+            <p>Escuchamos tu situación, revisamos documentación y te explicamos viabilidad, plazos y costes estimados.</p>
+          </li>
+          <li class="metodo__step">
+            <span class="metodo__num">2</span>
+            <h3>Estrategia</h3>
+            <p>Definimos la vía más adecuada: negociación, mediación, vía administrativa o procedimiento judicial.</p>
+          </li>
+          <li class="metodo__step">
+            <span class="metodo__num">3</span>
+            <h3>Presupuesto</h3>
+            <p>Recibes un presupuesto por escrito con honorarios, gastos y forma de pago antes de formalizar el encargo.</p>
+          </li>
+          <li class="metodo__step">
+            <span class="metodo__num">4</span>
+            <h3>Seguimiento</h3>
+            <p>Un abogado referente te informa de cada hito procesal. Respondemos dudas por teléfono o email.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="equipo section section--alt" id="equipo">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Equipo</p>
+          <h2 class="section-title">Abogados colegiados en el ICAM</h2>
+        </header>
+        <div class="equipo__grid">
+
+          <article class="miembro">
+            <img
+              src="assets/img/equipo-1.jpg"
+              alt="Javier Martín Ruiz"
+              width="400"
+              height="400"
+              loading="lazy"
+            >
+            <div class="miembro__body">
+              <h3>Javier Martín Ruiz</h3>
+              <p class="miembro__cargo">Socio director</p>
+              <p class="miembro__areas">Civil · Mercantil · Sucesiones</p>
+              <p class="miembro__bio">Licenciado en Derecho (UCM). Más de 25 años en litigación civil y asesoría a pymes. Mediador familiar certificado.</p>
+              <p class="miembro__col">Colegiado ICAM nº 45.821</p>
+            </div>
+          </article>
+
+          <article class="miembro">
+            <img
+              src="assets/img/equipo-2.jpg"
+              alt="Elena Costa Vidal"
+              width="400"
+              height="400"
+              loading="lazy"
+            >
+            <div class="miembro__body">
+              <h3>Elena Costa Vidal</h3>
+              <p class="miembro__cargo">Socia</p>
+              <p class="miembro__areas">Laboral · Penal · Seguridad Social</p>
+              <p class="miembro__bio">Licenciada en Derecho (UAM). Especializada en despidos, incapacidades y defensa penal. Conciliadora en SMAC de Madrid.</p>
+              <p class="miembro__col">Colegiada ICAM nº 78.304</p>
+            </div>
+          </article>
+
+          <article class="miembro">
+            <img
+              src="assets/img/equipo-3.jpg"
+              alt="Miguel Ángel Ortega"
+              width="400"
+              height="400"
+              loading="lazy"
+            >
+            <div class="miembro__body">
+              <h3>Miguel Ángel Ortega</h3>
+              <p class="miembro__cargo">Abogado asociado</p>
+              <p class="miembro__areas">Mercantil · Inmobiliario · Concursal</p>
+              <p class="miembro__bio">Graduado en Derecho (UC3M). Enfocado en recuperación de deudas, arrendamientos y procedimientos concursales.</p>
+              <p class="miembro__col">Colegiado ICAM nº 102.567</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="casos section" id="casos">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Experiencia</p>
+          <h2 class="section-title">Supuestos reales, datos anonimizados</h2>
+          <p class="section-intro">
+            Cada asunto depende de sus circunstancias. Estos ejemplos ilustran el tipo de
+            procedimientos que tramitamos habitualmente.
+          </p>
+        </header>
+        <div class="casos__grid">
+
+          <article class="caso">
+            <span class="caso__area">Laboral</span>
+            <h3>Despido improcedente — sector logística</h3>
+            <p>
+              Trabajador con 11 años de antigüedad. Tras la conciliación en el SMAC,
+              el juzgado declaró el despido improcedente. Acuerdo con indemnización
+              superior a la oferta inicial y sin reincorporación.
+            </p>
+          </article>
+
+          <article class="caso">
+            <span class="caso__area">Mercantil</span>
+            <h3>Monitorio por impago a proveedor</h3>
+            <p>
+              Pyme con 62.400 € pendientes de cobro. Presentación de monitorio,
+              oposición desestimada y ejecución con embargo de cuentas.
+              Cantidad principal recuperada en cinco meses.
+            </p>
+          </article>
+
+          <article class="caso">
+            <span class="caso__area">Familia</span>
+            <h3>Divorcio contencioso con menores</h3>
+            <p>
+              Mediación previa al juicio. Convenio regulador sobre custodia compartida,
+              uso de vivienda familiar y pensión de alimentos sin necesidad de sentencia.
+            </p>
+          </article>
+
+        </div>
+        <p class="casos__note">Los resultados pasados no garantizan resultados futuros. Consulta siempre tu caso con un abogado.</p>
+      </div>
+    </section>
+
+    <section class="faq section section--alt" id="faq">
+      <div class="container faq__wrap">
+        <header class="section-header">
+          <p class="section-label">Preguntas frecuentes</p>
+          <h2 class="section-title">Antes de tu primera cita</h2>
+        </header>
+        <div class="faq__list">
+
+          <details class="faq__item">
+            <summary>¿Cuánto cuesta la primera consulta?</summary>
+            <p>
+              90 € por sesión de 45 minutos. Si encargas el asunto al despacho, ese importe
+              se descuenta de los honorarios acordados. La consulta puede ser presencial
+              o por videollamada.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary>¿Cómo se fijan los honorarios?</summary>
+            <p>
+              Según la complejidad: honorario fijo por servicio (ej. divorcio de mutuo acuerdo),
+              por fases procesales o cuota mensual en asesoría continuada. Siempre por escrito
+              y conforme al código deontológico del ICAM.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary>¿Gestionáis asuntos fuera de Madrid?</summary>
+            <p>
+              Sí. La consulta inicial puede ser telemática y actuamos ante juzgados y
+              administraciones de toda España cuando la jurisdicción lo exige.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary>¿Qué documentos debo llevar a la primera cita?</summary>
+            <p>
+              Todo lo que tengas: contratos, comunicaciones, resoluciones, nóminas o
+              citaciones. Si falta algo, te indicamos qué solicitar antes de iniciar el procedimiento.
+            </p>
+          </details>
+
+          <details class="faq__item">
+            <summary>¿Ofrecéis mediación en lugar de ir a juicio?</summary>
+            <p>
+              Cuando es viable, sí. En materia familiar y mercantil la mediación puede
+              acortar plazos y costes. Te asesoramos sobre la mejor vía en la primera consulta.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto section section--dark" id="contacto">
+      <div class="container contacto__grid">
+        <div class="contacto__info">
+          <p class="section-label section-label--light">Contacto</p>
+          <h2 class="section-title section-title--light">Reserva tu consulta</h2>
+          <p class="contacto__text">
+            Cuéntanos brevemente tu situación. Un abogado del despacho te contactará
+            en un plazo máximo de 24 horas laborables.
+          </p>
+          <ul class="contacto__datos">
+            <li>
+              <span>Teléfono</span>
+              <a href="tel:+34912345678">912 345 678</a>
+            </li>
+            <li>
+              <span>Email</span>
+              <a href="mailto:info@martincostaabogados.com">info@martincostaabogados.com</a>
+            </li>
+            <li>
+              <span>Oficina</span>
+              Calle de Serrano, 45, 2.º dcha.<br>28001 Madrid (Barrio de Salamanca)
+            </li>
+            <li>
+              <span>Horario</span>
+              Lunes a viernes, 9:00 – 19:00
+            </li>
+          </ul>
+        </div>
+        <form class="contacto__form" id="contact-form" novalidate>
+          <label class="field">
+            <span>Nombre y apellidos</span>
+            <input type="text" id="nombre" name="nombre" required autocomplete="name" placeholder="Nombre completo">
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="tu@email.com">
+          </label>
+          <label class="field">
+            <span>Teléfono</span>
+            <input type="tel" id="telefono" name="telefono" autocomplete="tel" inputmode="tel" placeholder="Para contactarte con rapidez">
+          </label>
+          <label class="field">
+            <span>Área de consulta</span>
+            <select id="area" name="area" required>
+              <option value="" disabled selected>Selecciona una materia</option>
+              <option value="familia">Familia y sucesiones</option>
+              <option value="laboral">Laboral y Seguridad Social</option>
+              <option value="mercantil">Mercantil y societario</option>
+              <option value="penal">Penal</option>
+              <option value="inmobiliario">Inmobiliario</option>
+              <option value="civil">Civil y mediación</option>
+              <option value="otro">Otra consulta</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Mensaje</span>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Resume tu situación: plazos, documentación disponible, etc."></textarea>
+          </label>
+          <label class="field field--check">
+            <input type="checkbox" id="privacidad" name="privacidad" required>
+            <span>He leído la <a href="#">política de privacidad</a> y autorizo el tratamiento de mis datos para gestionar mi consulta.</span>
+          </label>
+          <button type="submit" class="btn btn--gold btn--full">Solicitar consulta</button>
+          <p class="form-ok" id="form-ok" hidden>Consulta recibida. Nos pondremos en contacto contigo pronto.</p>
+        </form>
+      </div>
+      <div class="container contacto__map">
+        <iframe
+          src="https://maps.google.com/maps?q=Calle+de+Serrano+45+Madrid&output=embed"
+          title="Ubicación del despacho en Calle de Serrano, 45, Madrid"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <p class="footer__name">Martín & Costa Abogados</p>
+        <p>Despacho jurídico en Madrid desde 1998</p>
+        <p class="footer__meta">CIF B-12345678 · Colegio de Abogados de Madrid</p>
+      </div>
+      <div class="footer__contact">
+        <p>Contacto</p>
+        <ul>
+          <li><a href="tel:+34912345678">912 345 678</a></li>
+          <li><a href="mailto:info@martincostaabogados.com">info@martincostaabogados.com</a></li>
+          <li>Calle de Serrano, 45, 2.º dcha. — 28001 Madrid</li>
+        </ul>
+      </div>
+      <div class="footer__legal">
+        <ul>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Política de cookies</a></li>
+        </ul>
+        <p class="footer__copy">© 2026 Martín & Costa Abogados. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="tel:+34912345678" class="fab" aria-label="Llamar al despacho">Llamar</a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
