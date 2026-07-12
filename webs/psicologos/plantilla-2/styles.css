@@ -894,9 +894,18 @@ strong { color: var(--ink-2); font-weight: 600; }
   .hero__media {
     max-width: 100%;
     order: -1;
+    margin-inline: -0.15rem;
   }
 
-  .hero__media img { max-height: 320px; aspect-ratio: 16 / 11; }
+  .hero__media img {
+    max-height: none;
+    height: clamp(200px, 40dvh, 300px);
+    aspect-ratio: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 4px;
+  }
 
   .hero__frame { display: none; }
 

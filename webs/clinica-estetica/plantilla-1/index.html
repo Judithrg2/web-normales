@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Lumière — Cabina de estética en Madrid. Patricia Solís, especialista en labios, cejas y armonización facial. Citas por WhatsApp.">
+  <meta name="theme-color" content="#f7f3f0">
+  <title>Lumière · Labios y estética facial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="mast">
+    <a href="#inicio" class="mast__logo">Lumière</a>
+    <button class="mast__toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+    <nav class="mast__nav" id="menu">
+      <a href="#tratamientos">Tratamientos</a>
+      <a href="#patricia">Patricia</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#visita">Visítanos</a>
+      <a href="https://wa.me/34911234567" class="mast__wa" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </nav>
+  </header>
+  <div class="menu-scrim" id="menu-scrim" hidden></div>
+
+  <main>
+
+    <section class="intro" id="inicio">
+      <div class="intro__copy">
+        <p class="intro__where">Salamanca, Madrid</p>
+        <h1 class="intro__title">
+          Especialista en <em>labios</em> con trato de cabina pequeña
+        </h1>
+        <p class="intro__lead">
+          No somos un gran centro. Somos Patricia y una sala tranquila donde
+          cada tratamiento se piensa contigo, sin prisas ni paquetes cerrados.
+        </p>
+        <a href="https://wa.me/34911234567?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20cita" class="cta" target="_blank" rel="noopener noreferrer">
+          Escribir por WhatsApp
+        </a>
+      </div>
+      <figure class="intro__frame">
+        <img
+          src="assets/img/hero.jpg"
+          srcset="assets/img/hero.jpg 720w"
+          sizes="(max-width: 768px) 280px, 42vw"
+          alt="Labios con acabado natural y luminoso"
+          width="720"
+          height="900"
+          decoding="async"
+          fetchpriority="high"
+        >
+      </figure>
+    </section>
+
+    <section class="tratamientos" id="tratamientos">
+      <div class="wrap">
+        <h2 class="tratamientos__head">Lo que hacemos</h2>
+        <ul class="tratamientos__lista">
+          <li>
+            <span class="tratamientos__nombre">Aumento de labios</span>
+            <span class="tratamientos__detalle">Ácido hialurónico, volumen progresivo</span>
+          </li>
+          <li>
+            <span class="tratamientos__nombre">Perfilado</span>
+            <span class="tratamientos__detalle">Contorno, simetría, arco de Cupido</span>
+          </li>
+          <li>
+            <span class="tratamientos__nombre">Hidratación labial</span>
+            <span class="tratamientos__detalle">Suaviza y da luminosidad sin volumen</span>
+          </li>
+          <li>
+            <span class="tratamientos__nombre">Cejas</span>
+            <span class="tratamientos__detalle">Diseño, microblading, perfilado</span>
+          </li>
+          <li>
+            <span class="tratamientos__nombre">Armonización facial</span>
+            <span class="tratamientos__detalle">Pómulos, mentón — siempre con criterio</span>
+          </li>
+        </ul>
+        <p class="tratamientos__nota">
+          Primera visita de valoración. Te explicamos opciones y precio antes de nada.
+        </p>
+      </div>
+    </section>
+
+    <section class="patricia" id="patricia">
+      <div class="wrap patricia__layout">
+        <figure class="patricia__foto">
+          <img
+            src="assets/img/patricia.jpg"
+            alt="Patricia Solís, médico estético"
+            loading="lazy"
+            decoding="async"
+            width="560"
+            height="700"
+          >
+        </figure>
+        <div class="patricia__texto">
+          <p class="patricia__firma">Patricia Solís</p>
+          <blockquote class="patricia__cita">
+            <p>«Me obsesiona que salgas de aquí sintiéndote tú, no con la cara de otra persona.»</p>
+          </blockquote>
+          <p>
+            Médico estético desde hace doce años. Solo atiende en esta cabina — tú hablas
+            siempre con ella, de la primera llamada al control de revisión.
+          </p>
+          <p class="patricia__col">Colegiada ICAM · Máster en Medicina Estética</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pasos" aria-label="Proceso del tratamiento">
+      <div class="wrap">
+        <p class="pasos__linea">
+          <span>Consulta</span>
+          <span class="pasos__dot" aria-hidden="true"></span>
+          <span>Diseño</span>
+          <span class="pasos__dot" aria-hidden="true"></span>
+          <span>Tratamiento</span>
+          <span class="pasos__dot" aria-hidden="true"></span>
+          <span>Revisión</span>
+        </p>
+        <p class="pasos__sub">Así trabajamos. Sin sorpresas, sin prisas.</p>
+      </div>
+    </section>
+
+    <section class="resultados" id="resultados">
+      <div class="wrap resultados__header">
+        <h2 class="resultados__head">Algunos resultados</h2>
+        <p class="resultados__sub">Pacientes que autorizaron compartir su caso. Cada rostro pide algo distinto.</p>
+        <p class="resultados__hint" aria-hidden="true">Desliza para ver más →</p>
+      </div>
+      <div class="resultados__scroll" tabindex="0" aria-label="Galería de resultados, desliza para ver más">
+        <figure>
+          <img src="assets/img/res-1.jpg" alt="Resultado de perfilado suave" loading="lazy" decoding="async" width="400" height="500">
+          <figcaption>Perfilado suave</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/res-2.jpg" alt="Resultado de hidratación facial" loading="lazy" decoding="async" width="400" height="500">
+          <figcaption>Hidratación</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/res-3.jpg" alt="Resultado de diseño de cejas" loading="lazy" decoding="async" width="400" height="500">
+          <figcaption>Cejas</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/res-4.jpg" alt="Resultado de volumen natural en labios" loading="lazy" decoding="async" width="400" height="500">
+          <figcaption>Volumen natural</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="voces" aria-label="Opiniones de pacientes">
+      <div class="wrap voces__grid">
+        <blockquote class="voz voz--destacada">
+          <p>«Tenía pánico al efecto patito. Patricia me lo explicó todo en la primera visita y el resultado es justo lo que quería.»</p>
+          <footer>Laura · aumento de labios</footer>
+        </blockquote>
+        <blockquote class="voz">
+          <p>«Cabina pequeña, trato de tú a tú. Volví al mes para hidratación.»</p>
+          <footer>Elena · hidratación</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="visita" id="visita">
+      <div class="wrap visita__card">
+        <h2 class="visita__head">Pide cita por WhatsApp</h2>
+        <p class="visita__text">
+          No reservamos por la web. Escríbenos y Patricia o su asistente te contestan
+          en horario de mañana o tarde.
+        </p>
+        <a href="https://wa.me/34911234567?text=Hola%2C%20quiero%20pedir%20cita%20en%20Lumi%C3%A8re" class="cta cta--wa" target="_blank" rel="noopener noreferrer">
+          Abrir WhatsApp
+        </a>
+        <ul class="visita__datos">
+          <li><a href="tel:+34911234567">911 234 567</a></li>
+          <li>Calle de Serrano, 58 · 1.º izquierda</li>
+          <li>28006 Madrid</li>
+          <li>L–V 10:00 – 19:00</li>
+        </ul>
+        <a href="https://maps.google.com/?q=Calle+de+Serrano+58+Madrid" class="visita__mapa" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>© Lumière · Patricia Solís</p>
+    <p><a href="#">Privacidad</a></p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
