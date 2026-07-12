@@ -19,7 +19,7 @@ Abre `index.html` en la raíz del repositorio para ver el listado con enlaces.
 ### 1. Crear el repositorio en GitHub
 
 1. Entra en [github.com/new](https://github.com/new)
-2. Nombre sugerido: `plantillas-web` (o el que prefieras)
+Nombre del repositorio: **`web-normales`** (cuenta `Judithrg2`).
 3. Deja el repositorio **público**
 4. **No** marques “Add a README” (ya existe uno aquí)
 5. Pulsa **Create repository**
@@ -34,7 +34,7 @@ git init
 git add .
 git commit -m "Publicar plantillas web para GitHub Pages"
 git branch -M main
-git remote add origin https://github.com/TU_USUARIO/NOMBRE_REPO.git
+git remote add origin https://github.com/Judithrg2/web-normales.git
 git push -u origin main
 ```
 
@@ -50,18 +50,18 @@ GitHub te pedirá iniciar sesión la primera vez.
 
 ### 4. Tus enlaces públicos
 
-Si tu usuario es `judit` y el repo `plantillas-web`, las URLs serán:
+Si tu usuario es `Judithrg2` y el repo `web-normales`, las URLs serán:
 
 | Web | URL |
 |-----|-----|
-| Índice | `https://judit.github.io/plantillas-web/` |
-| Psicóloga 1 | `https://judit.github.io/plantillas-web/webs/psicologos/plantilla-1/` |
-| Psicóloga 2 | `https://judit.github.io/plantillas-web/webs/psicologos/plantilla-2/` |
-| Abogados | `https://judit.github.io/plantillas-web/webs/abogados/plantilla-1/` |
-| Bar | `https://judit.github.io/plantillas-web/webs/bares/plantilla-1/` |
-| Academia | `https://judit.github.io/plantillas-web/webs/academias/plantilla-1/` |
+| Índice | `https://judithrg2.github.io/web-normales/` |
+| Psicóloga 1 | `https://judithrg2.github.io/web-normales/webs/psicologos/plantilla-1/` |
+| Psicóloga 2 | `https://judithrg2.github.io/web-normales/webs/psicologos/plantilla-2/` |
+| Abogados | `https://judithrg2.github.io/web-normales/webs/abogados/plantilla-1/` |
+| Bar | `https://judithrg2.github.io/web-normales/webs/bares/plantilla-1/` |
+| Academia | `https://judithrg2.github.io/web-normales/webs/academias/plantilla-1/` |
 
-Sustituye `judit` y `plantillas-web` por tu usuario y nombre de repositorio reales.
+Sustituye solo si usas otro usuario o nombre de repositorio.
 
 ## Estructura del repositorio
 
