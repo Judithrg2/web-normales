@@ -2,8 +2,9 @@
   var btn = document.querySelector('.top__btn');
   var nav = document.querySelector('.top__nav');
   var scrim = document.getElementById('scrim');
+  var topbar = document.getElementById('top');
   var body = document.body;
-  var BP = 768;
+  var BP = 900;
 
   function isMobile() {
     return window.matchMedia('(max-width: ' + BP + 'px)').matches;
@@ -56,5 +57,13 @@
     window.addEventListener('resize', function () {
       if (!isMobile()) closeMenu();
     });
+  }
+
+  if (topbar) {
+    var onScroll = function () {
+      topbar.classList.toggle('is-scrolled', window.scrollY > 8);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
   }
 })();
