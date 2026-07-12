@@ -63,8 +63,19 @@ Si tu usuario es `judit` y el repo `plantillas-web`, las URLs serán:
 
 Sustituye `judit` y `plantillas-web` por tu usuario y nombre de repositorio reales.
 
+## Estructura del repositorio
+
+```
+index.html          → índice con enlaces a todas las webs
+webs/
+  psicologos/plantilla-1/   → index.html, styles.css, assets/js/main.js
+  psicologos/plantilla-2/
+  abogados/plantilla-1/     → + assets/img/ (imágenes locales)
+  bares/plantilla-1/
+  academias/plantilla-1/
+```
+
 ## Notas
 
-- La carpeta `WEB ORDEN/` no se sube (son borradores antiguos).
 - Todas las webs usan rutas relativas (`styles.css`, `assets/...`) y funcionan en subcarpetas de GitHub Pages.
 - Algunas imágenes cargan desde Unsplash o Google Maps; hace falta conexión a internet para verlas.
