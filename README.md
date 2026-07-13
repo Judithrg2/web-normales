@@ -10,6 +10,7 @@ Webs publicadas y listas para compartir.
 - [Bar de tapas](webs/bares/plantilla-1/)
 - [Peluquería — La Silla](webs/peluqueria/plantilla-1/)
 - [Fisioterapeuta — Mendoza Fisioterapia](webs/fisioterapeuta/plantilla-1/)
+- [NovaDent — Clínica dental](webs/dentistas/plantilla-1/)
 - [Academia Nova](webs/academias/plantilla-1/)
 - [Lumière — Cabina estética](webs/clinica-estetica/plantilla-1/)
 

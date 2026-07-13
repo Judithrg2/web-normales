@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="NovaDent — Clínica dental en Salamanca, Madrid. Estética, ortodoncia, implantes y odontología infantil.">
+  <meta name="theme-color" content="#0a2540">
+  <title>NovaDent · Clínica Dental</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#inicio">Ir al contenido</a>
+
+  <nav class="indice" aria-label="Secciones">
+    <a href="#inicio" class="activo"><span>00</span><em>Inicio</em></a>
+    <a href="#servicios"><span>01</span><em>Servicios</em></a>
+    <a href="#elegirnos"><span>02</span><em>Ventajas</em></a>
+    <a href="#resultados"><span>03</span><em>Resultados</em></a>
+    <a href="#clinica"><span>04</span><em>Clínica</em></a>
+    <a href="#opiniones"><span>05</span><em>Opiniones</em></a>
+    <a href="#faq"><span>06</span><em>FAQ</em></a>
+    <a href="#contacto"><span>07</span><em>Cita</em></a>
+  </nav>
+
+  <button class="abrir-menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="panel">
+    <span class="abrir-menu__txt">Menú</span>
+    <span class="abrir-menu__ico" aria-hidden="true"></span>
+  </button>
+
+  <div class="velo" id="velo" hidden></div>
+  <nav class="panel" id="panel" aria-label="Menú móvil" hidden>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#elegirnos">Por qué elegirnos</a>
+    <a href="#resultados">Antes y después</a>
+    <a href="#clinica">La clínica</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#faq">Preguntas</a>
+    <a href="#contacto" class="panel__cta">Reservar cita</a>
+  </nav>
+
+  <main>
+
+    <section class="pantalla" id="inicio">
+      <figure class="pantalla__fondo">
+        <img src="assets/img/hero.jpg" alt="Paciente en consulta dental moderna" width="1200" height="800" decoding="async" fetchpriority="high">
+      </figure>
+      <div class="pantalla__velo" aria-hidden="true"></div>
+      <div class="pantalla__contenido">
+        <p class="pantalla__zona">Salamanca · Madrid</p>
+        <h1>Clínica Dental Profesional</h1>
+        <p class="pantalla__sub">Especialistas en estética y salud bucal</p>
+        <a href="#contacto" class="pantalla__cta">Reservar cita</a>
+      </div>
+      <div class="pantalla__scroll" aria-hidden="true">
+        <span>Desliza</span>
+        <i></i>
+      </div>
+      <svg class="pantalla__ola" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="currentColor"/>
+      </svg>
+    </section>
+
+    <section class="tratamientos" id="servicios">
+      <div class="tratamientos__wrap">
+        <header class="tratamientos__cab">
+          <p class="rotulo">Tratamientos</p>
+          <h2>Servicios principales</h2>
+          <p class="tratamientos__lead">Seis especialidades con protocolo propio. Selecciona un tratamiento para ver el detalle.</p>
+        </header>
+
+        <div class="tratamientos__cuerpo">
+          <div class="tratamientos__nav" role="tablist" aria-label="Servicios dentales">
+            <button type="button" class="tratamientos__tab activo" role="tab" id="tab-1" aria-selected="true" aria-controls="srv-1" data-srv="srv-1">
+              <span class="tratamientos__n">01</span>
+              <span class="tratamientos__nombre">Limpieza dental</span>
+              <span class="tratamientos__barra" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="tratamientos__tab" role="tab" id="tab-2" aria-selected="false" aria-controls="srv-2" data-srv="srv-2" tabindex="-1">
+              <span class="tratamientos__n">02</span>
+              <span class="tratamientos__nombre">Ortodoncia</span>
+              <span class="tratamientos__barra" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="tratamientos__tab" role="tab" id="tab-3" aria-selected="false" aria-controls="srv-3" data-srv="srv-3" tabindex="-1">
+              <span class="tratamientos__n">03</span>
+              <span class="tratamientos__nombre">Blanqueamiento</span>
+              <span class="tratamientos__barra" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="tratamientos__tab" role="tab" id="tab-4" aria-selected="false" aria-controls="srv-4" data-srv="srv-4" tabindex="-1">
+              <span class="tratamientos__n">04</span>
+              <span class="tratamientos__nombre">Implantes dentales</span>
+              <span class="tratamientos__barra" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="tratamientos__tab" role="tab" id="tab-5" aria-selected="false" aria-controls="srv-5" data-srv="srv-5" tabindex="-1">
+              <span class="tratamientos__n">05</span>
+              <span class="tratamientos__nombre">Carillas estéticas</span>
+              <span class="tratamientos__barra" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="tratamientos__tab" role="tab" id="tab-6" aria-selected="false" aria-controls="srv-6" data-srv="srv-6" tabindex="-1">
+              <span class="tratamientos__n">06</span>
+              <span class="tratamientos__nombre">Odontología infantil</span>
+              <span class="tratamientos__barra" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <div class="tratamientos__visor" aria-live="polite">
+            <article class="tratamientos__panel activo" id="srv-1" role="tabpanel" aria-labelledby="tab-1">
+              <figure class="tratamientos__foto">
+                <img src="assets/img/clinica.jpg" alt="Limpieza dental profesional en consulta" width="900" height="600" loading="lazy">
+              </figure>
+              <div class="tratamientos__detalle">
+                <span class="tratamientos__indice">01 / 06</span>
+                <h3>Limpieza dental</h3>
+                <p>Higiene profesional, eliminación de sarro y revisiones periódicas. Base de cualquier plan de salud bucal.</p>
+                <ul class="tratamientos__tags">
+                  <li>45 min</li>
+                  <li>Sin dolor</li>
+                  <li>Prevención</li>
+                </ul>
+                <a href="#contacto" class="tratamientos__pedir">Pedir cita</a>
+              </div>
+            </article>
+            <article class="tratamientos__panel" id="srv-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+              <figure class="tratamientos__foto">
+                <img src="assets/img/ba-3.jpg" alt="Ortodoncia invisible en consulta" width="600" height="600" loading="lazy">
+              </figure>
+              <div class="tratamientos__detalle">
+                <span class="tratamientos__indice">02 / 06</span>
+                <h3>Ortodoncia</h3>
+                <p>Brackets metálicos, estéticos o alineadores invisibles. Seguimiento digital y revisiones programadas.</p>
+                <ul class="tratamientos__tags">
+                  <li>Invisalign®</li>
+                  <li>3D</li>
+                  <li>Todas las edades</li>
+                </ul>
+                <a href="#contacto" class="tratamientos__pedir">Pedir cita</a>
+              </div>
+            </article>
+            <article class="tratamientos__panel" id="srv-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+              <figure class="tratamientos__foto">
+                <img src="assets/img/ba-2.jpg" alt="Resultado de blanqueamiento dental" width="600" height="600" loading="lazy">
+              </figure>
+              <div class="tratamientos__detalle">
+                <span class="tratamientos__indice">03 / 06</span>
+                <h3>Blanqueamiento</h3>
+                <p>Tratamiento en consulta con luz LED y pautas de mantenimiento en casa para un blanco uniforme.</p>
+                <ul class="tratamientos__tags">
+                  <li>1–2 sesiones</li>
+                  <li>Resultado inmediato</li>
+                  <li>Seguro</li>
+                </ul>
+                <a href="#contacto" class="tratamientos__pedir">Pedir cita</a>
+              </div>
+            </article>
+            <article class="tratamientos__panel" id="srv-4" role="tabpanel" aria-labelledby="tab-4" hidden>
+              <figure class="tratamientos__foto">
+                <img src="assets/img/ba-5.jpg" alt="Implante dental con planificación 3D" width="600" height="600" loading="lazy">
+              </figure>
+              <div class="tratamientos__detalle">
+                <span class="tratamientos__indice">04 / 06</span>
+                <h3>Implantes dentales</h3>
+                <p>Reposición fija con titanio Straumann® y coronas de alta estética. Planificación 3D antes de intervenir.</p>
+                <ul class="tratamientos__tags">
+                  <li>Plan 3D</li>
+                  <li>Titanio</li>
+                  <li>Garantía</li>
+                </ul>
+                <a href="#contacto" class="tratamientos__pedir">Pedir cita</a>
+              </div>
+            </article>
+            <article class="tratamientos__panel" id="srv-5" role="tabpanel" aria-labelledby="tab-5" hidden>
+              <figure class="tratamientos__foto">
+                <img src="assets/img/ba-6.jpg" alt="Carillas estéticas de porcelana" width="600" height="600" loading="lazy">
+              </figure>
+              <div class="tratamientos__detalle">
+                <span class="tratamientos__indice">05 / 06</span>
+                <h3>Carillas estéticas</h3>
+                <p>Porcelana ultrafina para corregir forma, color y pequeñas imperfecciones con acabado natural.</p>
+                <ul class="tratamientos__tags">
+                  <li>Porcelana</li>
+                  <li>Mínima invasión</li>
+                  <li>Diseño digital</li>
+                </ul>
+                <a href="#contacto" class="tratamientos__pedir">Pedir cita</a>
+              </div>
+            </article>
+            <article class="tratamientos__panel" id="srv-6" role="tabpanel" aria-labelledby="tab-6" hidden>
+              <figure class="tratamientos__foto">
+                <img src="assets/img/hero.jpg" alt="Odontología infantil en gabinete adaptado" width="1200" height="800" loading="lazy">
+              </figure>
+              <div class="tratamientos__detalle">
+                <span class="tratamientos__indice">06 / 06</span>
+                <h3>Odontología infantil</h3>
+                <p>Primera visita sin miedo, revisiones y tratamientos adaptados. Gabinete y lenguaje pensados para niños.</p>
+                <ul class="tratamientos__tags">
+                  <li>Desde 3 años</li>
+                  <li>Sin prisas</li>
+                  <li>Pediatría dental</li>
+                </ul>
+                <a href="#contacto" class="tratamientos__pedir">Pedir cita</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cinta" id="elegirnos">
+      <div class="cinta__intro">
+        <p class="rotulo rotulo--claro">Ventajas</p>
+        <h2>Por qué elegirnos</h2>
+      </div>
+      <div class="cinta__pista" tabindex="0" aria-label="Ventajas de la clínica, desplazamiento horizontal">
+        <article class="cinta__item">
+          <div class="cinta__icono" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M24 16v16M16 24h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Tecnología avanzada</h3>
+          <p>Radiografía digital, escáner intraoral y planificación 3D.</p>
+        </article>
+        <article class="cinta__item">
+          <div class="cinta__icono" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="18" cy="18" r="6" stroke="currentColor" stroke-width="1.5"/><circle cx="30" cy="18" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M10 36c0-5 4-8 8-8s8 3 8 8M22 36c0-5 4-8 8-8s8 3 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Equipo especializado</h3>
+          <p>Estética, implantología y ortodoncia invisible.</p>
+        </article>
+        <article class="cinta__item cinta__item--destacado">
+          <div class="cinta__icono" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M14 26c0-6 4-11 10-11s10 5 10 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12 30h24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Resultados naturales</h3>
+          <p>Proporciones armónicas que se integran con tu rostro.</p>
+        </article>
+        <article class="cinta__item">
+          <div class="cinta__icono" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 10l4 8 9 1-6 6 1 9-8-4-8 4 1-9-6-6 9-1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Atención personalizada</h3>
+          <p>Presupuestos claros y seguimiento entre visitas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="comparar" id="resultados">
+      <header class="comparar__cab">
+        <p class="rotulo">Casos reales</p>
+        <h2>Antes y después</h2>
+        <p class="comparar__lead">Tres transformaciones con blanqueamiento, ortodoncia invisible y carillas de porcelana.</p>
+      </header>
+      <div class="comparar__lista">
+        <figure class="par">
+          <div class="par__visor">
+            <div class="par__lado par__lado--antes">
+              <img src="assets/img/ba-1.jpg" alt="Antes del blanqueamiento" width="600" height="600" loading="lazy">
+              <span>Antes</span>
+            </div>
+            <div class="par__linea" aria-hidden="true"></div>
+            <div class="par__lado par__lado--despues">
+              <img src="assets/img/ba-2.jpg" alt="Después del blanqueamiento" width="600" height="600" loading="lazy">
+              <span>Después</span>
+            </div>
+          </div>
+          <figcaption>Blanqueamiento profesional · 2 sesiones</figcaption>
+        </figure>
+        <figure class="par">
+          <div class="par__visor">
+            <div class="par__lado par__lado--antes">
+              <img src="assets/img/ba-3.jpg" alt="Antes de ortodoncia invisible" width="600" height="600" loading="lazy">
+              <span>Antes</span>
+            </div>
+            <div class="par__linea" aria-hidden="true"></div>
+            <div class="par__lado par__lado--despues">
+              <img src="assets/img/ba-4.jpg" alt="Después de ortodoncia invisible" width="600" height="600" loading="lazy">
+              <span>Después</span>
+            </div>
+          </div>
+          <figcaption>Ortodoncia invisible · 14 meses</figcaption>
+        </figure>
+        <figure class="par">
+          <div class="par__visor">
+            <div class="par__lado par__lado--antes">
+              <img src="assets/img/ba-5.jpg" alt="Antes de carillas estéticas" width="600" height="600" loading="lazy">
+              <span>Antes</span>
+            </div>
+            <div class="par__linea" aria-hidden="true"></div>
+            <div class="par__lado par__lado--despues">
+              <img src="assets/img/ba-6.jpg" alt="Después de carillas estéticas" width="600" height="600" loading="lazy">
+              <span>Después</span>
+            </div>
+          </div>
+          <figcaption>Carillas de porcelana · arcada superior</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="editorial" id="clinica">
+      <div class="editorial__bloque">
+        <figure class="editorial__foto editorial__foto--principal">
+          <img src="assets/img/clinica.jpg" alt="Gabinete dental con equipamiento moderno" width="900" height="700" loading="lazy">
+        </figure>
+        <div class="editorial__texto">
+          <p class="rotulo">Sobre la clínica</p>
+          <h2>Más de 15 años cuidando sonrisas en Madrid</h2>
+          <blockquote class="editorial__cita">
+            «Odontología de alto nivel en un espacio acogedor, lejos del ambiente frío de los grandes centros.»
+          </blockquote>
+          <p>
+            Cada gabinete está equipado con tecnología digital y materiales certificados.
+            Nuestro equipo combina experiencia clínica y sensibilidad estética: te explicamos
+            cada paso antes de empezar.
+          </p>
+          <ul class="editorial__sellos">
+            <li>Colegio Oficial de Odontólogos</li>
+            <li>ISO 9001</li>
+            <li>Invisalign® Provider</li>
+            <li>Straumann® Partner</li>
+          </ul>
+        </div>
+      </div>
+      <figure class="editorial__equipo">
+        <img src="assets/img/equipo.jpg" alt="Equipo de odontólogos de NovaDent" width="900" height="500" loading="lazy">
+        <figcaption>Dr. Javier Ruiz y Dra. Elena Vidal · Directores clínicos</figcaption>
+      </figure>
+    </section>
+
+    <section class="voces" id="opiniones">
+      <header class="voces__cab">
+        <p class="rotulo">Pacientes</p>
+        <h2>Opiniones</h2>
+      </header>
+      <div class="voces__montaje">
+        <blockquote class="voz voz--lider">
+          <p>«Tenía pánico al dentista. Aquí me explicaron todo con calma y el implante fue mucho más llevadero de lo que imaginaba.»</p>
+          <footer>Carlos R. · Implante dental</footer>
+        </blockquote>
+        <blockquote class="voz">
+          <p>«Me puse los alineadores sin que nadie en el trabajo se diera cuenta. El resultado, muy natural.»</p>
+          <footer>Marta G. · Ortodoncia</footer>
+        </blockquote>
+        <blockquote class="voz">
+          <p>«Llevé a mis hijos de 6 y 9 años. La primera visita fue un juego. Ahora piden ir a la revisión.»</p>
+          <footer>Laura M. · Odontología infantil</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="acordeon" id="faq">
+      <div class="acordeon__col">
+        <p class="rotulo">Dudas</p>
+        <h2>Preguntas frecuentes</h2>
+        <p class="acordeon__lead">Lo que nos preguntan antes de la primera visita.</p>
+      </div>
+      <div class="acordeon__col">
+        <details class="faq-item">
+          <summary>¿Cuánto dura la primera visita?</summary>
+          <p>Unos 40 minutos. Incluye exploración, radiografía si es necesaria y un plan orientativo.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Ofrecéis financiación?</summary>
+          <p>Sí, en ortodoncia e implantes. Te presentamos las cuotas antes de decidir.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Trabajáis con seguros dentales?</summary>
+          <p>Colaboramos con las principales mutuas. Indícanos tu compañía al reservar.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿El blanqueamiento daña el esmalte?</summary>
+          <p>Los protocolos que usamos son seguros. Valoramos la sensibilidad previa para adaptar la concentración.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Atendéis urgencias?</summary>
+          <p>Dolor agudo o provisional caído: llamamos y buscamos hueco el mismo día si es posible.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cierre" id="contacto">
+      <div class="cierre__mapa">
+        <iframe
+          src="https://maps.google.com/maps?q=Calle+Serrano+45+Madrid&output=embed"
+          title="Ubicación NovaDent"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="cierre__tarjeta">
+        <p class="rotulo rotulo--claro">Contacto</p>
+        <h2>Reserva tu cita</h2>
+        <p class="cierre__texto">Cuéntanos qué necesitas. Respondemos el mismo día laborable.</p>
+        <address>
+          C/ Serrano, 45 · 28001 Madrid<br>
+          Metro Velázquez · L4
+        </address>
+        <p class="cierre__tel"><a href="tel:+34914223870">914 223 870</a></p>
+        <a href="https://wa.me/34612345678?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20cita%20en%20NovaDent" class="cierre__wa" target="_blank" rel="noopener noreferrer">WhatsApp directo</a>
+        <form class="cierre__form" id="form-cita" novalidate>
+          <label>
+            <span>Nombre</span>
+            <input type="text" id="f-nombre" name="nombre" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Teléfono</span>
+            <input type="tel" id="f-tel" name="telefono" autocomplete="tel" required>
+          </label>
+          <label>
+            <span>Servicio</span>
+            <select id="f-servicio" name="servicio" required>
+              <option value="">Elige tratamiento</option>
+              <option>Limpieza dental</option>
+              <option>Ortodoncia</option>
+              <option>Blanqueamiento</option>
+              <option>Implantes dentales</option>
+              <option>Carillas estéticas</option>
+              <option>Odontología infantil</option>
+              <option>Otro</option>
+            </select>
+          </label>
+          <label class="cierre__nota">
+            <span>Comentario</span>
+            <textarea id="f-nota" name="nota" rows="2" placeholder="Opcional"></textarea>
+          </label>
+          <button type="submit" class="cierre__enviar">Enviar solicitud</button>
+          <p class="enviado" id="enviado" hidden>Recibido. Te contactamos pronto.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="sello">
+    <span class="sello__marca">NovaDent</span>
+    <span>© 2026 · <a href="#">Legal</a> · <a href="#">Privacidad</a></span>
+  </footer>
+
+  <a href="https://wa.me/34612345678?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20cita%20en%20NovaDent" class="wa-flotante" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WA</a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
