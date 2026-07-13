@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Oria Nutrición — Lucía Mena, dietista en Sevilla. Consulta presencial y online. Alimentación con criterio, sin dietas milagro.">
+  <meta name="theme-color" content="#faf8f5">
+  <title>Oria Nutrición · Lucía Mena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#contenido">Ir al contenido</a>
+
+  <header class="site-head site-head--solid" id="site-head">
+    <div class="site-head__inner">
+      <a href="#" class="site-head__brand">Oria</a>
+      <nav class="site-head__nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#consulta">Consulta</a>
+        <a href="#sobre">Sobre mí</a>
+      </nav>
+      <a href="#contacto" class="site-head__action">Reservar</a>
+      <button type="button" class="site-head__menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-overlay">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="nav-overlay" hidden>
+    <nav aria-label="Menú móvil">
+      <a href="#servicios">Servicios</a>
+      <a href="#consulta">Consulta</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#contacto">Reservar cita</a>
+    </nav>
+  </div>
+
+  <main id="contenido">
+
+    <section class="inicio">
+      <div class="inicio__copy">
+        <p class="inicio__badge">Dietista-nutricionista · Sevilla · Col. AN 4120</p>
+        <h1>Tu alimentación,<br><span>con sentido</span></h1>
+        <p class="inicio__desc">
+          Consulta sin prohibiciones absurdas ni batidos milagro.
+          Un plan que puedas sostener más allá de enero.
+        </p>
+        <div class="inicio__btns">
+          <a href="#contacto" class="btn btn--fill">Primera consulta · 60 €</a>
+          <a href="tel:+34954123456" class="btn btn--line">954 123 456</a>
+        </div>
+      </div>
+      <figure class="inicio__media">
+        <img src="assets/img/hero.jpg" alt="Ingredientes frescos preparados en cocina" width="1400" height="900" decoding="async" fetchpriority="high">
+      </figure>
+    </section>
+
+    <section class="servicios" id="servicios">
+      <div class="contenedor">
+        <h2>En qué puedo ayudarte</h2>
+        <div class="servicios__cols">
+          <article>
+            <h3>Salud metabólica</h3>
+            <p>Diabetes, colesterol, tensión, SOP. Analíticas y pautas realistas.</p>
+          </article>
+          <article>
+            <h3>Conducta</h3>
+            <p>Atracones, ansiedad, culpa. La relación con la comida, no solo el plato.</p>
+          </article>
+          <article>
+            <h3>Deporte</h3>
+            <p>Rendimiento y recuperación sin suplementos innecesarios.</p>
+          </article>
+          <article>
+            <h3>Maternidad</h3>
+            <p>Embarazo, lactancia y postparto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="consulta" id="consulta">
+      <div class="contenedor consulta__grid">
+        <figure class="consulta__foto">
+          <img src="assets/img/consulta.jpg" alt="Consulta de nutrición" width="800" height="600" loading="lazy">
+        </figure>
+        <div class="consulta__info">
+          <h2>La primera consulta</h2>
+          <p>
+            <strong>60 minutos</strong> en Triana o por videollamada. Historial, hábitos,
+            analíticas y objetivos. Sales con un plan escrito y pasos claros.
+          </p>
+          <ul class="consulta__precios">
+            <li><span>Presencial</span><strong>60 €</strong></li>
+            <li><span>Online</span><strong>50 €</strong></li>
+            <li><span>Seguimiento</span><strong>40 €</strong></li>
+          </ul>
+          <p class="consulta__nota">Dudas por WhatsApp 5 días tras cada visita.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <div class="contenedor sobre__texto">
+        <h2>Lucía Mena</h2>
+        <p>
+          Dietista-nutricionista en Sevilla. Más de diez años en consulta privada.
+          Une evidencia clínica con flexibilidad real: lo que importa es lo que haces
+          un martes a las nueve de la noche.
+        </p>
+        <p class="sobre__firma">«No vendo motivación. Te doy criterio para decidir solo.»</p>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contenedor contacto__grid">
+        <div class="contacto__info">
+          <h2>Reserva tu cita</h2>
+          <p>Confirmo hora en menos de 24 h laborables.</p>
+          <div class="contacto__rapido">
+            <a href="tel:+34954123456" class="btn btn--claro">954 123 456</a>
+            <a href="https://wa.me/34612345678?text=Hola%20Luc%C3%ADa%2C%20quiero%20pedir%20cita" class="btn btn--wa" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+          <address>C/ Pureza, 14 · Triana · 41010 Sevilla</address>
+        </div>
+        <form class="contacto__form" id="form" novalidate>
+          <label>
+            <span>Nombre</span>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Teléfono</span>
+            <input type="tel" id="tel" name="tel" autocomplete="tel" required>
+          </label>
+          <label>
+            <span>Motivo</span>
+            <textarea id="motivo" name="motivo" rows="3" placeholder="Ej. mejorar analítica" required></textarea>
+          </label>
+          <button type="submit" class="btn btn--fill">Enviar solicitud</button>
+          <p class="contacto__ok" id="ok" hidden>Mensaje recibido. Te escribo pronto.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-foot">
+    <div class="contenedor site-foot__inner">
+      <span>Oria Nutrición · Lucía Mena</span>
+      <a href="#">Privacidad</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
