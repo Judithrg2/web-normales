@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Corriente — Marta Rivas, psicóloga en Valencia. Un espacio vivo para explorar lo que sientes, a tu ritmo.">
+  <meta name="theme-color" content="#0a1628">
+  <title>Corriente · Marta Rivas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#inicio">Ir al contenido</a>
+
+  <canvas class="fondo-vivo" id="fondo-vivo" aria-hidden="true"></canvas>
+
+  <div class="capas" aria-hidden="true">
+    <div class="capas__blob capas__blob--a"></div>
+    <div class="capas__blob capas__blob--b"></div>
+    <div class="capas__blob capas__blob--c"></div>
+  </div>
+
+  <header class="marca-flotante">
+    <a href="#inicio" class="marca-flotante__logo">Corriente</a>
+    <span class="marca-flotante__ciudad">Valencia</span>
+  </header>
+
+  <button type="button" class="menu-movil" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="menu-movil-panel" id="menu-movil" hidden aria-label="Menú móvil">
+    <a href="#inicio" data-cierra-menu>Inicio</a>
+    <a href="#respira" data-cierra-menu>Respira</a>
+    <a href="#nodos" data-cierra-menu>Nodos</a>
+    <a href="#proceso" data-cierra-menu>Proceso</a>
+    <a href="#marta" data-cierra-menu>Marta</a>
+    <a href="#ancla" data-cierra-menu>Ancla</a>
+  </nav>
+
+  <main class="flujo" id="inicio">
+
+    <section class="entrada" aria-labelledby="entrada-titulo">
+      <div class="entrada__nucleo">
+        <p class="entrada__etq">Psicología clínica · CV-12345</p>
+        <h1 class="entrada__titulo" id="entrada-titulo">
+          <span class="entrada__palabra" data-palabra>Lo</span>
+          <span class="entrada__palabra" data-palabra>que</span>
+          <span class="entrada__palabra" data-palabra>sientes</span>
+          <span class="entrada__palabra entrada__palabra--acento" data-palabra>también</span>
+          <span class="entrada__palabra" data-palabra>se</span>
+          <span class="entrada__palabra" data-palabra>mueve.</span>
+        </h1>
+        <p class="entrada__sub">
+          Soy <strong>Marta Rivas</strong>. Trabajo con personas que llegan agotadas,
+          confundidas o con la sensación de ir a contracorriente.
+        </p>
+        <div class="entrada__acciones">
+          <a href="#respira" class="btn btn--brillo">Probar un minuto de calma</a>
+          <a href="#nodos" class="btn btn--fantasma">Explorar temas</a>
+        </div>
+      </div>
+      <div class="entrada__orbita" aria-hidden="true">
+        <span class="entrada__anillo entrada__anillo--1"></span>
+        <span class="entrada__anillo entrada__anillo--2"></span>
+        <span class="entrada__anillo entrada__anillo--3"></span>
+        <span class="entrada__punto"></span>
+      </div>
+    </section>
+
+    <section class="respira" id="respira" aria-labelledby="respira-titulo">
+      <div class="respira__cab">
+        <h2 id="respira-titulo">Sincroniza un minuto</h2>
+        <p>El círculo late contigo. No es meditación perfecta: es un ancla antes de seguir navegando.</p>
+      </div>
+      <div class="respira__escena">
+        <button type="button" class="respira__orb" id="respira-orb" aria-pressed="false" aria-label="Iniciar ejercicio de respiración">
+          <span class="respira__onda respira__onda--1"></span>
+          <span class="respira__onda respira__onda--2"></span>
+          <span class="respira__onda respira__onda--3"></span>
+          <span class="respira__centro" id="respira-texto">Toca</span>
+        </button>
+        <p class="respira__fase" id="respira-fase" aria-live="polite">4 s inhalar · 4 s sostener · 6 s exhalar</p>
+        <div class="respira__barra" aria-hidden="true">
+          <span class="respira__progreso" id="respira-progreso"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="nodos" id="nodos" aria-labelledby="nodos-titulo">
+      <header class="nodos__cab">
+        <h2 id="nodos-titulo">Mapa de corrientes</h2>
+        <p>Arrastra los nodos y toca uno para ver de qué hablamos en consulta.</p>
+      </header>
+      <div class="nodos__layout">
+        <div class="nodos__campo" id="nodos-campo">
+          <svg class="nodos__hilos" id="nodos-hilos" aria-hidden="true"></svg>
+          <div class="nodos__arena" id="nodos-arena">
+            <button type="button" class="nodo" data-nodo="ansiedad" data-x="16" data-y="20" aria-pressed="false">
+              <span class="nodo__pulso" aria-hidden="true"></span>
+              <span class="nodo__halo" aria-hidden="true"></span>
+              <span class="nodo__nombre">Ansiedad</span>
+            </button>
+            <button type="button" class="nodo" data-nodo="pareja" data-x="76" data-y="16" aria-pressed="false">
+              <span class="nodo__pulso" aria-hidden="true"></span>
+              <span class="nodo__halo" aria-hidden="true"></span>
+              <span class="nodo__nombre">Pareja</span>
+            </button>
+            <button type="button" class="nodo" data-nodo="autoestima" data-x="84" data-y="56" aria-pressed="false">
+              <span class="nodo__pulso" aria-hidden="true"></span>
+              <span class="nodo__halo" aria-hidden="true"></span>
+              <span class="nodo__nombre">Autoestima</span>
+            </button>
+            <button type="button" class="nodo" data-nodo="duelo" data-x="22" data-y="66" aria-pressed="false">
+              <span class="nodo__pulso" aria-hidden="true"></span>
+              <span class="nodo__halo" aria-hidden="true"></span>
+              <span class="nodo__nombre">Duelo</span>
+            </button>
+            <button type="button" class="nodo" data-nodo="burnout" data-x="50" data-y="38" aria-pressed="false">
+              <span class="nodo__pulso" aria-hidden="true"></span>
+              <span class="nodo__halo" aria-hidden="true"></span>
+              <span class="nodo__nombre">Burnout</span>
+            </button>
+          </div>
+          <p class="nodos__pista" id="nodos-pista" aria-hidden="true">Arrastra · Toca para explorar</p>
+        </div>
+        <aside class="nodos__panel" id="nodos-panel" aria-live="polite">
+          <p class="nodos__panel-etq">Tema activo</p>
+          <h3 id="nodos-panel-titulo">Elige un nodo</h3>
+          <p class="nodos__panel-tag" id="nodos-panel-tag"></p>
+          <p id="nodos-panel-texto">Cada corriente tiene su ritmo. Aquí verás una pista de por dónde empezamos.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="proceso" id="proceso" aria-labelledby="proceso-titulo">
+      <header class="proceso__cab">
+        <h2 id="proceso-titulo">Cómo fluye una sesión</h2>
+        <p>Desliza las tarjetas. No hay guion rígido, pero sí un camino que muchas personas reconocen.</p>
+      </header>
+      <div class="proceso__carril" id="proceso-carril" tabindex="0" aria-label="Pasos del proceso, desliza horizontalmente">
+        <article class="proceso__tarjeta">
+          <span class="proceso__num">01</span>
+          <h3>Llegas como puedas</h3>
+          <p>Sin discurso preparado. A veces con llanto, a veces con silencio. Las dos cosas valen.</p>
+        </article>
+        <article class="proceso__tarjeta">
+          <span class="proceso__num">02</span>
+          <h3>Nombramos sin apresurar</h3>
+          <p>Buscamos palabras que te encajen. No las mías ni las de un manual.</p>
+        </article>
+        <article class="proceso__tarjeta">
+          <span class="proceso__num">03</span>
+          <h3>Probamos herramientas</h3>
+          <p>TCC, ACT, mindfulness… Lo que tenga sentido para ti, no para una etiqueta.</p>
+        </article>
+        <article class="proceso__tarjeta">
+          <span class="proceso__num">04</span>
+          <h3>Revisamos el ritmo</h3>
+          <p>Cada pocas sesiones miramos si vamos bien, si hace falta pausa o más profundidad.</p>
+        </article>
+        <article class="proceso__tarjeta">
+          <span class="proceso__num">05</span>
+          <h3>Cierras cuando toca</h3>
+          <p>No hay permanencia. Puedes volver más adelante sin explicaciones largas.</p>
+        </article>
+      </div>
+      <p class="proceso__pista" aria-hidden="true">← desliza →</p>
+    </section>
+
+    <section class="marta" id="marta" aria-labelledby="marta-titulo">
+      <div class="marta__visual">
+        <div class="marta__aura" aria-hidden="true"></div>
+        <div class="marta__foto">
+          <img
+            src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=560&q=80&auto=format&fit=crop"
+            alt="Marta Rivas en consulta"
+            width="280"
+            height="340"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+        <ul class="marta__orbita" aria-label="Credenciales">
+          <li class="marta__chip" style="--angulo:0deg">+12 años</li>
+          <li class="marta__chip" style="--angulo:72deg">GI sanitaria</li>
+          <li class="marta__chip" style="--angulo:144deg">Online</li>
+          <li class="marta__chip" style="--angulo:216deg">Presencial</li>
+          <li class="marta__chip" style="--angulo:288deg">Valencia</li>
+        </ul>
+      </div>
+      <div class="marta__texto">
+        <h2 id="marta-titulo">Marta Rivas</h2>
+        <p class="marta__rol">Psicóloga general sanitaria · colegiada CV-12345</p>
+        <p>
+          Empecé en urgencias emocionales y acabé en consulta privada porque me interesa
+          el tiempo largo: ver cómo alguien va encontrando su propio ritmo.
+        </p>
+        <p>
+          Fuera del despacho: natación muy temprano, playlists desordenadas
+          y una colección absurda de tazas con ballenas.
+        </p>
+        <dl class="marta__tarifas">
+          <div>
+            <dt>Primera sesión</dt>
+            <dd>50 € <span>· 50 min</span></dd>
+          </div>
+          <div>
+            <dt>Sesión habitual</dt>
+            <dd>55 € <span>· 50 min</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="ancla" id="ancla" aria-labelledby="ancla-titulo">
+      <div class="ancla__corriente" aria-hidden="true">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+          <path class="ancla__ola" d="M0,40 C150,10 300,70 450,40 S750,10 900,40 S1050,70 1200,40"/>
+          <path class="ancla__ola ancla__ola--2" d="M0,50 C200,80 400,20 600,50 S900,80 1100,50 L1200,50"/>
+        </svg>
+      </div>
+      <div class="ancla__grid">
+        <div class="ancla__info">
+          <h2 id="ancla-titulo">Echa el ancla</h2>
+          <p>Escríbeme aunque no tengas claro qué pedir. Respondo en 24–48 h.</p>
+          <ul class="ancla__datos">
+            <li>
+              <a href="tel:+34961234567" class="ancla__dato">
+                <span class="ancla__punto" aria-hidden="true"></span>
+                961 234 567
+              </a>
+            </li>
+            <li>C/ Colón 28, 3º · Valencia</li>
+            <li>Lun–jue · 9:00–20:00</li>
+          </ul>
+        </div>
+        <form class="ancla__form" id="form" novalidate>
+          <p class="ancla__form-lead">O déjame un mensaje y lo abrimos en WhatsApp listo para enviar.</p>
+          <label class="campo">
+            <span>Nombre</span>
+            <input type="text" name="nombre" required autocomplete="name">
+          </label>
+          <label class="campo">
+            <span>Email</span>
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <label class="campo">
+            <span>Mensaje</span>
+            <textarea name="mensaje" rows="4" required placeholder="Lo que salga…"></textarea>
+          </label>
+          <button type="submit" class="btn btn--wsp btn--ancho">
+            <span class="btn__wsp-icon" aria-hidden="true"></span>
+            Enviar por WhatsApp
+          </button>
+          <p class="ancla__nota">Se abrirá WhatsApp con tu mensaje. Solo tienes que pulsar enviar allí.</p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="pie">
+      <p>© Corriente · Marta Rivas</p>
+      <a href="#">Privacidad</a>
+    </footer>
+  </main>
+
+  <nav class="dock" aria-label="Navegación principal">
+    <a href="#inicio" class="dock__item activo" data-dock="inicio">
+      <span class="dock__icon" aria-hidden="true">◎</span>
+      <span class="dock__txt">Inicio</span>
+    </a>
+    <a href="#respira" class="dock__item" data-dock="respira">
+      <span class="dock__icon" aria-hidden="true">○</span>
+      <span class="dock__txt">Respira</span>
+    </a>
+    <a href="#nodos" class="dock__item" data-dock="nodos">
+      <span class="dock__icon" aria-hidden="true">◇</span>
+      <span class="dock__txt">Nodos</span>
+    </a>
+    <a href="#proceso" class="dock__item" data-dock="proceso">
+      <span class="dock__icon" aria-hidden="true">→</span>
+      <span class="dock__txt">Proceso</span>
+    </a>
+    <a href="#ancla" class="dock__item" data-dock="ancla">
+      <span class="dock__icon" aria-hidden="true">⚓</span>
+      <span class="dock__txt">Ancla</span>
+    </a>
+  </nav>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

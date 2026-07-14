@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Bruma — Noa Calderón, psicóloga en Donostia. Un espacio interactivo y tranquilo para nombrar lo que sientes.">
+  <meta name="theme-color" content="#ebe6dc">
+  <title>Bruma · Noa Calderón</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Spline+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="sin-js">
+
+  <a class="saltar" href="#lienzo">Ir al contenido</a>
+
+  <div class="velo" aria-hidden="true">
+    <span class="velo__mancha velo__mancha--a"></span>
+    <span class="velo__mancha velo__mancha--b"></span>
+    <span class="velo__mancha velo__mancha--c"></span>
+  </div>
+
+  <nav class="bruma-nav" id="nav" aria-label="Navegación">
+    <a href="#lienzo" class="bruma-nav__logo">Bruma</a>
+    <div class="bruma-nav__links">
+      <a href="#tono">Tono</a>
+      <a href="#temas">Temas</a>
+      <a href="#noa">Noa</a>
+      <a href="#llegar" class="bruma-nav__cta">Llegar</a>
+    </div>
+    <button type="button" class="bruma-nav__menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-panel">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="menu-panel" id="menu-panel" hidden>
+    <nav aria-label="Menú móvil">
+      <a href="#tono">Tono</a>
+      <a href="#temas">Temas</a>
+      <a href="#noa">Noa</a>
+      <a href="#llegar">Llegar</a>
+    </nav>
+  </div>
+
+  <nav class="hilo" aria-label="Secciones">
+    <a href="#tono" class="hilo__nodo" data-seccion="tono"><span>Tono</span></a>
+    <a href="#temas" class="hilo__nodo" data-seccion="temas"><span>Temas</span></a>
+    <a href="#noa" class="hilo__nodo" data-seccion="noa"><span>Noa</span></a>
+    <a href="#llegar" class="hilo__nodo" data-seccion="llegar"><span>Llegar</span></a>
+  </nav>
+
+  <main class="lienzo" id="lienzo">
+
+    <header class="portada">
+      <p class="portada__meta">Donostia · Psicología clínica · GI-4102</p>
+      <h1 class="portada__titulo" data-texto-tilt>Bruma</h1>
+      <p class="portada__nombre">Noa Calderón</p>
+      <p class="portada__lead">
+        Hay días nítidos en los que aun así no sabes qué te pasa.
+        Trabajo en ese espacio intermedio —donde las cosas
+        aún no tienen nombre pero ya pesan.
+      </p>
+      <a href="#llegar" class="cta cta--lleno" data-magnet>Llegar sin discurso</a>
+    </header>
+
+    <section class="tono" id="tono">
+      <div class="tono__caja">
+        <h2 class="tono__pregunta">¿Con qué tono llegas hoy?</h2>
+        <div class="tono__pista" aria-hidden="true">
+          <span class="tono__marca" data-tono="0">nublado</span>
+          <span class="tono__marca" data-tono="1">tenso</span>
+          <span class="tono__marca" data-tono="2">cansado</span>
+          <span class="tono__marca" data-tono="3">perdido</span>
+          <span class="tono__marca" data-tono="4">enfadado</span>
+          <span class="tono__marca" data-tono="5">esperanza</span>
+        </div>
+        <input type="range" class="tono__slider" id="tono-slider" min="0" max="5" value="0" step="1"
+          aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"
+          aria-label="Elige cómo te sientes hoy">
+        <output class="tono__ahora" id="tono-ahora" for="tono-slider">nublado</output>
+        <p class="tono__respuesta" id="tono-respuesta" aria-live="polite">
+          Llegar sin claridad también es llegar. No necesitas saber cómo nombrarlo para empezar.
+        </p>
+      </div>
+    </section>
+
+    <section class="ecos">
+      <p class="ecos__intro">A veces la gente llega diciendo…</p>
+      <div class="ecos__lista">
+        <button type="button" class="eco" data-eco="0">
+          <span class="eco__onda" aria-hidden="true"></span>
+          <q>Funciono, pero por dentro no estoy bien</q>
+        </button>
+        <button type="button" class="eco" data-eco="1">
+          <span class="eco__onda" aria-hidden="true"></span>
+          <q>Sé lo que me pasa, me da vergüenza decirlo</q>
+        </button>
+        <button type="button" class="eco" data-eco="2">
+          <span class="eco__onda" aria-hidden="true"></span>
+          <q>Hablamos, pero ya no nos oímos</q>
+        </button>
+      </div>
+      <p class="ecos__respuesta" id="eco-respuesta" hidden aria-live="polite"></p>
+    </section>
+
+    <section class="temas" id="temas">
+      <header class="temas__cab">
+        <h2>En qué te acompaño</h2>
+        <p>Toca un faro. La niebla se abre.</p>
+      </header>
+      <div class="faros" id="faros">
+        <div class="faros__niebla" aria-hidden="true"></div>
+        <svg class="faros__hilo" viewBox="0 0 1000 48" preserveAspectRatio="none" aria-hidden="true">
+          <path class="faros__curva" d="M0,28 C120,8 280,40 420,22 S720,6 1000,26" />
+        </svg>
+        <div class="faros__lista" role="tablist" aria-label="Áreas de acompañamiento">
+          <button type="button" role="tab" class="faro" data-faro="0" id="faro-tab-0" aria-controls="faro-panel" aria-selected="false">
+            <span class="faro__asta" aria-hidden="true"></span>
+            <span class="faro__luz" aria-hidden="true"></span>
+            <span class="faro__nombre">Ansiedad</span>
+            <span class="faro__susurro">Cuerpo en alerta, mente que no suelta</span>
+          </button>
+          <button type="button" role="tab" class="faro" data-faro="1" id="faro-tab-1" aria-controls="faro-panel" aria-selected="false">
+            <span class="faro__asta" aria-hidden="true"></span>
+            <span class="faro__luz" aria-hidden="true"></span>
+            <span class="faro__nombre">Pareja</span>
+            <span class="faro__susurro">Cuando el conflicto vuelve</span>
+          </button>
+          <button type="button" role="tab" class="faro" data-faro="2" id="faro-tab-2" aria-controls="faro-panel" aria-selected="false">
+            <span class="faro__asta" aria-hidden="true"></span>
+            <span class="faro__luz" aria-hidden="true"></span>
+            <span class="faro__nombre">Duelo</span>
+            <span class="faro__susurro">Pérdidas sin horario</span>
+          </button>
+          <button type="button" role="tab" class="faro" data-faro="3" id="faro-tab-3" aria-controls="faro-panel" aria-selected="false">
+            <span class="faro__asta" aria-hidden="true"></span>
+            <span class="faro__luz" aria-hidden="true"></span>
+            <span class="faro__nombre">Límites</span>
+            <span class="faro__susurro">Decir que no sin culpa</span>
+          </button>
+          <button type="button" role="tab" class="faro" data-faro="4" id="faro-tab-4" aria-controls="faro-panel" aria-selected="false">
+            <span class="faro__asta" aria-hidden="true"></span>
+            <span class="faro__luz" aria-hidden="true"></span>
+            <span class="faro__nombre">Online</span>
+            <span class="faro__susurro">Donde estés</span>
+          </button>
+        </div>
+        <div class="faros__panel" id="faro-panel" role="tabpanel" aria-labelledby="faro-tab-0" hidden tabindex="0">
+          <span class="faros__panel-etq" id="faro-panel-etq">01</span>
+          <h3 class="faros__panel-titulo" id="faro-panel-titulo">Ansiedad</h3>
+          <p class="faros__panel-texto" id="faro-panel-texto">Preocupación persistente, insomnio, tensión. Trabajamos qué lo enciende y cómo recuperar margen sin pedirte calma a la fuerza.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="orbita-precio" id="tarifas" aria-label="Tarifas de sesión">
+      <div class="orbita-precio__centro">
+        <p class="orbita-precio__tag">Sesiones</p>
+        <p class="orbita-precio__dato">50–60 min</p>
+      </div>
+      <div class="orbita-precio__luna orbita-precio__luna--a">
+        <p class="orbita-precio__tipo">Primera</p>
+        <p class="orbita-precio__euro">55 €</p>
+        <p class="orbita-precio__txt">Sin interrogatorio. Vemos si encajamos.</p>
+      </div>
+      <div class="orbita-precio__luna orbita-precio__luna--b">
+        <p class="orbita-precio__tipo">Habitual</p>
+        <p class="orbita-precio__euro">58 €</p>
+        <p class="orbita-precio__txt">A tu ritmo. A veces con algo concreto.</p>
+      </div>
+    </section>
+
+    <section class="noa" id="noa">
+      <div class="noa__bloque">
+        <p class="noa__etq">Quién está al otro lado</p>
+        <h2>Noa Calderón</h2>
+        <p class="noa__rol">Psicóloga general sanitaria · GI-4102</p>
+        <div class="noa__textos">
+          <p class="noa__linea">
+            Llevo más de quince años en consulta. Enfoque integrativo —TCC, ACT, narrativa—
+            elegido según lo que necesites, no según una etiqueta fija.
+          </p>
+          <p class="noa__linea">
+            Me importa cómo cuentas lo que te pasa: el tono, las pausas, lo que callas.
+            No solo el nombre clínico.
+          </p>
+          <p class="noa__linea noa__linea--suave">
+            Fuera: paseos por la Concha, pan con chistorra
+            y un gato que revisa mis intervenciones.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="llegar" id="llegar">
+      <svg class="llegar__ola" viewBox="0 0 1200 48" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,24 C200,48 400,0 600,24 C800,48 1000,0 1200,24 L1200,48 L0,48 Z"/>
+      </svg>
+      <div class="llegar__cuerpo">
+        <header class="llegar__cab">
+          <h2>Llegar</h2>
+          <p>Escríbeme aunque no tengas el discurso. Respondo en 24–48 h.</p>
+        </header>
+        <div class="llegar__grid">
+          <div class="llegar__datos">
+            <a href="tel:+34943123456" class="dato-vivo">
+              <span class="dato-vivo__punto" aria-hidden="true"></span>
+              943 123 456
+            </a>
+            <p>Paseo de Francia, 8 · Donostia</p>
+            <p>Lun–vie · 10:00–19:00</p>
+            <p class="llegar__nota">Bizum o transferencia al final de cada sesión.</p>
+          </div>
+          <form class="llegar__form" id="form" novalidate>
+            <label class="campo-ola" for="nombre">
+              <span>Nombre</span>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </label>
+            <label class="campo-ola" for="email">
+              <span>Email</span>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </label>
+            <label class="campo-ola campo-ola--alto" for="mensaje">
+              <span>Mensaje</span>
+              <textarea id="mensaje" name="mensaje" rows="3" placeholder="Lo que puedas, sin orden…" required></textarea>
+            </label>
+            <button type="submit" class="cta cta--lleno cta--ancho" id="btn-enviar" data-magnet>Enviar</button>
+            <p class="llegar__ok" id="ok" role="status" hidden>Recibido. Te escribo pronto.</p>
+          </form>
+        </div>
+      </div>
+      <footer class="pie">
+        <span>Bruma · Noa Calderón</span>
+        <a href="#">Privacidad</a>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

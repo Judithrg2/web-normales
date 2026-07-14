@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Nadia Prieto — Psicóloga en Zaragoza. Terapia individual, pareja y online. Un espacio para entender lo que sientes sin prisas.">
+  <meta name="theme-color" content="#f6f0e4">
+  <title>Nadia Prieto · Psicología</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#contenido">Ir al contenido</a>
+
+  <header class="archivo-head" id="archivo-head">
+    <div class="archivo-head__carpeta">
+      <a href="#" class="archivo-head__sello" aria-label="Nadia Prieto, inicio">
+        <span class="archivo-head__sello-num">NP</span>
+        <span class="archivo-head__sello-txt">Nadia Prieto</span>
+      </a>
+      <nav class="archivo-head__tabs" aria-label="Secciones">
+        <a href="#expedientes" class="archivo-head__tab">Consulta</a>
+        <a href="#sesion" class="archivo-head__tab">La sesión</a>
+        <a href="#nadia" class="archivo-head__tab">Nadia</a>
+        <a href="#buzon" class="archivo-head__tab archivo-head__tab--cta">Escribir</a>
+      </nav>
+      <button type="button" class="archivo-head__menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-panel">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-panel" id="menu-panel" hidden>
+    <nav aria-label="Menú móvil">
+      <a href="#expedientes">Consulta</a>
+      <a href="#sesion">La sesión</a>
+      <a href="#nadia">Nadia</a>
+      <a href="#margen">Notas al margen</a>
+      <a href="#correo">Correspondencia</a>
+      <a href="#buzon">Escribir</a>
+    </nav>
+  </div>
+
+  <main id="contenido">
+
+    <section class="portada" id="inicio">
+      <div class="portada__hoja">
+        <p class="portada__meta">
+          <span>Psicología clínica</span>
+          <span>Zaragoza</span>
+          <span>Col. AR 3187</span>
+        </p>
+        <h1 class="portada__titulo">Nadia<br>Prieto</h1>
+        <p class="portada__sub">Psicóloga general sanitaria en Zaragoza</p>
+        <p class="portada__lead">
+          No vienes a «arreglarte». Vienes a entender qué te pasa,
+          ponerle nombre y decidir qué hacer con ello.
+        </p>
+        <div class="portada__firma">
+          <span class="portada__firma-linea"></span>
+          <span>Presencial y online</span>
+        </div>
+        <a href="#buzon" class="btn btn--sello">Pedir cita</a>
+      </div>
+      <aside class="portada__sello" aria-hidden="true">
+        <div class="sello-confidencial">
+          <span>Confidencial</span>
+          <span>uso clínico</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="expedientes" id="expedientes">
+      <div class="contenedor">
+        <header class="seccion-cab">
+          <p class="seccion-cab__ref">Consulta · 01</p>
+          <h2>¿Qué te trae por aquí?</h2>
+          <p class="seccion-cab__txt">Elige un tema. No tiene que encajar al milímetro — muchas veces se mezclan.</p>
+        </header>
+
+        <div class="expedientes__panel" data-tabs>
+          <div class="expedientes__pestanas" role="tablist" aria-label="Temas de consulta">
+            <button type="button" role="tab" id="tab-individual" aria-selected="true" aria-controls="panel-individual">Individual</button>
+            <button type="button" role="tab" id="tab-pareja" aria-selected="false" aria-controls="panel-pareja" tabindex="-1">Pareja</button>
+            <button type="button" role="tab" id="tab-ansiedad" aria-selected="false" aria-controls="panel-ansiedad" tabindex="-1">Ansiedad</button>
+            <button type="button" role="tab" id="tab-duelo" aria-selected="false" aria-controls="panel-duelo" tabindex="-1">Duelo</button>
+            <button type="button" role="tab" id="tab-online" aria-selected="false" aria-controls="panel-online" tabindex="-1">Online</button>
+          </div>
+
+          <div class="expedientes__contenido">
+            <article role="tabpanel" id="panel-individual" aria-labelledby="tab-individual" class="ficha">
+              <p class="ficha__codigo">EXP-IND · revisión 2026</p>
+              <h3>Un espacio solo tuyo</h3>
+              <p>Para cuando sientes que vas en piloto automático, te cuesta decidir, te repites patrones o simplemente necesitas hablar con alguien que no te juzgue.</p>
+              <ul class="ficha__lista">
+                <li>Autoestima y límites</li>
+                <li>Bloqueos y procrastinación</li>
+                <li>Identidad y decisiones vitales</li>
+              </ul>
+            </article>
+            <article role="tabpanel" id="panel-pareja" aria-labelledby="tab-pareja" class="ficha" hidden>
+              <p class="ficha__codigo">EXP-PAR · revisión 2026</p>
+              <h3>Cuando hablar ya no alcanza</h3>
+              <p>No hace falta estar en crisis. A veces se acude para mejorar la comunicación, renegociar roles o entender por qué los mismos conflictos vuelven una y otra vez.</p>
+              <ul class="ficha__lista">
+                <li>Comunicación y distanciamiento</li>
+                <li>Celos, desconfianza, infidelidad</li>
+                <li>Transiciones: hijos, mudanzas, cambios</li>
+              </ul>
+            </article>
+            <article role="tabpanel" id="panel-ansiedad" aria-labelledby="tab-ansiedad" class="ficha" hidden>
+              <p class="ficha__codigo">EXP-ANS · revisión 2026</p>
+              <h3>El cuerpo que se adelanta</h3>
+              <p>Preocupación constante, tensión, insomnio, pensamientos en bucle. Trabajamos qué lo dispara y cómo recuperar margen sin exigirte estar tranquila a la fuerza.</p>
+              <ul class="ficha__lista">
+                <li>Ansiedad generalizada y ataques de pánico</li>
+                <li>Estrés laboral y agotamiento</li>
+                <li>Herramientas de regulación corporal</li>
+              </ul>
+            </article>
+            <article role="tabpanel" id="panel-duelo" aria-labelledby="tab-duelo" class="ficha" hidden>
+              <p class="ficha__codigo">EXP-DUE · revisión 2026</p>
+              <h3>Lo que ya no está</h3>
+              <p>Pérdidas no siempre son funerales. También hay duelos por rupturas, por un cuerpo que cambia, por un proyecto que se acabó. Aquí no se mide el dolor con cronómetro.</p>
+              <ul class="ficha__lista">
+                <li>Muerte de personas cercanas</li>
+                <li>Rupturas y despedidas</li>
+                <li>Adaptación a cambios vitales</li>
+              </ul>
+            </article>
+            <article role="tabpanel" id="panel-online" aria-labelledby="tab-online" class="ficha" hidden>
+              <p class="ficha__codigo">EXP-ONL · revisión 2026</p>
+              <h3>Misma consulta, otra habitación</h3>
+              <p>Videollamada segura desde donde te sientas cómoda. Misma confidencialidad, misma profundidad. Ideal si vives fuera de Zaragoza o tienes horarios complicados.</p>
+              <ul class="ficha__lista">
+                <li>Plataforma cifrada</li>
+                <li>Enlace enviado con antelación</li>
+                <li>Factura y mutua si la necesitas</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sesion" id="sesion">
+      <div class="contenedor sesion__grid">
+        <header class="seccion-cab">
+          <p class="seccion-cab__ref">Protocolo · 02</p>
+          <h2>Cómo es una sesión</h2>
+        </header>
+        <div class="recibo">
+          <div class="recibo__cab">
+            <span>Nadia Prieto</span>
+            <span>Nº sesión — 001</span>
+          </div>
+          <ol class="recibo__lineas">
+            <li>
+              <span>Primera visita</span>
+              <span>60 min</span>
+            </li>
+            <li>
+              <span>Sesión habitual</span>
+              <span>50 min</span>
+            </li>
+            <li>
+              <span>Frecuencia</span>
+              <span>Semanal / quincenal</span>
+            </li>
+            <li>
+              <span>Modalidad</span>
+              <span>Presencial u online</span>
+            </li>
+            <li class="recibo__total">
+              <span>Tarifa sesión</span>
+              <span>65 €</span>
+            </li>
+          </ol>
+          <p class="recibo__nota">Pago por transferencia o Bizum al final de cada sesión. Primera cita: 55 €.</p>
+        </div>
+        <div class="sesion__texto">
+          <p>La primera vez me cuentas qué te trae, yo te explico cómo trabajo y vemos si encajamos. No hay interrogatorio ni diagnóstico exprés.</p>
+          <p>En las siguientes sesiones alternamos conversación y ejercicios concretos —según lo que necesites esa semana—. Cuando notes que puedes manejar las cosas sola, lo hablamos y cerramos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="nadia" id="nadia">
+      <div class="contenedor">
+        <div class="ficha-personal">
+          <header class="ficha-personal__cab">
+            <p>Ficha de profesional</p>
+            <p>AR-3187</p>
+          </header>
+          <div class="ficha-personal__cuerpo">
+            <h2>Nadia Prieto Alonso</h2>
+            <p class="ficha-personal__rol">Psicóloga general sanitaria</p>
+            <dl class="ficha-personal__datos">
+              <div><dt>Formación</dt><dd>Grado en Psicología · Universidad de Zaragoza</dd></div>
+              <div><dt>Especialización</dt><dd>Máster en Psicología General Sanitaria · UNED</dd></div>
+              <div><dt>Enfoque</dt><dd>Integrativo: TCC, ACT y trabajo narrativo</dd></div>
+              <div><dt>Desde</dt><dd>Consulta privada desde 2017</dd></div>
+            </dl>
+            <p class="ficha-personal__bio">
+              Me interesa cómo cuentas lo que te pasa, no solo el etiquetado clínico.
+              Trabajo con personas que llegan cansadas de aguantar solas, parejas que
+              se hablan sin escucharse y gente que quiere entender por qué repite
+              los mismos finales.
+            </p>
+            <p class="ficha-personal__bio">
+              Fuera de la consulta leo novelas de misterio, colecciono tazas feas
+              y tengo un perro que ladra a los carteros con convicción filosófica.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="margen" id="margen">
+      <div class="contenedor">
+        <header class="seccion-cab seccion-cab--claro">
+          <p class="seccion-cab__ref">Notas al margen · 03</p>
+          <h2>Lo que dicen quienes pasaron por aquí</h2>
+          <p class="seccion-cab__txt">Nombres cambiados, como corresponde.</p>
+        </header>
+        <div class="margen__notas">
+          <blockquote>
+            <p>«Pensé que iba a salir con una lista de deberes. Salí con más claridad y menos vergüenza de sentir lo que sentía.»</p>
+            <footer>— L., 29</footer>
+          </blockquote>
+          <blockquote>
+            <p>«Fuimos los dos. Nadia no tomó partido, pero tampoco se quedó en la superficie. Eso nos ayudó más de lo que esperábamos.»</p>
+            <footer>— R. y M.</footer>
+          </blockquote>
+          <blockquote>
+            <p>«Las sesiones online me daban pereza al principio. Ahora las prefiero: mismo trato, cero parking.»</p>
+            <footer>— S., 44</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="correo" id="correo">
+      <div class="contenedor">
+        <header class="seccion-cab">
+          <p class="seccion-cab__ref">Correspondencia · 04</p>
+          <h2>Preguntas que suelen llegar</h2>
+        </header>
+        <div class="correo__cartas">
+          <article class="carta">
+            <p class="carta__de">Pregunta</p>
+            <h3>¿Tengo que saber qué decir en la primera sesión?</h3>
+            <p class="carta__resp">No. Con un «no sé muy bien por dónde empezar» basta. Yo te voy orientando.</p>
+          </article>
+          <article class="carta">
+            <p class="carta__de">Pregunta</p>
+            <h3>¿Es confidencial?</h3>
+            <p class="carta__resp">Sí. Todo lo que compartes está protegido por secreto profesional, salvo situaciones de riesgo grave previstas por ley.</p>
+          </article>
+          <article class="carta">
+            <p class="carta__de">Pregunta</p>
+            <h3>¿Cuánto tardas en responder?</h3>
+            <p class="carta__resp">Entre uno y dos días laborables. Si es urgente, indícalo en el mensaje.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="buzon" id="buzon">
+      <div class="contenedor buzon__grid">
+        <div class="buzon__info">
+          <header class="seccion-cab seccion-cab--claro">
+            <p class="seccion-cab__ref">Buzón · 05</p>
+            <h2>Escribir a Nadia</h2>
+            <p class="seccion-cab__txt">Cuéntame brevemente qué te gustaría trabajar. Respondo en 24–48 h laborables.</p>
+          </header>
+          <address class="buzon__dir">
+            <p><strong>Consulta</strong> C/ Alfonso I, 23 · 50003 Zaragoza</p>
+            <p><strong>Teléfono</strong> <a href="tel:+34976123456">976 123 456</a></p>
+            <p><strong>Horario</strong> Lun–vie, 10:00 – 19:00</p>
+          </address>
+        </div>
+        <form class="buzon__form" id="form" novalidate>
+          <label>
+            <span>Nombre</span>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Mensaje</span>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Puedes empezar por aquí…" required></textarea>
+          </label>
+          <button type="submit" class="btn btn--sello">Enviar al buzón</button>
+          <p class="buzon__ok" id="ok" hidden>Mensaje recibido. Te escribo pronto.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="archivo-foot">
+    <div class="contenedor archivo-foot__inner">
+      <p>Nadia Prieto · Psicóloga · Colegiada AR-3187</p>
+      <p><a href="#">Privacidad</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

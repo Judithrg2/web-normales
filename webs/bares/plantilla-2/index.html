@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Velario — Restaurante de autor en Madrid. Mesa giratoria, cocina de temporada y doce plazas cada noche.">
+  <meta name="theme-color" content="#07080b">
+  <title>Velario · Restaurante de autor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="sin-js">
+
+  <a class="saltar" href="#mesa">Ir a la mesa</a>
+
+  <header class="vel-header" id="header">
+    <a href="#inicio" class="vel-header__marca">Velario</a>
+    <nav class="vel-header__nav" aria-label="Principal">
+      <a href="#inicio" data-nav="inicio">Mesa</a>
+      <a href="#salon" data-nav="salon">Salón</a>
+      <a href="#temporada" data-nav="temporada">Carta</a>
+      <a href="#reservar" class="vel-header__cta" data-nav="reservar">Reservar</a>
+    </nav>
+    <button type="button" class="vel-header__menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-panel">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu-panel" id="menu-panel" hidden>
+    <nav aria-label="Menú móvil">
+      <a href="#inicio">Mesa</a>
+      <a href="#salon">Salón</a>
+      <a href="#temporada">Carta</a>
+      <a href="#reservar">Reservar</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <section class="mesa-hero" id="inicio" aria-label="Velario — mesa giratoria">
+      <div class="mesa-hero__ambiente" aria-hidden="true">
+        <div class="mesa-hero__spot"></div>
+        <div class="mesa-hero__suelo"></div>
+      </div>
+
+      <header class="mesa-hero__cab">
+        <p class="mesa-hero__meta">Madrid · Chamberí · Cocina de autor</p>
+        <h1 class="mesa-hero__titulo">Velario</h1>
+        <p class="mesa-hero__sub">Gira la mesa. Cada posición es un momento del menú.</p>
+      </header>
+
+      <div class="mesa-hero__nucleo" id="mesa">
+        <div class="mesa-hero__mesa" id="mesa-wrap">
+          <div class="mesa-escena" id="mesa-escena" tabindex="0" role="application" aria-label="Mesa giratoria. Arrastra o desliza para girar. Usa las flechas del teclado.">
+            <div class="mesa-suelo" aria-hidden="true"></div>
+
+            <div class="mesa-sillas" aria-hidden="true">
+              <span class="mesa-silla mesa-silla--0"></span>
+              <span class="mesa-silla mesa-silla--1"></span>
+              <span class="mesa-silla mesa-silla--2"></span>
+              <span class="mesa-silla mesa-silla--3"></span>
+              <span class="mesa-silla mesa-silla--4"></span>
+              <span class="mesa-silla mesa-silla--5"></span>
+            </div>
+
+            <div class="mesa-lector" aria-hidden="true">
+              <span class="mesa-lector__haz"></span>
+              <span class="mesa-lector__flecha"></span>
+              <span class="mesa-lector__txt">Alinea aquí</span>
+            </div>
+
+            <div class="mesa-persp">
+              <div class="mesa-inclinada">
+                <div class="mesa-giro" id="mesa-disco" style="--giro: 0deg">
+                  <svg class="mesa-top" viewBox="0 0 400 400" aria-hidden="true">
+                    <defs>
+                      <radialGradient id="madera" cx="46%" cy="40%" r="60%">
+                        <stop offset="0%" stop-color="#5c4532"/>
+                        <stop offset="45%" stop-color="#3d2c20"/>
+                        <stop offset="100%" stop-color="#1e1610"/>
+                      </radialGradient>
+                      <radialGradient id="brillo" cx="38%" cy="32%" r="45%">
+                        <stop offset="0%" stop-color="rgba(255,240,210,0.12)"/>
+                        <stop offset="100%" stop-color="transparent"/>
+                      </radialGradient>
+                      <radialGradient id="madera-centro" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#2a2018"/>
+                        <stop offset="100%" stop-color="#1a1410"/>
+                      </radialGradient>
+                      <filter id="sombra-mesa">
+                        <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000" flood-opacity="0.55"/>
+                      </filter>
+                    </defs>
+                    <ellipse cx="200" cy="208" rx="172" ry="168" fill="#0a0806" opacity="0.45"/>
+                    <circle cx="200" cy="200" r="165" fill="url(#madera)" filter="url(#sombra-mesa)"/>
+                    <circle cx="200" cy="200" r="165" fill="url(#brillo)"/>
+                    <circle cx="200" cy="200" r="28" fill="url(#madera-centro)" stroke="rgba(90,65,45,0.5)" stroke-width="1"/>
+                  </svg>
+
+                  <div class="mesa-slot mesa-slot--0" data-estacion="0">
+                    <span class="mesa-slot__tag">00</span>
+                    <div class="mesa-slot__objetos">
+                      <div class="prop prop--vela">
+                        <span class="prop__llama"></span>
+                        <span class="prop__cera"></span>
+                      </div>
+                      <div class="prop prop--servilleta"></div>
+                    </div>
+                  </div>
+                  <div class="mesa-slot mesa-slot--1" data-estacion="1">
+                    <span class="mesa-slot__tag">01</span>
+                    <div class="mesa-slot__objetos">
+                      <div class="prop prop--plato">
+                        <span class="prop__ostra"></span>
+                      </div>
+                      <div class="prop prop--copa"></div>
+                    </div>
+                  </div>
+                  <div class="mesa-slot mesa-slot--2" data-estacion="2">
+                    <span class="mesa-slot__tag">02</span>
+                    <div class="mesa-slot__objetos">
+                      <div class="prop prop--plato prop--plato-azul">
+                        <span class="prop__pescado"></span>
+                      </div>
+                      <div class="prop prop--ramita"></div>
+                    </div>
+                  </div>
+                  <div class="mesa-slot mesa-slot--3" data-estacion="3">
+                    <span class="mesa-slot__tag">03</span>
+                    <div class="mesa-slot__objetos">
+                      <div class="prop prop--plato prop--plato-os">
+                        <span class="prop__carne"></span>
+                      </div>
+                      <div class="prop prop--cuchillo"></div>
+                    </div>
+                  </div>
+                  <div class="mesa-slot mesa-slot--4" data-estacion="4">
+                    <span class="mesa-slot__tag">04</span>
+                    <div class="mesa-slot__objetos">
+                      <div class="prop prop--ramekin">
+                        <span class="prop__souffle"></span>
+                      </div>
+                      <div class="prop prop--copa-cafe"></div>
+                    </div>
+                  </div>
+                  <div class="mesa-slot mesa-slot--5" data-estacion="5">
+                    <span class="mesa-slot__tag">05</span>
+                    <div class="mesa-slot__objetos">
+                      <div class="prop prop--carta">
+                        <span class="prop__sello"></span>
+                      </div>
+                      <div class="prop prop--copa-vino"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mesa-escena__pista" id="mesa-pista" aria-live="polite">
+            <span class="mesa-pista__txt">Arrastra la mesa con el dedo o el ratón</span>
+          </p>
+
+          <div class="mesa-controles" aria-label="Controles de la mesa">
+            <button type="button" class="mesa-ctrl mesa-ctrl--prev" id="mesa-prev" aria-label="Paso anterior">
+              <span aria-hidden="true">Anterior</span>
+            </button>
+            <button type="button" class="mesa-ctrl mesa-ctrl--next" id="mesa-next" aria-label="Paso siguiente">
+              <span aria-hidden="true">Siguiente</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="mesa-hero__ui">
+          <div class="mesa-pasos" role="tablist" aria-label="Pasos del menú" id="mesa-pasos">
+            <button type="button" role="tab" class="paso activo" data-paso="0" id="paso-0" aria-controls="mesa-panel" aria-selected="true">
+              <span class="paso__num">00</span>
+              <span class="paso__nom">Inicio</span>
+            </button>
+            <button type="button" role="tab" class="paso" data-paso="1" id="paso-1" aria-controls="mesa-panel" aria-selected="false">
+              <span class="paso__num">01</span>
+              <span class="paso__nom">Apertura</span>
+            </button>
+            <button type="button" role="tab" class="paso" data-paso="2" id="paso-2" aria-controls="mesa-panel" aria-selected="false">
+              <span class="paso__num">02</span>
+              <span class="paso__nom">Mar</span>
+            </button>
+            <button type="button" role="tab" class="paso" data-paso="3" id="paso-3" aria-controls="mesa-panel" aria-selected="false">
+              <span class="paso__num">03</span>
+              <span class="paso__nom">Tierra</span>
+            </button>
+            <button type="button" role="tab" class="paso" data-paso="4" id="paso-4" aria-controls="mesa-panel" aria-selected="false">
+              <span class="paso__num">04</span>
+              <span class="paso__nom">Cierre</span>
+            </button>
+            <button type="button" role="tab" class="paso" data-paso="5" id="paso-5" aria-controls="mesa-panel" aria-selected="false">
+              <span class="paso__num">05</span>
+              <span class="paso__nom">Reserva</span>
+            </button>
+          </div>
+
+          <div class="mesa-panel" id="mesa-panel" role="tabpanel" aria-labelledby="paso-0" tabindex="0" aria-live="polite">
+            <span class="mesa-panel__fase" id="panel-fase">00 · Inicio</span>
+            <h2 class="mesa-panel__titulo" id="panel-titulo">Antes del primer plato</h2>
+            <p class="mesa-panel__texto" id="panel-texto">
+              La mesa está puesta. Doce sillas, una vela, y el silencio justo antes de que entre el primer aroma.
+              Aquí no hay carta fija: cada noche el chef decide según lo que llegó al mercado.
+            </p>
+            <p class="mesa-panel__detalle" id="panel-detalle">Menú degustación · 7 pasos · desde 145 €</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#salon" class="mesa-hero__scroll" aria-label="Seguir leyendo">
+        <span>El salón</span>
+      </a>
+    </section>
+
+    <section class="salon" id="salon">
+      <div class="salon__grid">
+        <div class="salon__texto">
+          <p class="salon__etq">El salón</p>
+          <h2>Una sola habitación,<br>sin distracciones</h2>
+          <p>
+            Velario ocupa lo que fue un salón privado de 1923. Paredes de terciopelo oscuro,
+            una lámpara de latón sobre la mesa y nada más. No hay música. No hay pantallas.
+            Solo el crujido de la madera cuando gira.
+          </p>
+          <p>Abrimos de martes a sábado, una sesión a las 21:00. Doce comensales. Nunca más.</p>
+          <ul class="salon__datos">
+            <li><strong>Chef</strong> Mateo Arrieta</li>
+            <li><strong>Sommelier</strong> Lucía Vela</li>
+            <li><strong>Duración</strong> ~3 h</li>
+          </ul>
+        </div>
+        <div class="salon__visual" aria-hidden="true">
+          <div class="salon__mesa-top">
+            <svg viewBox="0 0 200 200" class="salon__mesa-svg">
+              <circle cx="100" cy="100" r="88" fill="none" stroke="rgba(193,127,74,0.15)" stroke-width="1"/>
+              <circle cx="100" cy="100" r="72" fill="none" stroke="rgba(193,127,74,0.1)" stroke-width="1" stroke-dasharray="3 6"/>
+              <circle cx="100" cy="100" r="52" fill="#1a1410" stroke="rgba(193,127,74,0.25)" stroke-width="1"/>
+              <circle cx="100" cy="100" r="18" fill="#111318" stroke="rgba(193,127,74,0.35)" stroke-width="1"/>
+              <g class="salon__asientos">
+                <ellipse cx="100" cy="18" rx="10" ry="6" fill="#0d0b09" opacity="0.8"/>
+                <ellipse cx="171" cy="50" rx="10" ry="6" fill="#0d0b09" opacity="0.8" transform="rotate(60 171 50)"/>
+                <ellipse cx="171" cy="150" rx="10" ry="6" fill="#0d0b09" opacity="0.8" transform="rotate(120 171 150)"/>
+                <ellipse cx="100" cy="182" rx="10" ry="6" fill="#0d0b09" opacity="0.8" transform="rotate(180 100 182)"/>
+                <ellipse cx="29" cy="150" rx="10" ry="6" fill="#0d0b09" opacity="0.8" transform="rotate(240 29 150)"/>
+                <ellipse cx="29" cy="50" rx="10" ry="6" fill="#0d0b09" opacity="0.8" transform="rotate(300 29 50)"/>
+              </g>
+            </svg>
+            <span class="salon__flecha"></span>
+          </div>
+          <p class="salon__cita">«La mesa no es el escenario.<br>Es el argumento.»</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="temporada" id="temporada">
+      <header class="temporada__cab">
+        <p class="temporada__etq">Esta temporada</p>
+        <h2>Lo que está en la mesa</h2>
+        <p>Julio 2026 · mercado de San Miguel y huertos de Segovia</p>
+      </header>
+      <div class="temporada__lista">
+        <article class="plato-card" data-slot="1">
+          <span class="plato-card__slot">01</span>
+          <h3>Ostra templada</h3>
+          <p>Emulsión de pepino, aceite de eneldo y perlas de lima.</p>
+        </article>
+        <article class="plato-card" data-slot="2">
+          <span class="plato-card__slot">02</span>
+          <h3>Rodaballo a la brasa</h3>
+          <p>Piel crujiente, caldo de algas y tuétano ahumado.</p>
+        </article>
+        <article class="plato-card" data-slot="3">
+          <span class="plato-card__slot">03</span>
+          <h3>Cordero lechal</h3>
+          <p>Confitado 18 h, setas de roble y jugo de castañas.</p>
+        </article>
+        <article class="plato-card" data-slot="4">
+          <span class="plato-card__slot">04</span>
+          <h3>Soufflé de cacao</h3>
+          <p>Sal marina de Añana, crema de pistacho y flor de azahar.</p>
+        </article>
+      </div>
+      <p class="temporada__nota">Maridaje opcional · Lucía Vela · +68 € · <a href="#inicio">Gira la mesa para ver cada paso</a></p>
+    </section>
+
+    <section class="reservar" id="reservar">
+      <div class="reservar__cuerpo">
+        <header class="reservar__cab">
+          <span class="reservar__slot">05 · Reserva</span>
+          <h2>Reservar mesa</h2>
+          <p>Doce plazas por noche. Responde en menos de 24 h.</p>
+        </header>
+        <div class="reservar__grid">
+          <div class="reservar__info">
+            <p class="reservar__dir">Calle de Almagro, 14 · Madrid</p>
+            <p>Martes–sábado · 21:00</p>
+            <a href="tel:+34911234567" class="reservar__tel">911 234 567</a>
+            <p class="reservar__pol">Señal de 80 € por persona. Cancelación gratuita hasta 48 h antes.</p>
+          </div>
+          <form class="reservar__form" id="form" novalidate>
+            <label class="campo" for="nombre">
+              <span>Nombre</span>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </label>
+            <label class="campo" for="email">
+              <span>Email</span>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </label>
+            <label class="campo" for="comensales">
+              <span>Comensales</span>
+              <select id="comensales" name="comensales" required>
+                <option value="">Elige</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </label>
+            <label class="campo" for="fecha">
+              <span>Fecha deseada</span>
+              <input type="date" id="fecha" name="fecha" required>
+            </label>
+            <label class="campo campo--alto" for="nota">
+              <span>Notas</span>
+              <textarea id="nota" name="nota" rows="2" placeholder="Alergias, celebración…"></textarea>
+            </label>
+            <button type="submit" class="btn-oro" id="btn-enviar">Solicitar mesa</button>
+            <p class="reservar__ok" id="ok" role="status" hidden>Recibido. Te confirmamos pronto.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <span>Velario · Madrid</span>
+    <a href="#">Privacidad</a>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
