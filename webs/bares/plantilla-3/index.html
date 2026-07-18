@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Kilómetro 47 — Bar-restaurante de carretera abierto 24h en la A-4, km 47. Comedor, barra y parada nocturna.">
+  <meta name="theme-color" content="#1c1c22">
+  <title>Kilómetro 47 · Has llegado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#entrada">Ir al contenido</a>
+
+  <header class="ruta">
+    <a href="index.html" class="ruta__km">KM <small>47</small></a>
+    <nav class="ruta__panel" aria-label="Páginas">
+      <a href="index.html" class="señal señal--activa">Entrada</a>
+      <a href="comedor.html" class="señal">Comedor</a>
+      <a href="barra.html" class="señal">Barra</a>
+      <a href="historia.html" class="señal">Historia</a>
+      <a href="parar.html" class="señal señal--cta">Parar aquí</a>
+    </nav>
+    <button type="button" class="ruta__menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="ruta-movil">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="ruta-movil" id="ruta-movil" aria-label="Menú móvil" hidden>
+    <a href="index.html" class="señal señal--activa">Entrada</a>
+    <a href="comedor.html" class="señal">Comedor</a>
+    <a href="barra.html" class="señal">Barra</a>
+    <a href="historia.html" class="señal">Historia</a>
+    <a href="parar.html" class="señal señal--cta">Parar aquí</a>
+  </nav>
+
+  <main id="entrada">
+    <section class="neon">
+      <p class="neon__sub">A-4 · Mancha · km 47</p>
+      <h1 class="neon__cartel">KILÓMETRO<br>47</h1>
+      <span class="badge-24">ABIERTO 24 HORAS</span>
+      <p class="neon__txt">
+        Un diner de neón en mitad de la nada. Gasolina, café recién hecho,
+        sopa a las tres de la mañana y una barra que no apaga las luces.
+      </p>
+      <a href="comedor.html" class="btn-carretera">Ver comedor →</a>
+    </section>
+
+    <div class="contenido">
+      <p class="pagina-km">// ENTRADA · PÁGINA 1 DE 5</p>
+      <h2 class="pagina-tit">Bienvenido a la parada</h2>
+      <p class="pagina-lead">
+        Esta no es una landing page: son cinco páginas conectadas como postes
+        de kilómetro. Cada una es un tramo distinto del mismo viaje.
+      </p>
+      <div class="tickets">
+        <article class="ticket">
+          <div class="ticket__cab">
+            <span class="ticket__nombre">Comedor</span>
+            <span class="ticket__precio">KM 48 →</span>
+          </div>
+          <p class="ticket__desc">Carta de carretera: día (huevos, sándwiches) y noche (cocina caliente hasta las 4).</p>
+        </article>
+        <article class="ticket">
+          <div class="ticket__cab">
+            <span class="ticket__nombre">Barra</span>
+            <span class="ticket__precio">KM 49 →</span>
+          </div>
+          <p class="ticket__desc">Cocteles con nombres de salidas de autopista. Cerveza de grifo y vermut de garrafa.</p>
+        </article>
+        <article class="ticket">
+          <div class="ticket__cab">
+            <span class="ticket__nombre">Historia</span>
+            <span class="ticket__precio">KM 50 →</span>
+          </div>
+          <p class="ticket__desc">Desde 1974. Camioneros, músicos de paso y el mito del km 47.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie-carretera">
+    <span>KM 47 · A-4 dirección sur</span>
+    <span><a href="parar.html">Reservar mesa</a> · 926 000 047</span>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

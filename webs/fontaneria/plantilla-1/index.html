@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Caudal — Fontanería de urgencia y reforma en Delicias, Zaragoza. Averías, calderas, desatascos y cambios de instalación. Presupuesto antes de empezar.">
+  <meta name="theme-color" content="#14202b">
+  <meta name="format-detection" content="telephone=yes">
+  <meta property="og:title" content="Caudal · Fontanería · Zaragoza">
+  <meta property="og:description" content="Llegamos, medimos la presión y dejamos el agua donde debe estar. Urgencias 24 horas en Zaragoza.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary">
+  <title>Caudal · Fontanería · Zaragoza</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2314202b'/%3E%3Cpath d='M6 16h8M18 16h8M14 10v12M18 10v12' stroke='%23c4682a' stroke-width='2.5' stroke-linecap='square'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23c4682a'/%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="styles.css" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="sin-js">
+
+  <a class="saltar" href="#inicio">Ir al contenido</a>
+
+  <header class="cromo" id="barra">
+    <a href="#inicio" class="barra__marca">
+      <span class="barra__sigla" aria-hidden="true">C</span>
+      <span class="barra__nombre">Caudal</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal" hidden>
+      <a href="#averias">Averías</a>
+      <a href="#visita">Visita</a>
+      <a href="#zona">Zona</a>
+      <a href="#tarifas">Tarifas</a>
+      <a href="#aviso" class="nav__cta">Avisar ahora</a>
+    </nav>
+    <a href="tel:+34976111222" class="barra__tel">976 111 222</a>
+    <button type="button" class="barra__menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="velo" id="velo" hidden aria-hidden="true"></div>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="hero__plano" aria-hidden="true">
+        <svg class="hero__tubos" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <defs>
+            <linearGradient id="cobre" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#e08a4a"/>
+              <stop offset="55%" stop-color="#c4682a"/>
+              <stop offset="100%" stop-color="#8a3f18"/>
+            </linearGradient>
+            <linearGradient id="agua" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7eb8c9" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#3a6d7c" stop-opacity="0.2"/>
+            </linearGradient>
+          </defs>
+          <rect width="800" height="600" fill="#14202b"/>
+          <path class="hero__chorro" d="M120 0 V220 Q120 280 180 300 T280 340 V600" fill="none" stroke="url(#agua)" stroke-width="28"/>
+          <path d="M80 80 H320 V200 H480 V80 H720" fill="none" stroke="url(#cobre)" stroke-width="18" stroke-linejoin="miter"/>
+          <path d="M320 200 V420 H200 V520" fill="none" stroke="url(#cobre)" stroke-width="18"/>
+          <path d="M480 200 V360 H640 V500" fill="none" stroke="url(#cobre)" stroke-width="14"/>
+          <circle cx="320" cy="200" r="22" fill="#14202b" stroke="#c4682a" stroke-width="6"/>
+          <circle cx="480" cy="200" r="18" fill="#14202b" stroke="#c4682a" stroke-width="5"/>
+          <rect x="300" y="188" width="40" height="24" fill="#c4682a"/>
+          <rect x="620" y="480" width="48" height="28" rx="2" fill="#c4682a"/>
+        </svg>
+        <div class="hero__manometro">
+          <div class="manometro">
+            <span class="manometro__aguja"></span>
+            <span class="manometro__centro"></span>
+            <span class="manometro__etiqueta">OK</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__copy">
+        <p class="hero__sello">
+          <span>OT-24H</span>
+          <span>Delicias · Zaragoza</span>
+        </p>
+        <h1 class="hero__marca">Caudal</h1>
+        <p class="hero__claim">El agua vuelve a su sitio.</p>
+        <p class="hero__lead">
+          Fontanería de urgencia y reforma. Sin vueltas: te damos el precio antes de abrir la pared.
+        </p>
+        <div class="hero__acciones">
+          <a href="tel:+34976111222" class="btn btn--cobre">
+            <span class="btn__corto">Llamar ahora</span>
+            <span class="btn__largo">Llamar · 976 111 222</span>
+          </a>
+          <a href="#aviso" class="btn btn--ghost">Pedir aviso</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="franja" aria-label="Disponibilidad">
+      <p class="franja__item"><strong>Urgencias</strong> · 24 horas</p>
+      <p class="franja__item"><strong>Presupuesto</strong> · antes de empezar</p>
+      <p class="franja__item"><strong>Desplazamiento</strong> · en Zaragoza</p>
+    </section>
+
+    <section class="bloque averias" id="averias">
+      <header class="cab">
+        <p class="cab__codigo">F-01</p>
+        <h2>Qué arreglamos</h2>
+        <p class="cab__sub">Averías del día a día y trabajos de instalación. Cada código es una orden típica.</p>
+      </header>
+      <ul class="ordenes">
+        <li class="orden">
+          <span class="orden__id">A-12</span>
+          <div>
+            <h3>Fugas y goteos</h3>
+            <p>Grifos, cisternas, juntas y tuberías vistas. Secamos, localizamos y cerramos el paso.</p>
+          </div>
+        </li>
+        <li class="orden">
+          <span class="orden__id">A-27</span>
+          <div>
+            <h3>Desatascos</h3>
+            <p>Fregaderos, duchas y bajantes. Máquina y sonda; sin químicos agresivos, salvo que haga falta.</p>
+          </div>
+        </li>
+        <li class="orden">
+          <span class="orden__id">C-04</span>
+          <div>
+            <h3>Calderas y termos</h3>
+            <p>Revisiones, fallos de encendido y sustitución. Trabajamos con marcas habituales de vivienda.</p>
+          </div>
+        </li>
+        <li class="orden">
+          <span class="orden__id">I-09</span>
+          <div>
+            <h3>Baño y cocina</h3>
+            <p>Cambio de sanitarios, platos de ducha, lavabos y tendidos nuevos en reforma.</p>
+          </div>
+        </li>
+        <li class="orden">
+          <span class="orden__id">P-03</span>
+          <div>
+            <h3>Presión y filtros</h3>
+            <p>Reductores, grupos de presión y filtros de entrada cuando el caudal no llega bien.</p>
+          </div>
+        </li>
+        <li class="orden">
+          <span class="orden__id">U-01</span>
+          <div>
+            <h3>Urgencia nocturna</h3>
+            <p>Rotura con agua abierta, inundación o caldera caída. Prioridad de llamada las 24 horas.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="bloque visita" id="visita">
+      <header class="cab">
+        <p class="cab__codigo">F-02</p>
+        <h2>Cómo va una visita</h2>
+        <p class="cab__sub">Sin misterio: tres pasos y el agua otra vez en su sitio.</p>
+      </header>
+      <ol class="pasos">
+        <li class="paso">
+          <span class="paso__n" aria-hidden="true">01</span>
+          <h3>Aviso</h3>
+          <p>Llamas o escribes. Te preguntamos qué pasa y cuándo puedes. Si es urgencia, salimos en cuanto podamos.</p>
+        </li>
+        <li class="paso">
+          <span class="paso__n" aria-hidden="true">02</span>
+          <h3>Diagnóstico</h3>
+          <p>Miramos la avería, te explicamos las opciones y te dejamos el precio cerrado antes de tocar nada.</p>
+        </li>
+        <li class="paso">
+          <span class="paso__n" aria-hidden="true">03</span>
+          <h3>Reparación</h3>
+          <p>Arreglamos, comprobamos el caudal y la presión, y limpiamos el rastro. Factura y garantía del trabajo.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="bloque zona" id="zona">
+      <header class="cab">
+        <p class="cab__codigo">F-03</p>
+        <h2>Zona de cobertura</h2>
+        <p class="cab__sub">Base en Delicias. El desplazamiento está incluido en la ciudad; fuera de Zaragoza, lo vemos al avisar.</p>
+      </header>
+      <div class="zona__mapa">
+        <p class="zona__base"><strong>Base</strong> · C/ Autonomía, 18 · Delicias</p>
+        <ul class="zona__lista">
+          <li>Delicias</li>
+          <li>Centro</li>
+          <li>Universidad</li>
+          <li>Las Fuentes</li>
+          <li>Oliver</li>
+          <li>Actur</li>
+          <li>Casablanca</li>
+          <li>Torrero</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bloque tarifas" id="tarifas">
+      <header class="cab">
+        <p class="cab__codigo">F-04</p>
+        <h2>Tarifas orientativas</h2>
+        <p class="cab__sub">Son orientativas hasta ver la avería. El precio final lo firmas antes de empezar.</p>
+      </header>
+      <div class="tabla-wrap" role="region" aria-label="Tarifas" tabindex="0">
+        <table class="tabla">
+          <caption class="visually-hidden">Precios orientativos de fontanería</caption>
+          <thead>
+            <tr>
+              <th scope="col">Concepto</th>
+              <th scope="col">Desde</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Desplazamiento y diagnóstico</td>
+              <td>35 €</td>
+            </tr>
+            <tr>
+              <td>Cambio de grifo o cisterna</td>
+              <td>45 €</td>
+            </tr>
+            <tr>
+              <td>Desatasco básico</td>
+              <td>60 €</td>
+            </tr>
+            <tr>
+              <td>Urgencia nocturna o festivo</td>
+              <td>+40 €</td>
+            </tr>
+            <tr>
+              <td>Hora de trabajo (mano de obra)</td>
+              <td>42 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="tarifas__nota">Materiales aparte. Garantía escrita de la mano de obra.</p>
+    </section>
+
+    <section class="bloque aviso" id="aviso">
+      <header class="cab">
+        <p class="cab__codigo">F-05</p>
+        <h2>Avisar ahora</h2>
+        <p class="cab__sub">Cuéntanos qué falla. Te respondemos por WhatsApp o te llamamos.</p>
+      </header>
+      <div class="aviso__grid">
+        <form class="parte" id="parte" novalidate>
+          <label class="campo">
+            <span>Nombre</span>
+            <input type="text" name="nombre" id="nombre" autocomplete="name" required placeholder="Tu nombre" enterkeyhint="next">
+          </label>
+          <label class="campo">
+            <span>Barrio o dirección</span>
+            <input type="text" name="zona" id="zona-campo" autocomplete="street-address" required placeholder="P. ej., Delicias, C/ …" enterkeyhint="next">
+          </label>
+          <label class="campo">
+            <span>Tipo de avería</span>
+            <select name="averia" id="averia" required aria-label="Tipo de avería">
+              <option value="Fuga o goteo">Fuga o goteo</option>
+              <option value="Desatasco">Desatasco</option>
+              <option value="Caldera o termo">Caldera o termo</option>
+              <option value="Sin agua o presión baja">Sin agua o presión baja</option>
+              <option value="Reforma o instalación">Reforma o instalación</option>
+              <option value="Urgencia">Urgencia (agua abierta)</option>
+            </select>
+          </label>
+          <label class="campo">
+            <span>Detalle (opcional)</span>
+            <textarea name="detalle" id="detalle" rows="3" placeholder="Desde cuándo, planta, acceso…" enterkeyhint="send"></textarea>
+          </label>
+          <p class="parte__error" id="parte-error" hidden role="alert"></p>
+          <button type="submit" class="btn btn--cobre btn--ancho">Enviar por WhatsApp</button>
+        </form>
+        <aside class="aviso__directo">
+          <p class="aviso__rotulo">Contacto directo</p>
+          <a href="tel:+34976111222" class="aviso__grande">976 111 222</a>
+          <a href="https://api.whatsapp.com/send?phone=34976111222" class="btn btn--ghost btn--ancho" rel="noopener noreferrer">WhatsApp</a>
+          <p class="aviso__horario">Lunes a viernes, 8:00–20:00 · Urgencias 24 horas</p>
+          <p class="aviso__mail"><a href="mailto:aviso@caudal.example">aviso@caudal.example</a></p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p><strong>Caudal</strong> · Fontanería · Zaragoza</p>
+    <p><a href="#inicio">Volver arriba</a></p>
+  </footer>
+
+  <div class="fab" id="fab" aria-label="Acciones rápidas">
+    <a href="https://api.whatsapp.com/send?phone=34976111222&text=Hola%20Caudal%2C%20necesito%20un%20fontanero." class="fab__wa" rel="noopener noreferrer">WhatsApp</a>
+    <a href="tel:+34976111222" class="fab__llamar">Llamar</a>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

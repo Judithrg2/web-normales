@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Barra Kilómetro 47 — Cocteles de carretera, cerveza de grifo y vermut. KM 49 de la A-4.">
+  <meta name="theme-color" content="#1c1c22">
+  <title>Barra · Kilómetro 47</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#barra">Ir al contenido</a>
+
+  <header class="ruta">
+    <a href="index.html" class="ruta__km">KM <small>47</small></a>
+    <nav class="ruta__panel" aria-label="Páginas">
+      <a href="index.html" class="señal">Entrada</a>
+      <a href="comedor.html" class="señal">Comedor</a>
+      <a href="barra.html" class="señal señal--activa">Barra</a>
+      <a href="historia.html" class="señal">Historia</a>
+      <a href="parar.html" class="señal señal--cta">Parar aquí</a>
+    </nav>
+    <button type="button" class="ruta__menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="ruta-movil">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="ruta-movil" id="ruta-movil" hidden>
+    <a href="index.html" class="señal">Entrada</a>
+    <a href="comedor.html" class="señal">Comedor</a>
+    <a href="barra.html" class="señal señal--activa">Barra</a>
+    <a href="historia.html" class="señal">Historia</a>
+    <a href="parar.html" class="señal señal--cta">Parar aquí</a>
+  </nav>
+
+  <main>
+    <div class="contenido" id="barra">
+      <p class="pagina-km">// BARRA · KM 49 · PÁGINA 3 DE 5</p>
+      <h1 class="pagina-tit">Cocteles de salida</h1>
+      <p class="pagina-lead">Cada trago lleva el nombre de una salida de autopista. La barra cierra cuando el último cliente se va — nunca antes.</p>
+
+      <div class="cocktails">
+        <article class="cocktail">
+          <span class="cocktail__num">01</span>
+          <div>
+            <h3>Salida 52</h3>
+            <p>Bourbon, jarabe de maple, bitter de naranja y humo de roble. Para los que frenan de golpe.</p>
+            <span class="ticket__precio">9 €</span>
+          </div>
+        </article>
+        <article class="cocktail">
+          <span class="cocktail__num">02</span>
+          <div>
+            <h3>Retorno</h3>
+            <p>Ginebra, vermut rojo, aceituna y una vuelta de tuerca de limón quemado.</p>
+            <span class="ticket__precio">8 €</span>
+          </div>
+        </article>
+        <article class="cocktail">
+          <span class="cocktail__num">03</span>
+          <div>
+            <h3>Faros largos</h3>
+            <p>Ron oscuro, café frío, crema flotante. El favorito de las 3 de la mañana.</p>
+            <span class="ticket__precio">9 €</span>
+          </div>
+        </article>
+        <article class="cocktail">
+          <span class="cocktail__num">04</span>
+          <div>
+            <h3>Gasolinera rosa</h3>
+            <p>Tequila, grapefruit, sal de romero y un toque de granadina. Dulce y peligroso.</p>
+            <span class="ticket__precio">10 €</span>
+          </div>
+        </article>
+        <article class="cocktail">
+          <span class="cocktail__num">05</span>
+          <div>
+            <h3>Caña del 47</h3>
+            <p>Cerveza de grifo, escancia perfecta. La que pides mientras miras la carretera.</p>
+            <span class="ticket__precio">2,50 €</span>
+          </div>
+        </article>
+        <article class="cocktail">
+          <span class="cocktail__num">06</span>
+          <div>
+            <h3>Vermut de garrafa</h3>
+            <p>De la casa, con naranja y hielo grande. Aperitivo de camionero refinado.</p>
+            <span class="ticket__precio">4 €</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie-carretera">
+    <span><a href="comedor.html">← Comedor</a> · <a href="historia.html">Historia →</a></span>
+    <span>Última ronda cuando tú digas</span>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

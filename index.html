@@ -2,215 +2,242 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Catálogo de plantillas web por sector">
-  <title>Plantillas web</title>
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card: #1e293b;
-      --text: #f1f5f9;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-      --border: rgba(148, 163, 184, 0.2);
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding: 2rem 1.25rem 3rem;
-    }
-    .wrap { max-width: 720px; margin: 0 auto; }
-    h1 { font-size: 1.75rem; font-weight: 600; margin-bottom: 0.5rem; }
-    p.lead { color: var(--muted); margin-bottom: 2rem; }
-    section { margin-bottom: 2rem; }
-    h2 {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      margin-bottom: 0.75rem;
-    }
-    ul { list-style: none; display: grid; gap: 0.75rem; }
-    a.card {
-      display: block;
-      padding: 1rem 1.25rem;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      color: var(--text);
-      text-decoration: none;
-      transition: border-color 0.2s, transform 0.2s;
-    }
-    a.card:hover {
-      border-color: var(--accent);
-      transform: translateY(-1px);
-    }
-    .card strong { display: block; font-size: 1.05rem; margin-bottom: 0.2rem; }
-    .card span { color: var(--muted); font-size: 0.9rem; }
-    footer {
-      margin-top: 2.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Landing pages a medida para negocios locales: psicólogos, bares, clínicas, yoga y estudios. Una sola página, móvil perfecto, lista para compartir.">
+  <meta name="theme-color" content="#0c1220">
+  <meta property="og:title" content="Estudio web · Landing pages con personalidad">
+  <meta property="og:description" content="Una página web completa para tu negocio. Diseño cuidado, optimizada para móvil y lista para contactar.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://judithrg2.github.io/web-normales/">
+  <title>Estudio web · Landing pages con personalidad</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230c1220'/%3E%3Cpath d='M8 22V10h4.2c2.8 0 4.6 1.4 4.6 3.6 0 1.5-.8 2.6-2.1 3.1L18 22h-3.2l-2.8-4.5H11v4.5H8zm3-6.8h1c1.1 0 1.7-.5 1.7-1.3s-.6-1.2-1.7-1.2H11v2.5zM20 22l5-12h3.2l-5 12H20z' fill='%2338bdf8'/%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="assets/css/landing.css" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/landing.css">
 </head>
 <body>
-  <div class="wrap">
-    <h1>Plantillas web</h1>
-    <p class="lead">Webs listas para ver y compartir. Cada enlace abre la plantilla correspondiente.</p>
 
-    <section>
-      <h2>Psicólogos</h2>
-      <ul>
-        <li>
-          <a class="card" href="webs/psicologos/plantilla-1/">
-            <strong>Plantilla 1 — Elena Morales</strong>
-            <span>Terapia individual, pareja y online</span>
-          </a>
-        </li>
-        <li>
-          <a class="card" href="webs/psicologos/plantilla-2/">
-            <strong>Plantilla 2 — Irene Vázquez</strong>
-            <span>Diseño editorial con barra lateral</span>
-          </a>
-        </li>
-        <li>
-          <a class="card" href="webs/psicologos/plantilla-3/">
-            <strong>Plantilla 3 — Corriente</strong>
-            <span>Interactiva · partículas, respiración y nodos vivos</span>
-          </a>
-        </li>
-        <li>
-          <a class="card" href="webs/psicologos/plantilla-4-bruma/">
-            <strong>Plantilla 4 — Bruma</strong>
-            <span>Psicología clínica · Noa Calderón · Donostia</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+  <a class="saltar" href="#inicio">Ir al contenido</a>
 
-    <section>
-      <h2>Abogados</h2>
-      <ul>
-        <li>
-          <a class="card" href="webs/abogados/plantilla-1/">
-            <strong>Plantilla 1 — Martín &amp; Costa</strong>
-            <span>Despacho corporativo</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+  <header class="top">
+    <a href="index.html" class="top__logo">Estudio web</a>
+    <nav class="top__nav" aria-label="Principal">
+      <a href="#que-es">Qué es</a>
+      <a href="#trabajo">Demos</a>
+      <a href="#precios">Precios</a>
+      <a href="plantillas.html">16 landings</a>
+      <a href="#contacto" class="top__cta">Presupuesto</a>
+    </nav>
+    <button type="button" class="top__menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
 
-    <section>
-      <h2>Bares</h2>
-      <ul>
-        <li>
-          <a class="card" href="webs/bares/plantilla-1/">
-            <strong>Plantilla 1 — Bar de tapas</strong>
-            <span>Carta, ambiente y ubicación</span>
-          </a>
-        </li>
-        <li>
-          <a class="card" href="webs/bares/plantilla-2/">
-            <strong>Plantilla 2 — Velario</strong>
-            <span>Restaurante de autor · mesa giratoria interactiva</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+  <div class="scrim" id="scrim" hidden aria-hidden="true"></div>
 
-    <section>
-      <h2>Peluquería</h2>
-      <ul>
-        <li>
-          <a class="card" href="webs/peluqueria/plantilla-1/">
-            <strong>Plantilla 1 — La Silla</strong>
-            <span>Peluquería pequeña de barrio · Lavapiés</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+  <nav class="menu-movil" id="menu-movil" aria-label="Menú móvil" hidden>
+    <a href="#que-es">Qué es una landing</a>
+    <a href="#trabajo">Ver demos</a>
+    <a href="#precios">Precios</a>
+    <a href="plantillas.html">Catálogo (16)</a>
+    <a href="#contacto">Pedir presupuesto</a>
+  </nav>
 
-    <section>
-      <h2>Fisioterapeuta</h2>
-      <ul>
-        <li>
-          <a class="card" href="webs/fisioterapeuta/plantilla-1/">
-            <strong>Plantilla 1 — Mendoza Fisioterapia</strong>
-            <span>Consulta individual en Retiro · Madrid</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+  <section class="hero" id="inicio">
+    <div class="hero__texto">
+      <p class="hero__etiq">Landing pages · negocios locales</p>
+      <h1 class="hero__titulo">Una sola página que lo <em>explica todo</em></h1>
+      <p class="hero__bajada">
+        Hacemos landing pages a medida: quién eres, qué ofreces, cómo contactar.
+        Sin menús infinitos ni webs vacías. Optimizada para móvil desde el primer día.
+      </p>
+      <div class="hero__acciones">
+        <a href="plantillas.html" class="btn btn--pri">Ver 16 ejemplos</a>
+        <a href="#contacto" class="btn btn--sec">Pedir presupuesto</a>
+      </div>
+      <p class="hero__nota">Psicólogos · bares · clínicas · yoga · y más</p>
+    </div>
+    <div class="hero__preview" aria-label="Ejemplos recientes">
+      <a class="preview-card" href="webs/psicologos/plantilla-3/" style="--pc:#3d7a8c">
+        <strong>Corriente</strong>
+        <span>Psicología · interactiva</span>
+      </a>
+      <a class="preview-card" href="webs/yoga/plantilla-1/" style="--pc:#7d9a82">
+        <strong>Mesa de luz</strong>
+        <span>Yoga · estilo editorial</span>
+      </a>
+      <a class="preview-card" href="webs/bares/plantilla-2/" style="--pc:#c9a227">
+        <strong>Velario</strong>
+        <span>Restaurante · premium</span>
+      </a>
+    </div>
+  </section>
 
-    <section>
-      <h2>Nutricionista</h2>
-      <ul>
-        <li>
-          <a class="card" href="webs/nutricionista/plantilla-1/">
-            <strong>Plantilla 1 — Oria Nutrición</strong>
-            <span>Dietista-nutricionista · Triana, Sevilla</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+  <section class="bloque que-es" id="que-es">
+    <p class="bloque__etiq">Qué hacemos exactamente</p>
+    <h2 class="bloque__titulo">Landing page = tu web completa en una página</h2>
+    <p class="bloque__txt">No es un anuncio suelto ni una web a medias. Es la página que mandas por WhatsApp, que aparece en Google y que convierte visitas en mensajes.</p>
+    <div class="que-es__grid">
+      <article class="que-es__item">
+        <h3>Todo en scroll</h3>
+        <p>Hero, servicios, sobre ti, precios y contacto. El visitante no se pierde.</p>
+      </article>
+      <article class="que-es__item">
+        <h3>Móvil primero</h3>
+        <p>El 80 % entra desde el teléfono. Diseñamos y probamos ahí antes que en desktop.</p>
+      </article>
+      <article class="que-es__item">
+        <h3>Lista para contactar</h3>
+        <p>WhatsApp, formulario o teléfono visible. Sin fricción para escribirte.</p>
+      </article>
+    </div>
+  </section>
 
-    <section>
-      <h2>Dentistas</h2>
-      <ul>
-        <li>
-          <a class="card" href="webs/dentistas/plantilla-1/">
-            <strong>Plantilla 1 — NovaDent</strong>
-            <span>Clínica dental · Salamanca, Madrid</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+  <section class="bloque" id="trabajo">
+    <p class="bloque__etiq">Demos destacadas</p>
+    <h2 class="bloque__titulo">Landings reales que puedes abrir ya</h2>
+    <p class="bloque__txt">Cada enlace es una landing page completa. Ábrela en el móvil y compártela como demo.</p>
+    <div class="estrellas">
+      <a class="estrella" href="webs/psicologos/plantilla-3/">
+        <span class="estrella__tag">Interactiva</span>
+        <strong>Corriente</strong>
+        <span>Psicología · respiración y mapa de nodos</span>
+      </a>
+      <a class="estrella" href="webs/psicologos/plantilla-4-bruma/">
+        <span class="estrella__tag">Experiencial</span>
+        <strong>Bruma</strong>
+        <span>Psicología · tono clínico con capas</span>
+      </a>
+      <a class="estrella" href="webs/bares/plantilla-2/">
+        <span class="estrella__tag">Premium</span>
+        <strong>Velario</strong>
+        <span>Restaurante · mesa giratoria interactiva</span>
+      </a>
+    </div>
+  </section>
 
-    <section>
-      <h2>Veterinarios</h2>
-      <ul>
-        <li>
-          <a class="card" href="webs/veterinarios/plantilla-1/">
-            <strong>Plantilla 1 — Huella Viva</strong>
-            <span>Clínica veterinaria · Chamberí, Madrid</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+  <section class="bloque" id="servicios">
+    <p class="bloque__etiq">Qué incluye</p>
+    <h2 class="bloque__titulo">Cada landing lleva lo esencial</h2>
+    <div class="servicios">
+      <article class="servicio">
+        <h3>Diseño único</h3>
+        <p>Sector, tono y estética propios. Nada de clonar la misma estructura.</p>
+      </article>
+      <article class="servicio">
+        <h3>Textos adaptados</h3>
+        <p>Tu nombre, ciudad, servicios y precios. Suena a ti, no a plantilla.</p>
+      </article>
+      <article class="servicio">
+        <h3>Publicación incluida</h3>
+        <p>Te la dejamos online en tu dominio o GitHub Pages, lista para compartir.</p>
+      </article>
+    </div>
+  </section>
 
-    <section>
-      <h2>Academias</h2>
-      <ul>
-        <li>
-          <a class="card" href="webs/academias/plantilla-1/">
-            <strong>Plantilla 1 — Academia Nova</strong>
-            <span>Academia de barrio en Chamberí</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+  <section class="bloque" id="precios">
+    <p class="bloque__etiq">Precios orientativos</p>
+    <h2 class="bloque__titulo">Paquetes de landing page</h2>
+    <p class="bloque__txt">Precio de partida por una landing de una página. Blog, tienda online o varios idiomas se presupuestan aparte.</p>
+    <div class="precios">
+      <article class="precio">
+        <p class="precio__nombre">Esencial</p>
+        <p class="precio__cant">450 € <small>+ IVA</small></p>
+        <ul>
+          <li>Landing de una página</li>
+          <li>Responsive móvil + desktop</li>
+          <li>WhatsApp o formulario</li>
+          <li>Publicación online</li>
+        </ul>
+        <a href="#contacto" class="btn btn--sec">Me interesa</a>
+      </article>
+      <article class="precio precio--dest">
+        <p class="precio__badge">Recomendado</p>
+        <p class="precio__nombre">Profesional</p>
+        <p class="precio__cant">750 € <small>+ IVA</small></p>
+        <ul>
+          <li>Todo lo de Esencial</li>
+          <li>Textos redactados contigo</li>
+          <li>Animaciones ligeras</li>
+          <li>SEO básico + vista previa al compartir</li>
+          <li>1 ronda de cambios</li>
+        </ul>
+        <a href="#contacto" class="btn btn--pri">Pedir esta</a>
+      </article>
+      <article class="precio">
+        <p class="precio__nombre">Premium</p>
+        <p class="precio__cant">1.100 € <small>+ IVA</small></p>
+        <ul>
+          <li>Todo lo de Profesional</li>
+          <li>Interacción avanzada (mapas, carruseles…)</li>
+          <li>Galería o portfolio ampliado</li>
+          <li>2 rondas de cambios</li>
+        </ul>
+        <a href="#contacto" class="btn btn--sec">Consultar</a>
+      </article>
+    </div>
+  </section>
 
-    <section>
-      <h2>Clínica estética</h2>
-      <ul>
-        <li>
-          <a class="card" href="webs/clinica-estetica/plantilla-1/">
-            <strong>Plantilla 1 — Lumière</strong>
-            <span>Cabina de labios y estética facial</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+  <section class="bloque">
+    <p class="bloque__etiq">Proceso</p>
+    <h2 class="bloque__titulo">De la demo a tu landing publicada</h2>
+    <div class="proceso">
+      <article class="paso">
+        <div>
+          <h3>Eliges una demo de referencia</h3>
+          <p>Miras el catálogo, nos dices qué estilo te encaja y qué sector es el tuyo.</p>
+        </div>
+      </article>
+      <article class="paso">
+        <div>
+          <h3>Adaptamos contenido y diseño</h3>
+          <p>Tu marca, tus textos, tus fotos. La landing se personaliza por completo.</p>
+        </div>
+      </article>
+      <article class="paso">
+        <div>
+          <h3>Revisas en tu móvil</h3>
+          <p>Te mandamos el enlace de prueba. Ajustamos lo que haga falta.</p>
+        </div>
+      </article>
+      <article class="paso">
+        <div>
+          <h3>Publicamos y listo</h3>
+          <p>Tu landing online, con dominio propio o enlace para compartir.</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-    <footer>
-      14 plantillas listas para GitHub Pages.
-    </footer>
-  </div>
+  <section class="bloque contacto" id="contacto">
+    <div class="contacto__grid">
+      <div>
+        <p class="bloque__etiq">Contacto</p>
+        <h2 class="bloque__titulo">Cuéntanos tu landing</h2>
+        <p class="bloque__txt">Sector, ciudad y qué quieres que haga la página. Te respondemos con propuesta y plazo estimado.</p>
+        <div class="contacto__sectores" aria-label="Sectores">
+          <span>Psicología</span>
+          <span>Hostelería</span>
+          <span>Salud</span>
+          <span>Yoga</span>
+          <span>Belleza</span>
+        </div>
+      </div>
+      <div class="contacto__links">
+        <a href="https://wa.me/34600000000?text=Hola%2C%20quiero%20una%20landing%20page%20para%20___" class="btn btn--pri" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="mailto:hola@ejemplo.com?subject=Presupuesto%20landing%20page" class="btn btn--sec">Email</a>
+        <a href="plantillas.html" class="btn btn--sec">Ver catálogo completo</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pie">
+    <p>Estudio web · Landing pages a medida</p>
+    <p><a href="plantillas.html">16 demos</a> · <a href="https://github.com/Judithrg2/web-normales">GitHub</a></p>
+  </footer>
+
+  <script src="assets/js/landing.js" defer></script>
 </body>
 </html>

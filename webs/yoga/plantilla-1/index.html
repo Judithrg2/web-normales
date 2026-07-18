@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Mesa de luz — Estudio de yoga y pilates en Gràcia, Barcelona. Clases en grupo, privadas y horarios de mañana y tarde.">
+  <meta name="theme-color" content="#f4f0e8">
+  <meta property="og:title" content="Mesa de luz · Yoga y pilates · Barcelona">
+  <meta property="og:description" content="Estudio pequeño en Gràcia. Hatha, vinyasa suave y pilates mat en un espacio luminoso y tranquilo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://judithrg2.github.io/web-normales/webs/yoga/plantilla-1/">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary">
+  <title>Mesa de luz · Yoga y pilates</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f4f0e8'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%237d9a82' stroke-width='1.5'/%3E%3Cpath d='M16 10v12M12 14h8' stroke='%237d9a82' stroke-width='1.2'/%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="styles.css" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="sin-js">
+
+  <a class="saltar" href="#inicio">Ir al contenido</a>
+
+  <header class="masthead" id="masthead">
+    <a href="#inicio" class="masthead__logo">Mesa de luz</a>
+    <button type="button" class="masthead__menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+    <nav class="masthead__nav" id="menu" aria-label="Principal">
+      <a href="#clases">Clases</a>
+      <a href="#horario">Horario</a>
+      <a href="#lucia">Lucía</a>
+      <a href="#espacio">Espacio</a>
+      <a href="#precios">Precios</a>
+      <a href="#reserva" class="masthead__cta">Reservar</a>
+    </nav>
+  </header>
+  <div class="scrim" id="scrim" hidden aria-hidden="true"></div>
+
+  <main>
+
+    <section class="portada" id="inicio">
+      <div class="portada__col portada__col--texto">
+        <p class="kicker">Gràcia · Barcelona · estudio pequeño</p>
+        <h1 class="portada__titulo">
+          Cuerpo<br><em>en calma</em>
+        </h1>
+        <p class="portada__lead">
+          Yoga y pilates en un local de una sola sala. Sin espejos de pared a pared,
+          sin playlists a todo volumen. Solo luz, suelo de madera y tiempo para respirar.
+        </p>
+        <div class="portada__acciones">
+          <a href="#reserva" class="btn">Primera clase — 12 €</a>
+          <a href="#horario" class="btn btn--sec">Ver horario</a>
+        </div>
+      </div>
+      <div class="portada__col portada__col--visual" aria-hidden="true">
+        <div class="portada__bloque portada__bloque--a"></div>
+        <div class="portada__bloque portada__bloque--b"></div>
+        <p class="portada__num">Est. 2021</p>
+      </div>
+    </section>
+
+    <section class="manifesto" id="manifesto">
+      <div class="bloque">
+        <blockquote>
+          <p>No enseñamos a hacer la postura perfecta. Enseñamos a escuchar qué pide el cuerpo hoy — que no es lo mismo el lunes que el jueves.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="clases seccion-pesada" id="clases">
+      <div class="bloque">
+        <header class="seccion-cab">
+          <span class="seccion-cab__num">01</span>
+          <h2>En la cartelera</h2>
+        </header>
+        <div class="columnas" role="list">
+          <article class="col-editorial" role="listitem">
+            <h3>Hatha suave</h3>
+            <p class="col-editorial__meta">Mañanas · 60 min</p>
+            <p>Posturas sostenidas, respiración y transiciones lentas. Ideal si vuelves después de una pausa o prefieres un ritmo pausado.</p>
+            <span class="col-editorial__tag">Nivel abierto</span>
+          </article>
+          <article class="col-editorial" role="listitem">
+            <h3>Vinyasa fluida</h3>
+            <p class="col-editorial__meta">Tardes · 75 min</p>
+            <p>Secuencias que enlazan movimiento y respiración. Más dinámica, pero sin perseguir acrobacias. Opciones siempre.</p>
+            <span class="col-editorial__tag">Con base</span>
+          </article>
+          <article class="col-editorial" role="listitem">
+            <h3>Pilates mat</h3>
+            <p class="col-editorial__meta">Mixto · 55 min</p>
+            <p>Core, alineación y fuerza funcional en esterilla. Grupos reducidos para corregir sin gritar.</p>
+            <span class="col-editorial__tag">Máx. 8 personas</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="horario seccion-pesada" id="horario">
+      <div class="bloque">
+        <header class="seccion-cab">
+          <span class="seccion-cab__num">02</span>
+          <h2>Horario semanal</h2>
+        </header>
+
+        <ul class="horario-cards" aria-label="Horario en formato lista">
+          <li><span class="horario-cards__dia">Lunes</span><span class="horario-cards__slots">08:30 Hatha · 19:30 Pilates</span></li>
+          <li><span class="horario-cards__dia">Martes</span><span class="horario-cards__slots">18:00 Vinyasa</span></li>
+          <li><span class="horario-cards__dia">Miércoles</span><span class="horario-cards__slots">08:30 Hatha · 19:30 Pilates</span></li>
+          <li><span class="horario-cards__dia">Jueves</span><span class="horario-cards__slots">18:00 Vinyasa</span></li>
+          <li><span class="horario-cards__dia">Viernes</span><span class="horario-cards__slots">08:30 Hatha · 19:30 Pilates</span></li>
+        </ul>
+
+        <div class="tabla-wrap">
+          <table class="tabla">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Lu</th>
+                <th scope="col">Ma</th>
+                <th scope="col">Mi</th>
+                <th scope="col">Ju</th>
+                <th scope="col">Vi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">08:30</th>
+                <td>Hatha</td>
+                <td>—</td>
+                <td>Hatha</td>
+                <td>—</td>
+                <td>Hatha</td>
+              </tr>
+              <tr>
+                <th scope="row">18:00</th>
+                <td>—</td>
+                <td>Vinyasa</td>
+                <td>—</td>
+                <td>Vinyasa</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <th scope="row">19:30</th>
+                <td>Pilates</td>
+                <td>—</td>
+                <td>Pilates</td>
+                <td>—</td>
+                <td>Pilates</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="horario__nota">Máximo 8 personas por clase. Reserva con 12 h de antelación.</p>
+      </div>
+    </section>
+
+    <section class="lucia seccion-pesada" id="lucia">
+      <div class="bloque lucia__grid">
+        <div class="lucia__foto" aria-hidden="true"></div>
+        <div class="lucia__texto">
+          <header class="seccion-cab seccion-cab--inline">
+            <span class="seccion-cab__num">03</span>
+            <h2>Lucía Ferrer</h2>
+          </header>
+          <p class="lucia__rol">Profesora · 500 h RYS · pilates clásico</p>
+          <p>Empecé en consultas de fisioterapia viendo lo mismo: cuerpos fuertes por fuera y agotados por dentro. Abrí Mesa de luz para un espacio intermedio — ni gimnasio ni retiro espiritual.</p>
+          <p>Enseño desde 2014. Antes diseñaba editoriales; creo que se nota en cómo ordeno las clases.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="espacio seccion-pesada" id="espacio">
+      <div class="bloque">
+        <header class="seccion-cab">
+          <span class="seccion-cab__num">04</span>
+          <h2>El espacio</h2>
+        </header>
+        <div class="mosaico">
+          <div class="mosaico__a" aria-hidden="true"></div>
+          <div class="mosaico__b" aria-hidden="true"></div>
+          <div class="mosaico__c" aria-hidden="true"></div>
+        </div>
+        <ul class="espacio__lista">
+          <li>Planta baja · sin escaleras</li>
+          <li>Vestuario con dos duchas</li>
+          <li>Toallas y esterillas incluidas</li>
+        </ul>
+        <p class="espacio__txt">C/ Torrent de l'Olla, 45 · 08012 Barcelona</p>
+      </div>
+    </section>
+
+    <section class="precios seccion-pesada" id="precios">
+      <div class="bloque">
+        <header class="seccion-cab">
+          <span class="seccion-cab__num">05</span>
+          <h2>Tarifas</h2>
+        </header>
+        <ul class="lista-precios">
+          <li><span>Clase suelta</span><span class="lista-precios__dots" aria-hidden="true"></span><span>18 €</span></li>
+          <li><span>Bono 5 clases</span><span class="lista-precios__dots" aria-hidden="true"></span><span>80 €</span></li>
+          <li><span>Bono 10 clases</span><span class="lista-precios__dots" aria-hidden="true"></span><span>150 €</span></li>
+          <li><span>Clase privada</span><span class="lista-precios__dots" aria-hidden="true"></span><span>45 €</span></li>
+          <li><span>Primera visita</span><span class="lista-precios__dots" aria-hidden="true"></span><span>12 €</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reserva" id="reserva">
+      <div class="bloque reserva__grid">
+        <div>
+          <header class="seccion-cab seccion-cab--claro">
+            <span class="seccion-cab__num">06</span>
+            <h2>Reservar plaza</h2>
+          </header>
+          <p class="reserva__txt">Elige la clase y escríbeme por WhatsApp. Te confirmo en unas horas.</p>
+          <p class="reserva__dir">C/ Torrent de l'Olla, 45 · Gràcia<br><a href="tel:+34931234567">931 234 567</a></p>
+        </div>
+        <div class="reserva__form">
+          <label class="reserva__label">
+            <span>Clase que te interesa</span>
+            <select id="clase-select" aria-label="Seleccionar clase">
+              <option value="Hatha suave">Hatha suave</option>
+              <option value="Vinyasa fluida">Vinyasa fluida</option>
+              <option value="Pilates mat">Pilates mat</option>
+              <option value="Primera visita">Primera visita (12 €)</option>
+              <option value="Clase privada">Clase privada</option>
+            </select>
+          </label>
+          <a href="#" class="btn btn--oscuro" id="btn-wa" target="_blank" rel="noopener noreferrer">Reservar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>Mesa de luz · Yoga y pilates · Barcelona</p>
+    <p><a href="#">Privacidad</a></p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

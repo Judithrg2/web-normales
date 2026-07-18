@@ -1,0 +1,567 @@
+/* Kilómetro 47 — multipágina · carretera nocturna */
+
+:root {
+  --asfalto: #1c1c22;
+  --asfalto-2: #26262e;
+  --linea: #3a3a44;
+  --neón-amb: #ffb347;
+  --neón-rosa: #ff5c8a;
+  --neón-verde: #5dffb0;
+  --cartel: #f4ead8;
+  --texto: #e8e4dc;
+  --texto-2: #9a9690;
+  --display: 'Bebas Neue', Impact, sans-serif;
+  --sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --mono: 'IBM Plex Mono', monospace;
+  --nav-h: 3.75rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-h) + env(safe-area-inset-top, 0px) + 0.5rem);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--texto);
+  background: var(--asfalto);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255,255,255,0.012) 2px, rgba(255,255,255,0.012) 4px),
+    radial-gradient(ellipse 80% 50% at 50% 100%, rgba(255, 92, 138, 0.06) 0%, transparent 55%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+a { color: var(--neón-amb); text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; }
+
+.saltar {
+  position: absolute; top: -100%; left: 1rem; z-index: 300;
+  padding: 0.5rem 1rem; background: var(--neón-amb); color: var(--asfalto);
+  font-weight: 600; border-radius: 2px;
+}
+.saltar:focus { top: max(0.5rem, env(safe-area-inset-top, 0px)); }
+
+/* Señales de navegación */
+.ruta {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  height: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
+  padding-top: env(safe-area-inset-top, 0px);
+  background: rgba(28, 28, 34, 0.94);
+  border-bottom: 2px solid var(--linea);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: max(1rem, env(safe-area-inset-left, 0px)) max(1rem, env(safe-area-inset-right, 0px));
+}
+
+.ruta__km {
+  font-family: var(--display);
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
+  color: var(--cartel);
+  text-decoration: none;
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.ruta__km small {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--neón-verde);
+  letter-spacing: 0.1em;
+}
+
+.ruta__panel { display: none; gap: 0.25rem; align-items: center; }
+
+.señal {
+  font-family: var(--display);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.65rem;
+  border: 2px solid var(--linea);
+  color: var(--texto-2);
+  text-decoration: none;
+  min-height: 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  transition: border-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.señal:hover { color: var(--cartel); border-color: var(--neón-amb); }
+
+.señal--activa {
+  color: var(--asfalto);
+  background: var(--neón-amb);
+  border-color: var(--neón-amb);
+  box-shadow: 0 0 12px rgba(255, 179, 71, 0.4);
+}
+
+.señal--cta {
+  background: var(--neón-rosa);
+  border-color: var(--neón-rosa);
+  color: var(--asfalto);
+}
+
+.señal--cta.señal--activa {
+  box-shadow: 0 0 16px rgba(255, 92, 138, 0.55);
+}
+
+.ruta__menu {
+  width: 2.75rem; height: 2.75rem;
+  border: 2px solid var(--linea);
+  background: var(--asfalto-2);
+  cursor: pointer;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 5px;
+}
+
+.ruta__menu span {
+  display: block; width: 18px; height: 2px; background: var(--cartel);
+}
+
+.ruta-movil {
+  position: fixed;
+  inset: calc(var(--nav-h) + env(safe-area-inset-top, 0px)) 0 0;
+  z-index: 99;
+  background: var(--asfalto-2);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  transform: translateX(105%);
+  transition: transform 0.3s ease;
+  border-left: 3px solid var(--neón-amb);
+}
+
+.ruta-movil.abierto { transform: translateX(0); }
+
+.ruta-movil .señal {
+  width: 100%;
+  justify-content: center;
+  min-height: 2.75rem;
+  font-size: 1.1rem;
+}
+
+body.menu-open { overflow: hidden; }
+
+main {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+  padding-top: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
+}
+
+.contenido {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 2rem max(1.25rem, env(safe-area-inset-left, 0px)) 3rem max(1.25rem, env(safe-area-inset-right, 0px));
+}
+
+/* Neón home */
+.neon {
+  text-align: center;
+  padding: 3rem 1.25rem 2rem;
+  min-height: clamp(22rem, 70dvh, 32rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.neon__cartel {
+  font-family: var(--display);
+  font-size: clamp(3.5rem, 14vw, 7rem);
+  line-height: 0.9;
+  letter-spacing: 0.04em;
+  color: var(--cartel);
+  text-shadow:
+    0 0 8px var(--neón-amb),
+    0 0 24px rgba(255, 179, 71, 0.5),
+    0 0 48px rgba(255, 92, 138, 0.25);
+  animation: parpadeo 4s ease-in-out infinite;
+}
+
+.neon__sub {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--neón-verde);
+}
+
+.neon__txt {
+  max-width: 32ch;
+  color: var(--texto-2);
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+@keyframes parpadeo {
+  0%, 100% { opacity: 1; }
+  92% { opacity: 1; }
+  93% { opacity: 0.85; }
+  94% { opacity: 1; }
+  96% { opacity: 0.9; }
+}
+
+.badge-24 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px dashed var(--neón-rosa);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--neón-rosa);
+  letter-spacing: 0.1em;
+}
+
+.badge-24::before {
+  content: '';
+  width: 6px; height: 6px;
+  background: var(--neón-rosa);
+  border-radius: 50%;
+  animation: pulso 1.5s ease infinite;
+}
+
+@keyframes pulso {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Títulos página */
+.pagina-tit {
+  font-family: var(--display);
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  letter-spacing: 0.05em;
+  color: var(--cartel);
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.pagina-km {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--neón-verde);
+  letter-spacing: 0.15em;
+  margin-bottom: 1.5rem;
+}
+
+.pagina-lead {
+  color: var(--texto-2);
+  max-width: 42ch;
+  margin-bottom: 2rem;
+  font-size: 0.98rem;
+}
+
+/* Tickets menú */
+.tickets {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.ticket {
+  background: var(--cartel);
+  color: var(--asfalto);
+  padding: 1rem 1.15rem;
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+}
+
+.ticket::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 12px; height: 12px;
+  background: var(--asfalto);
+}
+
+.ticket__cab {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.ticket__nombre {
+  font-family: var(--display);
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+}
+
+.ticket__precio {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.ticket__desc {
+  font-size: 0.85rem;
+  color: #4a4a50;
+  line-height: 1.45;
+}
+
+.ticket__tag {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--neón-rosa);
+}
+
+.ticket--noche {
+  background: var(--asfalto-2);
+  color: var(--texto);
+  border: 1px dashed var(--linea);
+  clip-path: none;
+}
+
+.ticket--noche::after { display: none; }
+.ticket--noche .ticket__desc { color: var(--texto-2); }
+
+/* Barra — coctelería */
+.cocktails {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.cocktail {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--linea);
+}
+
+.cocktail__num {
+  font-family: var(--display);
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--neón-rosa);
+  opacity: 0.7;
+}
+
+.cocktail h3 {
+  font-family: var(--display);
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+  color: var(--cartel);
+  margin-bottom: 0.2rem;
+}
+
+.cocktail p { font-size: 0.88rem; color: var(--texto-2); }
+.cocktail .ticket__precio { color: var(--neón-amb); margin-top: 0.35rem; display: block; }
+
+/* Historia — carretera */
+.carretera {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 3px dashed var(--neón-amb);
+  margin-left: 0.5rem;
+}
+
+.parada {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.parada::before {
+  content: '';
+  position: absolute;
+  left: calc(-2rem - 9px);
+  top: 0.35rem;
+  width: 14px; height: 14px;
+  background: var(--neón-rosa);
+  border: 3px solid var(--asfalto);
+  border-radius: 50%;
+}
+
+.parada__km {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--neón-verde);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.parada h3 {
+  font-family: var(--display);
+  font-size: 1.5rem;
+  color: var(--cartel);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+}
+
+.parada p { font-size: 0.92rem; color: var(--texto-2); }
+
+/* Parar — reservas */
+.parar-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.horario {
+  font-family: var(--mono);
+  font-size: 0.88rem;
+  line-height: 1.8;
+  padding: 1.25rem;
+  background: var(--asfalto-2);
+  border-left: 3px solid var(--neón-verde);
+}
+
+.horario strong { color: var(--cartel); }
+
+.form-parada {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.form-parada label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  font-family: var(--mono);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--texto-2);
+}
+
+.form-parada input,
+.form-parada select,
+.form-parada textarea {
+  min-height: 2.75rem;
+  padding: 0.65rem 0.85rem;
+  background: var(--asfalto-2);
+  border: 1px solid var(--linea);
+  color: var(--texto);
+  font: inherit;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.form-parada textarea { min-height: 5rem; resize: vertical; }
+
+.form-parada input:focus,
+.form-parada select:focus,
+.form-parada textarea:focus {
+  outline: 2px solid var(--neón-amb);
+  outline-offset: 1px;
+}
+
+.btn-carretera {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0 1.5rem;
+  font-family: var(--display);
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  background: var(--neón-amb);
+  color: var(--asfalto);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-carretera--rosa { background: var(--neón-rosa); }
+
+.form-ok {
+  padding: 1rem;
+  background: rgba(93, 255, 176, 0.1);
+  border: 1px solid var(--neón-verde);
+  color: var(--neón-verde);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+}
+
+.pie-carretera {
+  padding: 1.25rem max(1.25rem, env(safe-area-inset-right, 0px)) calc(1.25rem + env(safe-area-inset-bottom, 0px)) max(1.25rem, env(safe-area-inset-left, 0px));
+  border-top: 2px solid var(--linea);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--texto-2);
+  letter-spacing: 0.05em;
+  position: relative;
+  z-index: 1;
+}
+
+.pie-carretera a { color: var(--texto-2); }
+
+.turno {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.turno button {
+  min-height: 2.75rem;
+  padding: 0 1rem;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  background: var(--asfalto-2);
+  border: 1px solid var(--linea);
+  color: var(--texto-2);
+  cursor: pointer;
+}
+
+.turno button.activo {
+  background: var(--neón-verde);
+  color: var(--asfalto);
+  border-color: var(--neón-verde);
+}
+
+.turno-panel[hidden] { display: none; }
+
+@media (min-width: 768px) {
+  .ruta__menu { display: none; }
+  .ruta__panel { display: flex; }
+  .parar-grid { grid-template-columns: 1fr 1fr; }
+  .cocktails { grid-template-columns: 1fr 1fr; gap: 1.5rem 2rem; }
+  .tickets { grid-template-columns: 1fr 1fr; }
+}
+
+@media (hover: hover) {
+  .btn-carretera:hover { box-shadow: 0 0 20px rgba(255, 179, 71, 0.45); }
+  .señal--cta:hover { box-shadow: 0 0 16px rgba(255, 92, 138, 0.4); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .neon__cartel, .badge-24::before { animation: none; }
+}
+
+@media (max-width: 767px) {
+  .btn-carretera { width: 100%; }
+}

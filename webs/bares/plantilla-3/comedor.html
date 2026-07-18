@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Comedor Kilómetro 47 — Carta de día y noche. Huevos, sándwiches, guisos y cocina caliente 24h.">
+  <meta name="theme-color" content="#1c1c22">
+  <title>Comedor · Kilómetro 47</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#comedor">Ir al contenido</a>
+
+  <header class="ruta">
+    <a href="index.html" class="ruta__km">KM <small>47</small></a>
+    <nav class="ruta__panel" aria-label="Páginas">
+      <a href="index.html" class="señal">Entrada</a>
+      <a href="comedor.html" class="señal señal--activa">Comedor</a>
+      <a href="barra.html" class="señal">Barra</a>
+      <a href="historia.html" class="señal">Historia</a>
+      <a href="parar.html" class="señal señal--cta">Parar aquí</a>
+    </nav>
+    <button type="button" class="ruta__menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="ruta-movil">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="ruta-movil" id="ruta-movil" hidden>
+    <a href="index.html" class="señal">Entrada</a>
+    <a href="comedor.html" class="señal señal--activa">Comedor</a>
+    <a href="barra.html" class="señal">Barra</a>
+    <a href="historia.html" class="señal">Historia</a>
+    <a href="parar.html" class="señal señal--cta">Parar aquí</a>
+  </nav>
+
+  <main>
+    <div class="contenido" id="comedor">
+      <p class="pagina-km">// COMEDOR · KM 48 · PÁGINA 2 DE 5</p>
+      <h1 class="pagina-tit">Carta de carretera</h1>
+      <p class="pagina-lead">Dos turnos, dos mundos. De día huele a café y mantequilla; de noche, a cazuela y grasa buena.</p>
+
+      <div class="turno" role="tablist" aria-label="Turno del comedor">
+        <button type="button" class="activo" data-turno="dia" role="tab" aria-selected="true">06:00 – 16:00</button>
+        <button type="button" data-turno="noche" role="tab" aria-selected="false">16:00 – 04:00</button>
+      </div>
+
+      <div class="tickets turno-panel" data-panel="dia" role="tabpanel">
+        <article class="ticket">
+          <div class="ticket__cab">
+            <span class="ticket__nombre">Huevos km 47</span>
+            <span class="ticket__precio">8 €</span>
+          </div>
+          <p class="ticket__desc">Dos huevos, bacon crujiente, pan de molde tostado y salsa holandesa un poco rota.</p>
+          <span class="ticket__tag">Madrugadores</span>
+        </article>
+        <article class="ticket">
+          <div class="ticket__cab">
+            <span class="ticket__nombre">Sándwich de camionero</span>
+            <span class="ticket__precio">9 €</span>
+          </div>
+          <p class="ticket__desc">Pechuga de pavo, queso fundido, lechuga y mostaza en pan de caja. Sin preguntas.</p>
+        </article>
+        <article class="ticket">
+          <div class="ticket__cab">
+            <span class="ticket__nombre">Tostada mantequilla</span>
+            <span class="ticket__precio">3 €</span>
+          </div>
+          <p class="ticket__desc">Pan del día anterior tostado en mantequilla salada. Mermelada casera opcional.</p>
+        </article>
+        <article class="ticket">
+          <div class="ticket__cab">
+            <span class="ticket__nombre">Sopa del día</span>
+            <span class="ticket__precio">6 €</span>
+          </div>
+          <p class="ticket__desc">Lo que quedó ayer, mejorado. Pregunta al mostrador qué hay hoy.</p>
+        </article>
+      </div>
+
+      <div class="tickets turno-panel" data-panel="noche" role="tabpanel" hidden>
+        <article class="ticket ticket--noche">
+          <div class="ticket__cab">
+            <span class="ticket__nombre">Cazuela de la abuela</span>
+            <span class="ticket__precio">12 €</span>
+          </div>
+          <p class="ticket__desc">Guiso de ternera, patata y pimentón. Pan para mojar obligatorio.</p>
+          <span class="ticket__tag">Desde las 20h</span>
+        </article>
+        <article class="ticket ticket--noche">
+          <div class="ticket__cab">
+            <span class="ticket__nombre">Huevos rotos con chistorra</span>
+            <span class="ticket__precio">11 €</span>
+          </div>
+          <p class="ticket__desc">Clásico de las dos de la mañana. Patatas, huevo y chistorra de Cantimpalos.</p>
+        </article>
+        <article class="ticket ticket--noche">
+          <div class="ticket__cab">
+            <span class="ticket__nombre">Tosta de morcilla</span>
+            <span class="ticket__precio">8 €</span>
+          </div>
+          <p class="ticket__desc">Pan de campo, morcilla de Burgos, cebolla caramelizada y reducción de Oporto.</p>
+        </article>
+        <article class="ticket ticket--noche">
+          <div class="ticket__cab">
+            <span class="ticket__nombre">Ración de croquetas</span>
+            <span class="ticket__precio">7 €</span>
+          </div>
+          <p class="ticket__desc">Seis unidades. Jamón o boletus según lo que diga la pizarra.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie-carretera">
+    <span><a href="index.html">← Entrada</a> · <a href="barra.html">Barra →</a></span>
+    <span>Comedor abierto 24h</span>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Reserva mesa en Kilómetro 47 — A-4 km 47. Horarios, contacto y formulario de parada.">
+  <meta name="theme-color" content="#1c1c22">
+  <title>Parar aquí · Kilómetro 47</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#parar">Ir al contenido</a>
+
+  <header class="ruta">
+    <a href="index.html" class="ruta__km">KM <small>47</small></a>
+    <nav class="ruta__panel" aria-label="Páginas">
+      <a href="index.html" class="señal">Entrada</a>
+      <a href="comedor.html" class="señal">Comedor</a>
+      <a href="barra.html" class="señal">Barra</a>
+      <a href="historia.html" class="señal">Historia</a>
+      <a href="parar.html" class="señal señal--cta señal--activa">Parar aquí</a>
+    </nav>
+    <button type="button" class="ruta__menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="ruta-movil">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="ruta-movil" id="ruta-movil" hidden>
+    <a href="index.html" class="señal">Entrada</a>
+    <a href="comedor.html" class="señal">Comedor</a>
+    <a href="barra.html" class="señal">Barra</a>
+    <a href="historia.html" class="señal">Historia</a>
+    <a href="parar.html" class="señal señal--cta señal--activa">Parar aquí</a>
+  </nav>
+
+  <main>
+    <div class="contenido" id="parar">
+      <p class="pagina-km">// PARADA · KM 47 · PÁGINA 5 DE 5</p>
+      <h1 class="pagina-tit">Para aquí</h1>
+      <p class="pagina-lead">Reserva mesa en el comedor o avisa si venís en grupo. La barra no necesita cita — solo sed.</p>
+
+      <div class="parar-grid">
+        <div>
+          <div class="horario">
+            <strong>Horario</strong><br>
+            Comedor y barra: 24 h, 7 días<br>
+            Cocina caliente: 16:00 – 04:00<br>
+            Desayunos: 06:00 – 12:00<br><br>
+            <strong>Dirección</strong><br>
+            A-4, km 47 · 13600<br>
+            Alcázar de San Juan (Ciudad Real)<br><br>
+            <strong>Teléfono</strong><br>
+            <a href="tel:+34926000047">926 000 047</a>
+          </div>
+          <p style="margin-top:1rem;font-size:0.88rem;color:var(--texto-2);">
+            Parking para 40 vehículos. Gasolinera asociada 24h en el mismo recinto.
+          </p>
+        </div>
+
+        <form class="form-parada" id="form-parada" novalidate>
+          <label>
+            <span>Nombre</span>
+            <input type="text" name="nombre" required autocomplete="name">
+          </label>
+          <label>
+            <span>Teléfono</span>
+            <input type="tel" name="tel" required autocomplete="tel">
+          </label>
+          <label>
+            <span>Fecha y hora</span>
+            <input type="datetime-local" name="fecha" required>
+          </label>
+          <label>
+            <span>Personas</span>
+            <select name="personas">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6+">6 o más</option>
+            </select>
+          </label>
+          <label>
+            <span>¿Qué buscas?</span>
+            <select name="zona">
+              <option value="comedor">Mesa en comedor</option>
+              <option value="barra">Solo barra</option>
+              <option value="grupo">Grupo / evento</option>
+            </select>
+          </label>
+          <label>
+            <span>Notas</span>
+            <textarea name="notas" rows="3" placeholder="Alergias, hora aproximada de llegada…"></textarea>
+          </label>
+          <button type="submit" class="btn-carretera btn-carretera--rosa">Enviar parada</button>
+          <p class="form-ok" id="form-ok" hidden>Recibido. Te confirmamos por SMS. Buen viaje.</p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie-carretera">
+    <span><a href="historia.html">← Historia</a> · <a href="index.html">Entrada</a></span>
+    <span>KM 47 · Siempre encendidos</span>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
